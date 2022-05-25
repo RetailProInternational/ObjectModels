@@ -716,8 +716,8 @@ Legacy Column: NA
 ------------------------------------------------------
 
 Name: BtId
-Data Type: Nullable<Integer>
-Database Column: 'BT_ID',[],10,0
+Data Type: Nullable<Int64>
+Database Column: 'BT_ID',[],14,0
 Documentation: 'BtId','Document.89'
 Legacy Column: NA
 
@@ -964,8 +964,8 @@ Legacy Column: NA
 ------------------------------------------------------
 
 Name: StId
-Data Type: Nullable<Integer>
-Database Column: 'ST_ID',[],10,0
+Data Type: Nullable<Int64>
+Database Column: 'ST_ID',[],14,0
 Documentation: 'StId','Document.120'
 Legacy Column: NA
 

@@ -92,7 +92,7 @@ Legacy Column: NA
 ------------------------------------------------------
 
 Name: StartDate
-Data Type: TDateTime
+Data Type: TDate
 Database Column: 'START_DATE',[cpRequired,cpNotNull
 Documentation: 'date the task will initiate  (do not store timezone)','ScheduledTask.11'
 Legacy Column: NA
@@ -100,7 +100,7 @@ Legacy Column: NA
 ------------------------------------------------------
 
 Name: EndDate
-Data Type: Nullable<TDateTime>
+Data Type: Nullable<TDate>
 Database Column: 'END_DATE',[
 Documentation: 'date the task will end, if null then no end date. (do not store timezone)','ScheduledTask.12'
 Legacy Column: NA

@@ -23,7 +23,6 @@
       "prevprice" : 0,
       "newprice" : null,
       "newdiscamt" : null,
-      "newdiscamtdetaxed" : null,
       "newdiscperc" : null,
       "newtaxperc" : null,
       "discorigvalue" : 0,

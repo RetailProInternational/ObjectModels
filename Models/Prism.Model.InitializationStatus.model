@@ -107,6 +107,22 @@ Legacy Column: NA
 
 ------------------------------------------------------
 
+Name: CurrentResourceSid
+Data Type: Nullable<int64>
+Database Column: 'CURRENT_RESOURCE_SID',[],19,0
+Documentation: 'sid of the resource that is currently being processed','InitializationStatus.19'
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: CurrentProcessOrder
+Data Type: Nullable<integer>
+Database Column: 'CURRENT_PROCESS_ORDER',[],10,0
+Documentation: 'process order of the resource that is currently being processed','InitializationStatus.20'
+Legacy Column: NA
+
+------------------------------------------------------
+
 Name: TotalRowsProcessedSofar
 Data Type: Nullable<Int64>
 Database Column: 'TOTAL_ROWS_PROCESSED_SOFAR',[],30,0

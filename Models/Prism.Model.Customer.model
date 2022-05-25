@@ -132,8 +132,8 @@ Legacy Column: 'COMPANY_NAME'
 ------------------------------------------------------
 
 Name: CustId
-Data Type: Nullable<Integer>
-Database Column: 'CUST_ID',[],10,0
+Data Type: Nullable<Int64>
+Database Column: 'CUST_ID',[],14,0
 Documentation: 'CustId','Customer.16', 'STRING'
 Legacy Column: 'CUST_ID'
 

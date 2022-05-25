@@ -115,6 +115,14 @@ Legacy Column: NA
 
 ------------------------------------------------------
 
+Name: InvnSbsItemUID
+Data Type: Nullable<Int64>
+Database Column: 'INVN_ITEM_UID',[cpRequired,cpNotNull],19,0
+Documentation: 'ItemUID','DocItem.241'
+Legacy Column: NA
+
+------------------------------------------------------
+
 Name: DetaxFlag
 Data Type: Boolean
 Database Column: 'DETAX_FLAG',[cpRequired,cpNotNull],1,0
@@ -916,8 +924,8 @@ Legacy Column: NA
 ------------------------------------------------------
 
 Name: StId
-Data Type: Nullable<Integer>
-Database Column: 'ST_ID',[],10,0
+Data Type: Nullable<Int64>
+Database Column: 'ST_ID',[],14,0
 Documentation: 'StId','DocItem.113'
 Legacy Column: NA
 
@@ -1967,14 +1975,6 @@ Name: Employee5Id
 Data Type: Nullable<integer>
 Database Column: NA
 Documentation: 'Unique employee identifier in Rpro9. Used for reverse lookup of the employee SID for data coming from Rpro9','DocItem.240'
-Legacy Column: NA
-
-------------------------------------------------------
-
-Name: InvnSbsItemUID
-Data Type: Nullable<Int64>
-Database Column: NA
-Documentation: 'ItemUID','DocItem.241'
 Legacy Column: NA
 
 ------------------------------------------------------

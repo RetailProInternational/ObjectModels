@@ -22,7 +22,9 @@
       ],
       "initstatusconnection" : [
       ],
-      "subscriptionname" : null
+      "subscriptionname" : null,
+      "currentresourcesid" : null,
+      "currentprocessorder" : null
     }
   ]
 }

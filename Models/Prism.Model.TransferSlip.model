@@ -219,6 +219,14 @@ Legacy Column: NA
 
 ------------------------------------------------------
 
+Name: TaxArea2Sid
+Data Type: Nullable<Int64>
+Database Column: 'TAX_AREA2_SID',[],19,0
+Documentation: 'TaxArea2Sid','TransferSlip.130'
+Legacy Column: NA
+
+------------------------------------------------------
+
 Name: DocPriceTotal
 Data Type: Nullable<Double>
 Database Column: 'DOC_PRICE_TOTAL',[],16,4
@@ -688,6 +696,14 @@ Data Type: Nullable<String>
 Database Column: NA
 Documentation: 'Name','TransferSlip.72'
 Legacy Column: 'TAX_AREA_NAME'
+
+------------------------------------------------------
+
+Name: TaxArea2Name
+Data Type: Nullable<String>
+Database Column: NA
+Documentation: 'Name','TransferSlip.131'
+Legacy Column: NA
 
 ------------------------------------------------------
 

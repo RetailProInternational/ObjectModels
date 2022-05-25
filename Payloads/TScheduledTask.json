@@ -11,7 +11,7 @@
       "rowversion" : 0,
       "postdate" : null,
       "tenantsid" : null,
-      "startdate" : null,
+      "startdate" : "1899-12-30",
       "enddate" : null,
       "starttime" : null,
       "endtime" : null,

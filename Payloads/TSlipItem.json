@@ -79,7 +79,9 @@
       "alu" : null,
       "fccost" : null,
       "vendname" : null,
-      "ohcheckapproved" : false
+      "ohcheckapproved" : false,
+      "taxareasid" : null,
+      "taxarea" : null
     }
   ]
 }

@@ -1387,6 +1387,22 @@ Legacy Column: NA
 
 ------------------------------------------------------
 
+Name: DefaultPrice
+Data Type: double
+Database Column: NA
+Documentation: NA
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: DefaultPriceWT
+Data Type: double
+Database Column: NA
+Documentation: NA
+Legacy Column: NA
+
+------------------------------------------------------
+
 Name: DcsCode
 Data Type: Nullable<string>
 Database Column: NA

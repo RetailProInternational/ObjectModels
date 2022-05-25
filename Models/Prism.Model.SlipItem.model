@@ -163,6 +163,14 @@ Legacy Column: 'TAX_PERC'
 
 ------------------------------------------------------
 
+Name: TaxAreaSid
+Data Type: Nullable<Int64>
+Database Column: 'TAX_AREA_SID',[],19,0
+Documentation: 'TaxAreaSid','SlipItem.78'
+Legacy Column: NA
+
+------------------------------------------------------
+
 Name: TaxArea2Sid
 Data Type: Nullable<Int64>
 Database Column: 'TAX_AREA2_SID',[],19,0
@@ -447,6 +455,14 @@ Name: InvnSbsVendorSid
 Data Type: Nullable<Int64>
 Database Column: 'INVN_SBS_VENDOR_SID',[],19,0
 Documentation: 'SID of alternate vendor info','SlipItem.55'
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: TaxArea
+Data Type: TNullableString
+Database Column: NA
+Documentation: 'Name','SlipItem.79'
 Legacy Column: NA
 
 ------------------------------------------------------
