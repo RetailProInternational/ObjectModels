@@ -2939,6 +2939,14 @@ Legacy Column: NA
 
 ------------------------------------------------------
 
+Name: DocumentTaxBreak
+Data Type: IList<TDocumentTaxBreak>
+Database Column: NA
+Documentation: NA
+Legacy Column: NA
+
+------------------------------------------------------
+
 Name: DocTender
 Data Type: IList<TDocTender>
 Database Column: NA

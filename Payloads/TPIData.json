@@ -11,7 +11,10 @@
       "postdate" : null,
       "rowversion" : 0,
       "tenantsid" : null,
-      "data" : null
+      "data" : null,
+      "pisheetsid" : "0",
+      "chunkno" : 0,
+      "totalchunks" : 0
     }
   ]
 }

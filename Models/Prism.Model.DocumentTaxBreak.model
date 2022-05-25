@@ -1,11 +1,11 @@
 ##########################################################################################################
-File Name: Prism.Model.ResourceLock.pas
+File Name: Prism.Model.DocumentTaxBreak.pas
 ##########################################################################################################
-Class Name: TResourceLock
+Class Name: TDocumentTaxBreak
 Base Class Name: TModelBase
-Database Table: RESOURCE_LOCK
+Database Table: DOCUMENT_TAX_BREAK
 Associate Class: False
-Identified By: NA
+Identified By: 'FDocSid,FTaxArea,FTaxCode,FTaxPerc'
 Legacy Identified By: NA
 
 Members
@@ -91,65 +91,49 @@ Legacy Column: NA
 
 ------------------------------------------------------
 
-Name: ResourceName
-Data Type: string
-Database Column: 'RESOURCE_NAME',[cpRequired,cpNotNull],30
+Name: DocSid
+Data Type: Int64
+Database Column: 'DOC_SID',[cpRequired,cpNotNull],19,0
 Documentation: NA
 Legacy Column: NA
 
 ------------------------------------------------------
 
-Name: ResourceSid
-Data Type: Nullable<Int64>
-Database Column: 'RESOURCE_SID',[],19,0
-Documentation: NA
-Legacy Column: NA
-
-------------------------------------------------------
-
-Name: ResourceId
+Name: TaxArea
 Data Type: Nullable<string>
-Database Column: 'RESOURCE_ID',[],20
+Database Column: 'TAX_AREA',[],11
 Documentation: NA
 Legacy Column: NA
 
 ------------------------------------------------------
 
-Name: LifeTime
+Name: TaxCode
+Data Type: Nullable<string>
+Database Column: 'TAX_CODE',[],5
+Documentation: NA
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: TaxName
+Data Type: Nullable<string>
+Database Column: 'TAX_NAME',[],12
+Documentation: NA
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: TaxPerc
 Data Type: Nullable<Double>
-Database Column: 'LIFE_TIME',[],3,1
+Database Column: 'TAX_PERC',[],16,4
 Documentation: NA
 Legacy Column: NA
 
 ------------------------------------------------------
 
-Name: Status
-Data Type: Int16
-Database Column: 'STATUS',[cpRequired,cpNotNull],5,0
-Documentation: NA
-Legacy Column: NA
-
-------------------------------------------------------
-
-Name: WorkstationSid
-Data Type: Nullable<Int64>
-Database Column: 'WORKSTATION_SID',[],19,0
-Documentation: NA
-Legacy Column: NA
-
-------------------------------------------------------
-
-Name: SessionToken
-Data Type: Nullable<String>
-Database Column: 'SESSION_TOKEN',[],30
-Documentation: NA
-Legacy Column: NA
-
-------------------------------------------------------
-
-Name: Info
-Data Type: Nullable<string>
-Database Column: 'INFO',[],2000
+Name: TaxAmt
+Data Type: Nullable<Double>
+Database Column: 'TAX_AMT',[],17,5
 Documentation: NA
 Legacy Column: NA
 

@@ -1,0 +1,69 @@
+##########################################################################################################
+File Name: Prism.Model.EmployeeStoreList.pas
+##########################################################################################################
+Class Name: TEmployeeStoreList
+Base Class Name: TModelBase
+Database Table: EMPLOYEE_STORE_LIST_V
+Associate Class: False
+Identified By: NA
+Legacy Identified By: NA
+
+Members
+===========================================================================================
+
+Name: Sid
+Data Type: Int64
+Database Column: 'SID',[cpRequired,cpPrimaryKey,cpNotNull],19,0
+Documentation: 'Sid','EmployeeStoreList.1'
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: FullName
+Data Type: Nullable<string>
+Database Column: 'FULL_NAME',[],60
+Documentation: 'FullName','EmployeeStoreList.2'
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: UserName
+Data Type: Nullable<string>
+Database Column: 'USER_NAME',[],30
+Documentation: 'UserName','EmployeeStoreList.3'
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: Active
+Data Type: boolean
+Database Column: 'ACTIVE',[cpRequired,cpNotNull],1,0
+Documentation: 'Active','EmployeeStoreList.4'
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: OrigSbsSid
+Data Type: Nullable<Int64>
+Database Column: 'ORIG_SBS_SID',[],19,0
+Documentation: 'OrigSbsSid','EmployeeStoreList.5'
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: Internal
+Data Type: boolean
+Database Column: 'INTERNAL',[cpNotNull],1,0
+Documentation: 'Internal','EmployeeStoreList.6'
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: StoreSid
+Data Type: Nullable<Int64>
+Database Column: 'STORE_SID',[],19,0
+Documentation: 'StoreSid','EmployeeStoreList.7'
+Legacy Column: NA
+
+------------------------------------------------------
+

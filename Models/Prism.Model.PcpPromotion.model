@@ -179,6 +179,94 @@ Legacy Column: NA
 
 ------------------------------------------------------
 
+Name: ActivationWeekDays
+Data Type: Nullable<Int16>
+Database Column: 'ACTIVATION_WEEKDAYS',[],1,0
+Documentation: 'ActivationWeekDays','PcpPromotion.210'
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: ActivationWeekDay1
+Data Type: Nullable<Int16>
+Database Column: 'ACTIVATION_WEEKDAY1',[],1,0
+Documentation: 'ActivationWeekDay1','PcpPromotion.211'
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: ActivationWeekDay2
+Data Type: Nullable<Int16>
+Database Column: 'ACTIVATION_WEEKDAY2',[],1,0
+Documentation: 'ActivationWeekDay2','PcpPromotion.212'
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: ActivationWeekDay3
+Data Type: Nullable<Int16>
+Database Column: 'ACTIVATION_WEEKDAY3',[],1,0
+Documentation: 'ActivationWeekDay3','PcpPromotion.213'
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: ActivationWeekDay4
+Data Type: Nullable<Int16>
+Database Column: 'ACTIVATION_WEEKDAY4',[],1,0
+Documentation: 'ActivationWeekDay4','PcpPromotion.214'
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: ActivationWeekDay5
+Data Type: Nullable<Int16>
+Database Column: 'ACTIVATION_WEEKDAY5',[],1,0
+Documentation: 'ActivationWeekDay5','PcpPromotion.215'
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: ActivationWeekDay6
+Data Type: Nullable<Int16>
+Database Column: 'ACTIVATION_WEEKDAY6',[],1,0
+Documentation: 'ActivationWeekDay6','PcpPromotion.216'
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: ActivationWeekDay7
+Data Type: Nullable<Int16>
+Database Column: 'ACTIVATION_WEEKDAY7',[],1,0
+Documentation: 'ActivationWeekDay7','PcpPromotion.217'
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: ActivationDayTime
+Data Type: Nullable<Int16>
+Database Column: 'ACTIVATION_DAYTIME',[],1,0
+Documentation: 'ActivationDayTime','PcpPromotion.218'
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: ActivationDayTimeStart
+Data Type: Nullable<Double>
+Database Column: 'ACTIVATION_DAYTIME_START',[],10,9
+Documentation: 'ActivationDayTimeStart','PcpPromotion.219'
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: ActivationDayTimeEnd
+Data Type: Nullable<Double>
+Database Column: 'ACTIVATION_DAYTIME_END',[],10,9
+Documentation: 'ActivationDayTimeEnd','PcpPromotion.220'
+Legacy Column: NA
+
+------------------------------------------------------
+
 Name: ActivationSbsSid
 Data Type: Int64
 Database Column: 'ACTIVATION_SBS_SID',[cpRequired,cpNotNull],19,0

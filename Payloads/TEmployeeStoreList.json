@@ -1,0 +1,14 @@
+{
+  "data" : [
+    {
+      "sid" : "0",
+      "fullname" : null,
+      "username" : null,
+      "active" : false,
+      "origsbssid" : null,
+      "internal" : false,
+      "storesid" : null
+    }
+  ]
+}
+

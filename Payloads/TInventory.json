@@ -181,7 +181,9 @@
       "docqty" : 0,
       "doccaseqty" : 0,
       "docprice" : 0,
-      "doccost" : 0
+      "doccost" : 0,
+      "defaultprice" : 0,
+      "defaultpricewt" : 0
     }
   ]
 }

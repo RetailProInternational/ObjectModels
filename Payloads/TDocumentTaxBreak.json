@@ -11,14 +11,12 @@
       "postdate" : null,
       "rowversion" : 0,
       "tenantsid" : null,
-      "resourcename" : null,
-      "resourcesid" : null,
-      "resourceid" : null,
-      "lifetime" : null,
-      "status" : 0,
-      "workstationsid" : null,
-      "sessiontoken" : null,
-      "info" : null
+      "docsid" : "0",
+      "taxarea" : null,
+      "taxcode" : null,
+      "taxname" : null,
+      "taxperc" : null,
+      "taxamt" : null
     }
   ]
 }
