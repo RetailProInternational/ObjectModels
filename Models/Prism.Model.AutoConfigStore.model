@@ -1,11 +1,11 @@
 ##########################################################################################################
-File Name: Prism.Model.PcpRewardItemDiscTier.pas
+File Name: Prism.Model.AutoConfigStore.pas
 ##########################################################################################################
-Class Name: TPcpRewardItemDiscTier
+Class Name: TAutoConfigStore
 Base Class Name: TModelBase
-Database Table: PCP_REWARD_ITEM_DISC_TIER
+Database Table: AUTO_CONFIG_STORE
 Associate Class: False
-Identified By: 'FPromoSid,FQty'
+Identified By: 'FAutoConfigSid,FStoreSid'
 Legacy Identified By: NA
 
 Members
@@ -14,7 +14,7 @@ Members
 Name: Sid
 Data Type: Int64
 Database Column: 'SID',[cpRequired,cpPrimaryKey,cpNotNull],19,0
-Documentation: 'Sid','PcpRewardItemDiscTier.1'
+Documentation: 'unique identifying value','AutoConfigStore.1'
 Legacy Column: NA
 
 ------------------------------------------------------
@@ -22,7 +22,7 @@ Legacy Column: NA
 Name: CreatedBy
 Data Type: string
 Database Column: 'CREATED_BY',[cpRequired,cpNotNull],30
-Documentation: 'CreatedBy','PcpRewardItemDiscTier.2'
+Documentation: 'employee id of row creator using application ui','AutoConfigStore.2'
 Legacy Column: NA
 
 ------------------------------------------------------
@@ -30,7 +30,7 @@ Legacy Column: NA
 Name: CreatedDatetime
 Data Type: TDateTime
 Database Column: 'CREATED_DATETIME',[cpRequired,cpNotNull
-Documentation: 'CreatedDatetime','PcpRewardItemDiscTier.3'
+Documentation: 'datetime row was created','AutoConfigStore.3'
 Legacy Column: NA
 
 ------------------------------------------------------
@@ -38,7 +38,7 @@ Legacy Column: NA
 Name: ModifiedBy
 Data Type: Nullable<string>
 Database Column: 'MODIFIED_BY',[],30
-Documentation: 'ModifiedBy','PcpRewardItemDiscTier.4'
+Documentation: 'employee id of last modifier using application ui','AutoConfigStore.4'
 Legacy Column: NA
 
 ------------------------------------------------------
@@ -46,7 +46,7 @@ Legacy Column: NA
 Name: ModifiedDatetime
 Data Type: Nullable<TDateTime>
 Database Column: 'MODIFIED_DATETIME',[
-Documentation: 'ModifiedDatetime','PcpRewardItemDiscTier.5'
+Documentation: 'datetime row was last modified','AutoConfigStore.5'
 Legacy Column: NA
 
 ------------------------------------------------------
@@ -54,7 +54,7 @@ Legacy Column: NA
 Name: ControllerSid
 Data Type: Int64
 Database Column: 'CONTROLLER_SID',[cpRequired,cpNotNull],19,0
-Documentation: 'ControllerSid','PcpRewardItemDiscTier.6'
+Documentation: 'reference to store record for database where that owns row.','AutoConfigStore.6'
 Legacy Column: NA
 
 ------------------------------------------------------
@@ -62,7 +62,7 @@ Legacy Column: NA
 Name: OriginApplication
 Data Type: string
 Database Column: 'ORIGIN_APPLICATION',[cpRequired,cpNotNull],20
-Documentation: 'OriginApplication','PcpRewardItemDiscTier.7'
+Documentation: 'indicates application used to create row.  v9 and v8 are reserved for rpro versions 8 and 9,respectively.  this is the same value that will be used in licensing applications.','AutoConfigStore.7'
 Legacy Column: NA
 
 ------------------------------------------------------
@@ -70,7 +70,7 @@ Legacy Column: NA
 Name: PostDate
 Data Type: Nullable<TDateTime>
 Database Column: 'POST_DATE',[
-Documentation: 'PostDate','PcpRewardItemDiscTier.8'
+Documentation: 'date and time row was created/last modified in this system.  may not be the same as created/modified datetime.','AutoConfigStore.8'
 Legacy Column: NA
 
 ------------------------------------------------------
@@ -78,7 +78,7 @@ Legacy Column: NA
 Name: RowVersion
 Data Type: Integer
 Database Column: NA
-Documentation: 'RowVersion','PcpRewardItemDiscTier.9'
+Documentation: 'optimistic locking value','AutoConfigStore.9'
 Legacy Column: NA
 
 ------------------------------------------------------
@@ -86,39 +86,23 @@ Legacy Column: NA
 Name: TenantSid
 Data Type: Nullable<Int64>
 Database Column: 'TENANT_SID',[],19,0
-Documentation: 'TenantSid','PcpRewardItemDiscTier.10'
+Documentation: 'reference to tenant description','AutoConfigStore.10'
 Legacy Column: NA
 
 ------------------------------------------------------
 
-Name: PromoSid
+Name: AutoConfigSid
 Data Type: Int64
-Database Column: 'PROMO_SID',[cpRequired,cpNotNull],19,0
-Documentation: 'PromoSid','PcpRewardItemDiscTier.11'
+Database Column: 'AUTO_CONFIG_SID',[cpRequired,cpNotNull],19,0
+Documentation: 'reference to auto config record','AutoConfigStore.11'
 Legacy Column: NA
 
 ------------------------------------------------------
 
-Name: Qty
-Data Type: Nullable<Double>
-Database Column: 'QTY',[],10,3
-Documentation: 'Qty','PcpRewardItemDiscTier.12'
-Legacy Column: NA
-
-------------------------------------------------------
-
-Name: DiscValue
-Data Type: Nullable<Double>
-Database Column: 'DISC_VALUE',[],16,4
-Documentation: 'DiscValue','PcpRewardItemDiscTier.13'
-Legacy Column: NA
-
-------------------------------------------------------
-
-Name: PLSid
-Data Type: Nullable<Int64>
-Database Column: 'PL_SID',[],19,0
-Documentation: 'PLSid','PcpRewardItemDiscTier.14'
+Name: StoreSid
+Data Type: Int64
+Database Column: 'STORE_SID',[cpRequired,cpNotNull],19,0
+Documentation: 'reference to store record','AutoConfigStore.11'
 Legacy Column: NA
 
 ------------------------------------------------------

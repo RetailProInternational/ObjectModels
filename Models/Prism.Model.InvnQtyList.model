@@ -1,10 +1,10 @@
 ##########################################################################################################
-File Name: Prism.Model.Inventory.Associate.pas
+File Name: Prism.Model.InvnQtyList.pas
 ##########################################################################################################
-Class Name: TInventoryAssociate
+Class Name: TInvnQtyList
 Base Class Name: TModelBase
-Database Table: INVN_SBS_ITEM
-Associate Class: True
+Database Table: INVN_QTY_LIST_V
+Associate Class: False
 Identified By: NA
 Legacy Identified By: NA
 
@@ -19,241 +19,193 @@ Legacy Column: NA
 
 ------------------------------------------------------
 
-Name: ItemUID
-Data Type: Nullable<Int64>
-Database Column: 'INVN_ITEM_UID',[cpNotNull],19,0
+Name: SbsSid
+Data Type: Int64
+Database Column: 'SBS_SID',[cpRequired,cpNotNull],19,0
 Documentation: NA
 Legacy Column: NA
 
 ------------------------------------------------------
 
-Name: StyleSID
-Data Type: Nullable<Int64>
-Database Column: 'STYLE_SID',[cpNotNull],19,0
+Name: StoreSid
+Data Type: Int64
+Database Column: 'STORE_SID',[cpRequired,cpNotNull],19,0
 Documentation: NA
 Legacy Column: NA
 
 ------------------------------------------------------
 
-Name: Upc
-Data Type: Nullable<Int64>
-Database Column: 'UPC',[],18,0
+Name: InvnSbsItemSid
+Data Type: Int64
+Database Column: 'INVN_SBS_ITEM_SID',[cpRequired,cpNotNull],19,0
 Documentation: NA
 Legacy Column: NA
 
 ------------------------------------------------------
 
-Name: Description1
+Name: StoreCode
+Data Type: string
+Database Column: 'STORE_CODE',[cpRequired,cpNotNull],5
+Documentation: NA
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: StoreName
 Data Type: Nullable<string>
-Database Column: 'DESCRIPTION1',[],30
+Database Column: 'STORE_NAME',[],40
 Documentation: NA
 Legacy Column: NA
 
 ------------------------------------------------------
 
-Name: Description2
-Data Type: Nullable<string>
-Database Column: 'DESCRIPTION2',[],30
+Name: StoreNo
+Data Type: Int16
+Database Column: 'STORE_NO',[cpRequired,cpNotNull],5,0
 Documentation: NA
 Legacy Column: NA
 
 ------------------------------------------------------
 
-Name: Description3
-Data Type: Nullable<string>
-Database Column: 'DESCRIPTION3',[],30
-Documentation: NA
-Legacy Column: NA
-
-------------------------------------------------------
-
-Name: Description4
-Data Type: Nullable<string>
-Database Column: 'DESCRIPTION4',[],30
-Documentation: NA
-Legacy Column: NA
-
-------------------------------------------------------
-
-Name: ItemSize
-Data Type: Nullable<string>
-Database Column: 'ITEM_SIZE',[],8
-Documentation: NA
-Legacy Column: NA
-
-------------------------------------------------------
-
-Name: Attribute
-Data Type: Nullable<string>
-Database Column: 'ATTRIBUTE',[],8
-Documentation: NA
-Legacy Column: NA
-
-------------------------------------------------------
-
-Name: VendSid
-Data Type: Nullable<Int64>
-Database Column: 'VEND_SID',[],19,0
-Documentation: NA
-Legacy Column: NA
-
-------------------------------------------------------
-
-Name: UseQtyDecimals
-Data Type: Nullable<Int16>
-Database Column: 'USE_QTY_DECIMALS',[],1,0
-Documentation: NA
-Legacy Column: NA
-
-------------------------------------------------------
-
-Name: SerialType
-Data Type: Nullable<TInventorySerialType>
-Database Column: 'SERIAL_TYPE',[],1,0
-Documentation: NA
-Legacy Column: NA
-
-------------------------------------------------------
-
-Name: LotType
-Data Type: Nullable<Int16>
-Database Column: 'LOT_TYPE',[],1,0
-Documentation: NA
-Legacy Column: NA
-
-------------------------------------------------------
-
-Name: KitType
-Data Type: Nullable<TItemKitType>
-Database Column: 'KIT_TYPE',[],1,0
-Documentation: NA
-Legacy Column: NA
-
-------------------------------------------------------
-
-Name: ALU
-Data Type: Nullable<string>
-Database Column: 'ALU',[],20
-Documentation: NA
-Legacy Column: NA
-
-------------------------------------------------------
-
-Name: VendorListCost
+Name: Qty
 Data Type: Nullable<Double>
-Database Column: 'VENDOR_LIST_COST',[],16,4
+Database Column: 'QTY',[],10,3
 Documentation: NA
 Legacy Column: NA
 
 ------------------------------------------------------
 
-Name: TradeDiscPercent
+Name: TransferInQty
 Data Type: Nullable<Double>
-Database Column: 'TRADE_DISC_PERC',[],16,4
+Database Column: 'TRANSFER_IN_QTY',[],10,3
 Documentation: NA
 Legacy Column: NA
 
 ------------------------------------------------------
 
-Name: Cost
+Name: TransferOutQty
 Data Type: Nullable<Double>
-Database Column: 'COST',[],16,4
+Database Column: 'TRANSFER_OUT_QTY',[],10,3
 Documentation: NA
 Legacy Column: NA
 
 ------------------------------------------------------
 
-Name: FCCost
+Name: SoldQty
 Data Type: Nullable<Double>
-Database Column: 'FC_COST',[],16,4
+Database Column: 'SOLD_QTY',[],10,3
 Documentation: NA
 Legacy Column: NA
 
 ------------------------------------------------------
 
-Name: MinOrdQty
+Name: RcvdQty
 Data Type: Nullable<Double>
-Database Column: 'MIN_ORD_QTY',[],10,3
+Database Column: 'RCVD_QTY',[],10,3
 Documentation: NA
 Legacy Column: NA
 
 ------------------------------------------------------
 
-Name: TaxCodeSid
-Data Type: Nullable<Int64>
-Database Column: 'TAX_CODE_SID',[],19,0
+Name: OnOrderedQty
+Data Type: Nullable<Double>
+Database Column: 'ON_ORDERED_QTY',[],10,3
 Documentation: NA
 Legacy Column: NA
 
 ------------------------------------------------------
 
-Name: LastRcvdDate
+Name: ToInOrderedQty
+Data Type: Nullable<Double>
+Database Column: 'TO_IN_ORDERED_QTY',[],10,3
+Documentation: NA
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: ToInSentQty
+Data Type: Nullable<Double>
+Database Column: 'TO_IN_SENT_QTY',[],10,3
+Documentation: NA
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: ToOutOrderedQty
+Data Type: Nullable<Double>
+Database Column: 'TO_OUT_ORDERED_QTY',[],10,3
+Documentation: NA
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: ToOutSentQty
+Data Type: Nullable<Double>
+Database Column: 'TO_OUT_SENT_QTY',[],10,3
+Documentation: NA
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: PoOrderedQty
+Data Type: Nullable<Double>
+Database Column: 'PO_ORDERED_QTY',[],10,3
+Documentation: NA
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: PoRcvdQty
+Data Type: Nullable<Double>
+Database Column: 'PO_RCVD_QTY',[],10,3
+Documentation: NA
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: SoOrderedQty
+Data Type: Nullable<Double>
+Database Column: 'SO_ORDERED_QTY',[],10,3
+Documentation: NA
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: SoSentQty
+Data Type: Nullable<Double>
+Database Column: 'SO_SENT_QTY',[],10,3
+Documentation: NA
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: AsnInTransitQty
+Data Type: Nullable<Double>
+Database Column: 'ASN_IN_TRANSIT_QTY',[],10,3
+Documentation: NA
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: LastOnHandQtyDate
 Data Type: Nullable<TDateTime>
-Database Column: 'LAST_RCVD_DATE',[
+Database Column: 'LAST_ON_HAND_QTY_DATE',[
 Documentation: NA
 Legacy Column: NA
 
 ------------------------------------------------------
 
-Name: Active
-Data Type: Boolean
-Database Column: 'ACTIVE',[cpRequired,cpNotNull],1,0
-Documentation: NA
-Legacy Column: NA
-
-------------------------------------------------------
-
-Name: QtyPerCase
+Name: MinQty
 Data Type: Nullable<Double>
-Database Column: 'QTY_PER_CASE',[],10,3
+Database Column: 'MIN_QTY',[],10,3
 Documentation: NA
 Legacy Column: NA
 
 ------------------------------------------------------
 
-Name: DcsCode
-Data Type: Nullable<String>
-Database Column: NA
-Documentation: NA
-Legacy Column: NA
-
-------------------------------------------------------
-
-Name: VendCode
-Data Type: Nullable<String>
-Database Column: NA
-Documentation: NA
-Legacy Column: NA
-
-------------------------------------------------------
-
-Name: VendName
-Data Type: Nullable<String>
-Database Column: NA
-Documentation: NA
-Legacy Column: NA
-
-------------------------------------------------------
-
-Name: CName
-Data Type: Nullable<String>
-Database Column: NA
-Documentation: NA
-Legacy Column: NA
-
-------------------------------------------------------
-
-Name: DName
-Data Type: Nullable<String>
-Database Column: NA
-Documentation: NA
-Legacy Column: NA
-
-------------------------------------------------------
-
-Name: SName
-Data Type: Nullable<String>
-Database Column: NA
+Name: MaxQty
+Data Type: Nullable<Double>
+Database Column: 'MAX_QTY',[],10,3
 Documentation: NA
 Legacy Column: NA
 

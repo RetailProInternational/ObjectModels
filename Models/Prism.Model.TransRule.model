@@ -20,8 +20,8 @@ Legacy Column: NA
 ------------------------------------------------------
 
 Name: CreatedBy
-Data Type: Int64
-Database Column: 'CREATED_BY',[cpRequired,cpNotNull],19,0
+Data Type: string
+Database Column: 'CREATED_BY',[cpRequired,cpNotNull],30
 Documentation: 'employee id of row creator using application ui','TransRule.2'
 Legacy Column: NA
 
@@ -36,8 +36,8 @@ Legacy Column: NA
 ------------------------------------------------------
 
 Name: ModifiedBy
-Data Type: Nullable<Int64>
-Database Column: 'MODIFIED_BY',[],19,0
+Data Type: Nullable<string>
+Database Column: 'MODIFIED_BY',[],30
 Documentation: 'employee id of last modifier using application ui','TransRule.4'
 Legacy Column: NA
 

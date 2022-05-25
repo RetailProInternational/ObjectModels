@@ -11,16 +11,8 @@
       "postdate" : null,
       "rowversion" : 0,
       "tenantsid" : null,
-      "resourcename" : null,
-      "resourcesid" : "0",
-      "link" : null,
-      "eventtype" : 0,
-      "attributesaffected" : null,
-      "prismresourcesid" : "0",
-      "pubnotificationqueue" : [
-      ],
-      "processorder" : null,
-      "resourcetype" : 0
+      "autoconfigsid" : "0",
+      "storesid" : "0"
     }
   ]
 }

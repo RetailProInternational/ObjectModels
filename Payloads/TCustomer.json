@@ -122,7 +122,10 @@
       "pricelevelname" : null,
       "origintimezone" : "-07:00",
       "centralcredit" : null,
-      "centralcurrencycode" : null
+      "centralcurrencycode" : null,
+      "chargenetdays" : null,
+      "chargediscdays" : null,
+      "chargediscperc" : null
     }
   ]
 }

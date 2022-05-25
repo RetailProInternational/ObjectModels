@@ -83,6 +83,14 @@ Legacy Column: NA
 
 ------------------------------------------------------
 
+Name: ConnectionPausedAt
+Data Type: Nullable<TDateTime>
+Database Column: NA
+Documentation: NA
+Legacy Column: NA
+
+------------------------------------------------------
+
 Name: GlobalFilter
 Data Type: Nullable<string>
 Database Column: NA

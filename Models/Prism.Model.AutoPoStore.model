@@ -1,11 +1,11 @@
 ##########################################################################################################
-File Name: Prism.Model.RemoteConnection.Associate.pas
+File Name: Prism.Model.AutoPoStore.pas
 ##########################################################################################################
-Class Name: TRemoteConnectionAssociate
-Base Class Name: TAssociateBase
-Database Table: REMOTE_CONNECTION
-Associate Class: True
-Identified By: NA
+Class Name: TAutoPoStore
+Base Class Name: TModelBase
+Database Table: AUTO_PO_STORE
+Associate Class: False
+Identified By: 'FAutoPoConfigSid,FStoreSid'
 Legacy Identified By: NA
 
 Members
@@ -19,73 +19,89 @@ Legacy Column: NA
 
 ------------------------------------------------------
 
-Name: Active
-Data Type: Nullable<Int16>
-Database Column: 'ACTIVE',[cpRequired,cpNotNull],1,0
+Name: CreatedBy
+Data Type: string
+Database Column: 'CREATED_BY',[cpRequired,cpNotNull],30
 Documentation: NA
 Legacy Column: NA
 
 ------------------------------------------------------
 
-Name: RemoteControllerSid
-Data Type: Nullable<Int64>
-Database Column: 'REMOTE_CONTROLLER_SID',[cpRequired,cpNotNull],19,0
+Name: CreatedDatetime
+Data Type: TDateTime
+Database Column: 'CREATED_DATETIME',[cpRequired,cpNotNull
 Documentation: NA
 Legacy Column: NA
 
 ------------------------------------------------------
 
-Name: ConnectionType
-Data Type: TServerMode
-Database Column: 'CONNECTION_TYPE',[cpRequired,cpNotNull],1,0
+Name: ModifiedBy
+Data Type: Nullable<string>
+Database Column: 'MODIFIED_BY',[],30
 Documentation: NA
 Legacy Column: NA
 
 ------------------------------------------------------
 
-Name: LocalControllerSid
-Data Type: Nullable<Int64>
-Database Column: 'LOCAL_CONTROLLER_SID',[cpRequired,cpNotNull],19,0
-Documentation: NA
-Legacy Column: NA
-
-------------------------------------------------------
-
-Name: PausedAt
+Name: ModifiedDatetime
 Data Type: Nullable<TDateTime>
-Database Column: 'PAUSED_AT',[
+Database Column: 'MODIFIED_DATETIME',[
 Documentation: NA
 Legacy Column: NA
 
 ------------------------------------------------------
 
-Name: ConnectionName
-Data Type: Nullable<string>
+Name: ControllerSid
+Data Type: Int64
+Database Column: 'CONTROLLER_SID',[cpRequired,cpNotNull],19,0
+Documentation: NA
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: OriginApplication
+Data Type: string
+Database Column: 'ORIGIN_APPLICATION',[cpRequired,cpNotNull],20
+Documentation: NA
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: RowVersion
+Data Type: Int16
 Database Column: NA
 Documentation: NA
 Legacy Column: NA
 
 ------------------------------------------------------
 
-Name: LocalAddress
-Data Type: Nullable<string>
-Database Column: NA
+Name: TenantSid
+Data Type: Nullable<Int64>
+Database Column: 'TENANT_SID',[],19,0
 Documentation: NA
 Legacy Column: NA
 
 ------------------------------------------------------
 
-Name: RemoteAddress
-Data Type: Nullable<string>
-Database Column: NA
+Name: PostDate
+Data Type: Nullable<TDateTime>
+Database Column: 'POST_DATE',[
 Documentation: NA
 Legacy Column: NA
 
 ------------------------------------------------------
 
-Name: V9Address
-Data Type: Nullable<string>
-Database Column: NA
+Name: AutoPoConfigSid
+Data Type: Int64
+Database Column: 'AUTO_PO_CONFIG_SID',[cpRequired,cpNotNull],19,0
+Documentation: NA
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: StoreSid
+Data Type: Int64
+Database Column: 'STORE_SID',[cpRequired,cpNotNull],19,0
 Documentation: NA
 Legacy Column: NA
 

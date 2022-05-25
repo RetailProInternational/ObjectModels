@@ -5,7 +5,7 @@ Class Name: TAutoMMFormula
 Base Class Name: TModelBase
 Database Table: AUTO_MM_FORMULA
 Associate Class: False
-Identified By: 'FSid'
+Identified By: 'FAutoConfigSid,FFormulaName'
 Legacy Identified By: NA
 
 Members
@@ -115,18 +115,130 @@ Legacy Column: NA
 
 ------------------------------------------------------
 
-Name: InvnFilterName
+Name: Filter
 Data Type: Nullable<string>
-Database Column: 'INVN_FILTER_NAME',[],200
+Database Column: 'FILTER',[],200
 Documentation: 'name of inventory filter being used','AutoMMFormula.14'
 Legacy Column: NA
 
 ------------------------------------------------------
 
-Name: AutoMMFormulaDetail
-Data Type: IList<TAutoMMFormulaDetail>
-Database Column: NA
-Documentation: 'list of formula details','AutoMMFormula.15'
+Name: FilterDB
+Data Type: Nullable<string>
+Database Column: 'FILTER_DB',[],2001
+Documentation: 'name of inventory filter being used','AutoMMFormula.142'
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: MinFormulatype
+Data Type: Int16
+Database Column: 'MIN_FORMULA_TYPE',[cpRequired,cpNotNull],1,0
+Documentation: 'minimum formula type: 0=DaysOfSupply (default), 1=Annual','AutoMMFormula.15'
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: MinSoldFrom
+Data Type: Int64
+Database Column: 'MIN_SOLD_FROM',[cpRequired,cpNotNull],10,0
+Documentation: 'minimum sold from quantity - minimum range value i.e. 0 is default','AutoMMFormula.16'
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: MinSoldTo
+Data Type: Int64
+Database Column: 'MIN_SOLD_TO',[cpRequired,cpNotNull],10,0
+Documentation: 'minimum sold to quantity - maximum range value i.e. 9999999 is default','AutoMMFormula.17'
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: MinConditionType
+Data Type: Int16
+Database Column: 'MIN_CONDITION_TYPE',[cpRequired,cpNotNull],1,0
+Documentation: 'minimum condition type: 0=GreaterThan (default), 1=LesserThan','AutoMMFormula.18'
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: MinDos
+Data Type: Nullable<Int16>
+Database Column: 'MIN_DOS',[],5,0
+Documentation: 'minimum days of supply (DOS): 0=default','AutoMMFormula.19'
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: MinDosQty
+Data Type: Nullable<Double>
+Database Column: 'MIN_DOS_QTY',[],10,3
+Documentation: 'minimum quantity value for DOS: 0=default','AutoMMFormula.20'
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: MinIncludeOos
+Data Type: Boolean
+Database Column: 'MIN_INCLUDE_OOS',[],1,0
+Documentation: 'minimum include out of stock: 0=exclude (default), 1=include','AutoMMFormula.21'
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: MaxFormulaType
+Data Type: Int16
+Database Column: 'MAX_FORMULA_TYPE',[cpRequired,cpNotNull],1,0
+Documentation: 'maximum formula type: 0=DaysOfSupply (default), 1=Annual','AutoMMFormula.22'
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: MaxSoldFrom
+Data Type: Int64
+Database Column: 'MAX_SOLD_FROM',[cpRequired,cpNotNull],10,0
+Documentation: 'maximum sold from quantity - maximum range value i.e. 0 is default','AutoMMFormula.23'
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: MaxSoldTo
+Data Type: Int64
+Database Column: 'MAX_SOLD_TO',[cpRequired,cpNotNull],10,0
+Documentation: 'maximum sold to quantity - maximum range value i.e. 9999999 is default','AutoMMFormula.24'
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: MaxConditionType
+Data Type: Int16
+Database Column: 'MAX_CONDITION_TYPE',[cpRequired,cpNotNull],1,0
+Documentation: 'maximum condition type: 0=GreaterThan (default), 1=LesserThan','AutoMMFormula.25'
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: MaxDos
+Data Type: Nullable<Int16>
+Database Column: 'MAX_DOS',[],5,0
+Documentation: 'maximum days of supply (DOS): 0=default','AutoMMFormula.26'
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: MaxDosQty
+Data Type: Nullable<Double>
+Database Column: 'MAX_DOS_QTY',[],10,3
+Documentation: 'max quantity value for DOS: 0=default','AutoMMFormula.27'
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: MaxIncludeOos
+Data Type: Boolean
+Database Column: 'MAX_INCLUDE_OOS',[],1,0
+Documentation: 'maximum include out of stock: 0=exclude (default), 1=include','AutoMMFormula.28'
 Legacy Column: NA
 
 ------------------------------------------------------

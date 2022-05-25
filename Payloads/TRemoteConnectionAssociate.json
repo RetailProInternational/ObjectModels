@@ -4,6 +4,7 @@
       "sid" : "0",
       "connectionname" : "Unknown",
       "active" : null,
+      "pausedat" : null,
       "remotecontrollersid" : null,
       "connectiontype" : 0,
       "localcontrollersid" : null,

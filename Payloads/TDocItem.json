@@ -26,6 +26,7 @@
       "origprice" : null,
       "origtaxamt" : null,
       "price" : null,
+      "activeprice" : null,
       "taxperc" : null,
       "taxamt" : null,
       "tax2perc" : null,

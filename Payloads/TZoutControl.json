@@ -61,6 +61,7 @@
       "sequence" : null,
       "zoutcontrolaudit" : [
       ],
+      "finalized" : null,
       "origintimezone" : "-07:00"
     }
   ]

@@ -139,38 +139,6 @@ Legacy Column: 'QTY'
 
 ------------------------------------------------------
 
-Name: MinQty
-Data Type: Nullable<Double>
-Database Column: 'MIN_QTY',[],10,3
-Documentation: 'MinQty','InvnQuantity.14'
-Legacy Column: 'MIN_QTY'
-
-------------------------------------------------------
-
-Name: MaxQty
-Data Type: Nullable<Double>
-Database Column: 'MAX_QTY',[],10,3
-Documentation: 'MaxQty','InvnQuantity.15'
-Legacy Column: 'MAX_QTY'
-
-------------------------------------------------------
-
-Name: NewMinQty
-Data Type: Nullable<Double>
-Database Column: 'NEW_MIN_QTY',[],10,3
-Documentation: 'NewMinQty','InvnQuantity.16'
-Legacy Column: 'NEW_MIN_QTY'
-
-------------------------------------------------------
-
-Name: NewMaxQty
-Data Type: Nullable<Double>
-Database Column: 'NEW_MAX_QTY',[],10,3
-Documentation: 'NewMaxQty','InvnQuantity.17'
-Legacy Column: 'NEW_MAX_QTY'
-
-------------------------------------------------------
-
 Name: TransferInQty
 Data Type: Nullable<Double>
 Database Column: 'TRANSFER_IN_QTY',[],10,3
@@ -184,22 +152,6 @@ Data Type: Nullable<Double>
 Database Column: 'TRANSFER_OUT_QTY',[],10,3
 Documentation: 'TransferOutQty','InvnQuantity.19'
 Legacy Column: 'TRANSFER_OUT_QTY'
-
-------------------------------------------------------
-
-Name: MinmaxBeginDate
-Data Type: Nullable<TDate>
-Database Column: 'MINMAX_BEGIN_DATE',[
-Documentation: 'MinmaxBeginDate','InvnQuantity.20'
-Legacy Column: 'MINMAX_BEGIN_DATE'
-
-------------------------------------------------------
-
-Name: MinmaxEndDate
-Data Type: Nullable<TDate>
-Database Column: 'MINMAX_END_DATE',[
-Documentation: 'MinmaxEndDate','InvnQuantity.21'
-Legacy Column: 'MINMAX_END_DATE'
 
 ------------------------------------------------------
 
@@ -311,14 +263,6 @@ Name: InvnSbsItemSid
 Data Type: Int64
 Database Column: 'INVN_SBS_ITEM_SID',[cpRequired,cpNotNull],19,0
 Documentation: 'used by api to navigate to invn_sbs_item resource','InvnQuantity.35'
-Legacy Column: NA
-
-------------------------------------------------------
-
-Name: AutoConfigSid
-Data Type: Nullable<Int64>
-Database Column: 'AUTO_CONFIG_SID',[],19,0
-Documentation: 'used by api to navigate to auto utility config','InvnQuantity.44'
 Legacy Column: NA
 
 ------------------------------------------------------

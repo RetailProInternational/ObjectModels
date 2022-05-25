@@ -739,6 +739,30 @@ Legacy Column: 'LTY_OPT_IN_MANUAL'
 
 ------------------------------------------------------
 
+Name: ChargeNetDays
+Data Type: Nullable<Integer>
+Database Column: 'CHARGE_NET_DAYS',[],10,0
+Documentation: 'terms of charge, net days','Customer.112'
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: ChargeDiscDays
+Data Type: Nullable<Integer>
+Database Column: 'CHARGE_DISC_DAYS',[],10,0
+Documentation: 'terms of charge, discount days','Customer.113'
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: ChargeDiscPerc
+Data Type: Nullable<Double>
+Database Column: 'CHARGE_DISC_PERC',[],16,4
+Documentation: 'terms of charge, amount discounted if paid before end of discount days.','Customer.114'
+Legacy Column: NA
+
+------------------------------------------------------
+
 Name: CustAddress
 Data Type: IList<TCustAddress>
 Database Column: NA

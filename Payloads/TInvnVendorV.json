@@ -11,16 +11,17 @@
       "postdate" : null,
       "rowversion" : 0,
       "tenantsid" : null,
-      "resourcename" : null,
-      "resourcesid" : "0",
-      "link" : null,
-      "eventtype" : 0,
-      "attributesaffected" : null,
-      "prismresourcesid" : "0",
-      "pubnotificationqueue" : [
-      ],
-      "processorder" : null,
-      "resourcetype" : 0
+      "invnitemuid" : null,
+      "sbssid" : "0",
+      "vendsid" : null,
+      "upc" : null,
+      "alu" : null,
+      "scaleno" : null,
+      "vendno" : 0,
+      "lastrcvdcost" : null,
+      "invnsbsitemsid" : "0",
+      "sbsno" : null,
+      "vendorcode" : null
     }
   ]
 }

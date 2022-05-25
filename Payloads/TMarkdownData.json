@@ -11,16 +11,13 @@
       "postdate" : null,
       "rowversion" : 0,
       "tenantsid" : null,
-      "resourcename" : null,
-      "resourcesid" : "0",
-      "link" : null,
-      "eventtype" : 0,
-      "attributesaffected" : null,
-      "prismresourcesid" : "0",
-      "pubnotificationqueue" : [
-      ],
-      "processorder" : null,
-      "resourcetype" : 0
+      "markdownsid" : "0",
+      "chunkno" : 0,
+      "totalchunks" : 0,
+      "seq" : 0,
+      "ispublished" : false,
+      "isprocessed" : false,
+      "data" : null
     }
   ]
 }

@@ -19,6 +19,7 @@
       "vouheld" : false,
       "voustatus" : null,
       "vouactive" : false,
+      "sbssid" : "0",
       "voutotalpackages" : 0,
       "voutotalpackagesreceived" : 0,
       "vendcode" : null

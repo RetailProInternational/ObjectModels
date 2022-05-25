@@ -1,0 +1,32 @@
+{
+  "data" : [
+    {
+      "sid" : "0",
+      "sbssid" : "0",
+      "storesid" : "0",
+      "invnsbsitemsid" : "0",
+      "storecode" : null,
+      "storename" : null,
+      "storeno" : 0,
+      "qty" : null,
+      "transferinqty" : null,
+      "transferoutqty" : null,
+      "soldqty" : null,
+      "rcvdqty" : null,
+      "onorderedqty" : null,
+      "toinorderedqty" : null,
+      "toinsentqty" : null,
+      "tooutorderedqty" : null,
+      "tooutsentqty" : null,
+      "poorderedqty" : null,
+      "porcvdqty" : null,
+      "soorderedqty" : null,
+      "sosentqty" : null,
+      "asnintransitqty" : null,
+      "lastonhandqtydate" : null,
+      "minqty" : null,
+      "maxqty" : null
+    }
+  ]
+}
+

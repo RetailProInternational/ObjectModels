@@ -1,0 +1,989 @@
+##########################################################################################################
+File Name: Prism.Model.InventoryQtyList.pas
+##########################################################################################################
+Class Name: TInventoryQtyList
+Base Class Name: TModelBase
+Database Table: INVENTORY_QTY_LIST_V
+Associate Class: False
+Identified By: NA
+Legacy Identified By: NA
+
+Members
+===========================================================================================
+
+Name: Sid
+Data Type: Int64
+Database Column: 'SID',[cpRequired,cpPrimaryKey,cpNotNull],19,0
+Documentation: 'unique identifying value','InventoryQtyList.1'
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: CreatedBy
+Data Type: string
+Database Column: 'CREATED_BY',[cpRequired,cpNotNull],30
+Documentation: 'employee id of row creator using application ui','InventoryQtyList.2'
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: CreatedDatetime
+Data Type: TDateTime
+Database Column: 'CREATED_DATETIME',[cpRequired,cpNotNull
+Documentation: 'datetime row was created','InventoryQtyList.3'
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: ModifiedBy
+Data Type: Nullable<string>
+Database Column: 'MODIFIED_BY',[],30
+Documentation: 'employee id of last modifier using application ui','InventoryQtyList.4'
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: ModifiedDatetime
+Data Type: Nullable<TDateTime>
+Database Column: 'MODIFIED_DATETIME',[
+Documentation: 'datetime row was last modified','InventoryQtyList.5'
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: ControllerSid
+Data Type: Int64
+Database Column: 'CONTROLLER_SID',[cpRequired,cpNotNull],19,0
+Documentation: 'reference to controller record for database where that owns row.','InventoryQtyList.6'
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: OriginApplication
+Data Type: string
+Database Column: 'ORIGIN_APPLICATION',[cpRequired,cpNotNull],20
+Documentation: 'indicates application used to create row.  v9 and v8 are reserved for rpro versions 8and 9, respectively.  this is the same value that will be used in licensing applications.','InventoryQtyList.7'
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: PostDate
+Data Type: Nullable<TDateTime>
+Database Column: 'POST_DATE',[
+Documentation: 'date and time row was created/last modified in this system.  may not be the same ascreated/modified datetime.','InventoryQtyList.8'
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: RowVersion
+Data Type: Integer
+Database Column: NA
+Documentation: 'optimistic locking value','InventoryQtyList.9'
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: TenantSid
+Data Type: Nullable<Int64>
+Database Column: 'TENANT_SID',[],19,0
+Documentation: 'Reference to tenant description','InventoryQtyList.10'
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: InvnItemUid
+Data Type: Int64
+Database Column: 'INVN_ITEM_UID',[cpRequired,cpNotNull],19,0
+Documentation: 'InvnItemUid','InventoryQtyList.11'
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: SbsSid
+Data Type: Int64
+Database Column: 'SBS_SID',[cpRequired,cpNotNull],19,0
+Documentation: 'reference to subsidiary.sid','InventoryQtyList.12'
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: Alu
+Data Type: Nullable<string>
+Database Column: 'ALU',[],20
+Documentation: 'alternate lookup code','InventoryQtyList.13'
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: StyleSid
+Data Type: Int64
+Database Column: 'STYLE_SID',[cpRequired,cpNotNull],19,0
+Documentation: 'reference to invn_style.sid','InventoryQtyList.14'
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: DcsSid
+Data Type: Int64
+Database Column: 'DCS_SID',[cpRequired,cpNotNull],19,0
+Documentation: 'reference to department','InventoryQtyList.15'
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: VendSid
+Data Type: Nullable<Int64>
+Database Column: 'VEND_SID',[],19,0
+Documentation: 'reference to vendor','InventoryQtyList.16'
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: Description1
+Data Type: Nullable<string>
+Database Column: 'DESCRIPTION1',[],30
+Documentation: 'Description1','InventoryQtyList.17'
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: Description2
+Data Type: Nullable<string>
+Database Column: 'DESCRIPTION2',[],30
+Documentation: 'Description2','InventoryQtyList.18'
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: Description3
+Data Type: Nullable<string>
+Database Column: 'DESCRIPTION3',[],30
+Documentation: 'Description3','InventoryQtyList.19'
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: Description4
+Data Type: Nullable<string>
+Database Column: 'DESCRIPTION4',[],30
+Documentation: 'Description4','InventoryQtyList.20'
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: LongDescription
+Data Type: Nullable<string>
+Database Column: 'LONG_DESCRIPTION',[],2000
+Documentation: 'LongDescription','InventoryQtyList.21'
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: Text1
+Data Type: Nullable<string>
+Database Column: 'TEXT1',[],255
+Documentation: 'Text1','InventoryQtyList.22'
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: Text2
+Data Type: Nullable<string>
+Database Column: 'TEXT2',[],255
+Documentation: 'Text2','InventoryQtyList.23'
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: Text3
+Data Type: Nullable<string>
+Database Column: 'TEXT3',[],255
+Documentation: 'Text3','InventoryQtyList.24'
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: Text4
+Data Type: Nullable<string>
+Database Column: 'TEXT4',[],255
+Documentation: 'Text4','InventoryQtyList.25'
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: Text5
+Data Type: Nullable<string>
+Database Column: 'TEXT5',[],255
+Documentation: 'Text5','InventoryQtyList.26'
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: Text6
+Data Type: Nullable<string>
+Database Column: 'TEXT6',[],255
+Documentation: 'Text6','InventoryQtyList.27'
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: Text7
+Data Type: Nullable<string>
+Database Column: 'TEXT7',[],255
+Documentation: 'Text7','InventoryQtyList.28'
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: Text8
+Data Type: Nullable<string>
+Database Column: 'TEXT8',[],255
+Documentation: 'Text8','InventoryQtyList.29'
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: Text9
+Data Type: Nullable<string>
+Database Column: 'TEXT9',[],255
+Documentation: 'Text9','InventoryQtyList.30'
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: Text10
+Data Type: Nullable<string>
+Database Column: 'TEXT10',[],255
+Documentation: 'Text10','InventoryQtyList.31'
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: Attribute
+Data Type: Nullable<string>
+Database Column: 'ATTRIBUTE',[],8
+Documentation: 'Attribute','InventoryQtyList.32'
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: Cost
+Data Type: Nullable<Double>
+Database Column: 'COST',[],16,4
+Documentation: 'cost of last order of item','InventoryQtyList.33'
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: Spif
+Data Type: Nullable<Double>
+Database Column: 'SPIF',[],16,4
+Documentation: 'Spif','InventoryQtyList.34'
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: CurrencySid
+Data Type: Nullable<Int64>
+Database Column: 'CURRENCY_SID',[],19,0
+Documentation: 'reference to currency record for foreign currency cost','InventoryQtyList.35'
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: LastSoldDate
+Data Type: Nullable<TDate>
+Database Column: 'LAST_SOLD_DATE',[
+Documentation: 'LastSoldDate','InventoryQtyList.36'
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: MarkdownDate
+Data Type: Nullable<TDateTime>
+Database Column: 'MARKDOWN_DATE',[
+Documentation: 'date of last markdown','InventoryQtyList.37'
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: DiscontinuedDate
+Data Type: Nullable<TDate>
+Database Column: 'DISCONTINUED_DATE',[
+Documentation: 'date sales of item were discontinued','InventoryQtyList.38'
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: TaxCodeSid
+Data Type: Nullable<Int64>
+Database Column: 'TAX_CODE_SID',[],19,0
+Documentation: 'reference to tax_code record','InventoryQtyList.39'
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: Udf1Float
+Data Type: Nullable<Integer>
+Database Column: 'UDF1_FLOAT',[],10,0
+Documentation: 'user defined numeric field','InventoryQtyList.40'
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: Udf2Float
+Data Type: Nullable<Integer>
+Database Column: 'UDF2_FLOAT',[],10,0
+Documentation: 'user defined numeric field','InventoryQtyList.41'
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: Udf3Float
+Data Type: Nullable<Integer>
+Database Column: 'UDF3_FLOAT',[],10,0
+Documentation: 'user defined numeric field','InventoryQtyList.42'
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: Udf1Date
+Data Type: Nullable<TDateTime>
+Database Column: 'UDF1_DATE',[
+Documentation: 'user defined date field','InventoryQtyList.43'
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: Udf2Date
+Data Type: Nullable<TDateTime>
+Database Column: 'UDF2_DATE',[
+Documentation: 'user defined date field','InventoryQtyList.44'
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: Udf3Date
+Data Type: Nullable<TDateTime>
+Database Column: 'UDF3_DATE',[
+Documentation: 'user defined date field','InventoryQtyList.45'
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: ItemSize
+Data Type: Nullable<string>
+Database Column: 'ITEM_SIZE',[],8
+Documentation: 'ItemSize','InventoryQtyList.46'
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: FcCost
+Data Type: Nullable<Double>
+Database Column: 'FC_COST',[],16,4
+Documentation: 'cost of last order of item in foreign currency','InventoryQtyList.47'
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: FstPrice
+Data Type: Nullable<Double>
+Database Column: 'FST_PRICE',[],16,4
+Documentation: 'Price for the item when it was received first time','InventoryQtyList.48'
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: FirstRcvdDate
+Data Type: Nullable<TDate>
+Database Column: 'FIRST_RCVD_DATE',[
+Documentation: 'FirstRcvdDate','InventoryQtyList.49'
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: LastRcvdDate
+Data Type: Nullable<TDate>
+Database Column: 'LAST_RCVD_DATE',[
+Documentation: 'LastRcvdDate','InventoryQtyList.50'
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: LastRcvdCost
+Data Type: Nullable<double>
+Database Column: 'LAST_RCVD_COST',[],16,4
+Documentation: 'last received cost. It will be updated by voucher for primary vendor','InventoryQtyList.51'
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: CommSid
+Data Type: Nullable<Int64>
+Database Column: 'COMM_SID',[],19,0
+Documentation: 'reference to commission record','InventoryQtyList.52'
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: DiscScheduleSid
+Data Type: Nullable<Int64>
+Database Column: 'DISC_SCHEDULE_SID',[],19,0
+Documentation: 'reference to promotional pricing schedule (discount_schedule)','InventoryQtyList.53'
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: Udf1String
+Data Type: Nullable<string>
+Database Column: 'UDF1_STRING',[],100
+Documentation: 'user defined field','InventoryQtyList.54'
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: Udf2String
+Data Type: Nullable<string>
+Database Column: 'UDF2_STRING',[],100
+Documentation: 'user defined field','InventoryQtyList.55'
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: Udf3String
+Data Type: Nullable<string>
+Database Column: 'UDF3_STRING',[],100
+Documentation: 'user defined field','InventoryQtyList.56'
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: Udf4String
+Data Type: Nullable<string>
+Database Column: 'UDF4_STRING',[],100
+Documentation: 'user defined field','InventoryQtyList.57'
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: Udf5String
+Data Type: Nullable<string>
+Database Column: 'UDF5_STRING',[],100
+Documentation: 'user defined field','InventoryQtyList.58'
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: SellableDate
+Data Type: Nullable<TDate>
+Database Column: 'SELLABLE_DATE',[
+Documentation: 'Item cannot be sold until this date','InventoryQtyList.59'
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: OrderableDate
+Data Type: Nullable<TDate>
+Database Column: 'ORDERABLE_DATE',[
+Documentation: 'Item cannot be ordered until this date','InventoryQtyList.60'
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: Orderable
+Data Type: boolean
+Database Column: 'ORDERABLE',[],1,0
+Documentation: 'Orderable','InventoryQtyList.61'
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: UseQtyDecimals
+Data Type: Int16
+Database Column: 'USE_QTY_DECIMALS',[cpRequired,cpNotNull],1,0
+Documentation: 'UseQtyDecimals','InventoryQtyList.62'
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: Description
+Data Type: Nullable<string>
+Database Column: 'DESCRIPTION',[],30
+Documentation: 'Description','InventoryQtyList.63'
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: Regional
+Data Type: Boolean
+Database Column: 'REGIONAL',[],1,0
+Documentation: '1=Regional 0=Not Regional','InventoryQtyList.64'
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: Active
+Data Type: Boolean
+Database Column: 'ACTIVE',[cpRequired,cpNotNull],1,0
+Documentation: 'Indicates whether the item is active','InventoryQtyList.65'
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: QtyPerCase
+Data Type: Nullable<Double>
+Database Column: 'QTY_PER_CASE',[],10,3
+Documentation: 'Used to record number of items per case','InventoryQtyList.66'
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: Upc
+Data Type: Nullable<Int64>
+Database Column: 'UPC',[],18,0
+Documentation: 'Upc','InventoryQtyList.67'
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: MaxDiscPerc1
+Data Type: Nullable<Double>
+Database Column: 'MAX_DISC_PERC1',[],16,4
+Documentation: 'used to record maximum discount % allowed for item.','InventoryQtyList.68'
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: MaxDiscPerc2
+Data Type: Nullable<Double>
+Database Column: 'MAX_DISC_PERC2',[],16,4
+Documentation: 'used to record maximum discount % allowed for item.','InventoryQtyList.69'
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: ItemNo
+Data Type: Nullable<Integer>
+Database Column: 'ITEM_NO',[],10,0
+Documentation: 'item number as used in V8 systems','InventoryQtyList.70'
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: SerialType
+Data Type: Nullable<TInventorySerialType>
+Database Column: 'SERIAL_TYPE',[],1,0
+Documentation: 'serial-type from V9 invn_sbs.ext_flag.(V9 ext-flag contains serial-type and lot-type).0-None,1-Partial,2-Full.','InventoryQtyList.71'
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: LotType
+Data Type: Nullable<Int16>
+Database Column: 'LOT_TYPE',[],1,0
+Documentation: 'lot-type from V9 invn_sbs.ext_flag.(V9 ext-flag contains serial-type and lot-type).','InventoryQtyList.72'
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: KitType
+Data Type: Nullable<TItemKitType>
+Database Column: 'KIT_TYPE',[],1,0
+Documentation: '0-NoEntry,1-Kit,2-Package,3-GiftCardStoredValue,4-GiftCardPrePaid,5-GiftCertificate,6-Fee,7-GiftCardCentral','InventoryQtyList.73'
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: ScaleSid
+Data Type: Nullable<Int64>
+Database Column: 'SCALE_SID',[],19,0
+Documentation: 'ScaleSid','InventoryQtyList.74'
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: PromoQtyDiscWeight
+Data Type: Double
+Database Column: 'PROMO_QTYDISCWEIGHT',[cpRequired,cpNotNull],10,3
+Documentation: 'Promotions: Qty Disc Weight','InventoryQtyList.75'
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: PromoInvenExclude
+Data Type: boolean
+Database Column: 'PROMO_INVENEXCLUDE',[],1,0
+Documentation: 'Promotions: Excluding item flag','InventoryQtyList.76'
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: NonInventory
+Data Type: Boolean
+Database Column: 'NON_INVENTORY',[],1,0
+Documentation: 'NonInventory','InventoryQtyList.77'
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: NonCommitted
+Data Type: Boolean
+Database Column: 'NON_COMMITED',[],1,0
+Documentation: 'NonCommitted','InventoryQtyList.78'
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: SpecialOrder
+Data Type: Boolean
+Database Column: 'SPECIAL_ORDER',[],1,0
+Documentation: 'SpecialOrder','InventoryQtyList.90'
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: ItemState
+Data Type: Nullable<Int16>
+Database Column: 'ITEM_STATE',[],5,0
+Documentation: 'Item_State : 0=normal, 1=proposed item','InventoryQtyList.79'
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: PublishStatus
+Data Type: TModelPublishStatus
+Database Column: 'PUBLISH_STATUS',[],1,0
+Documentation: 'Publish_State: 0=published, 1=WIP','InventoryQtyList.80'
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: LtyPriceInPoints
+Data Type: Nullable<Double>
+Database Column: 'LTY_PRICE_IN_POINTS',[],24,8
+Documentation: 'Cost of item in Customer Loyalty points','InventoryQtyList.81'
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: LtyPointsEarned
+Data Type: Nullable<Double>
+Database Column: 'LTY_POINTS_EARNED',[],24,8
+Documentation: 'Customer Loyalty points earned on purchase','InventoryQtyList.82'
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: MinOrdQty
+Data Type: Nullable<Double>
+Database Column: 'MIN_ORD_QTY',[],10,3
+Documentation: 'Minimum Order Quantity','InventoryQtyList.83'
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: VendorListCost
+Data Type: Nullable<Double>
+Database Column: 'VENDOR_LIST_COST',[],16,4
+Documentation: 'cost for order item using trade discount','InventoryQtyList.84'
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: TradeDiscPercent
+Data Type: Nullable<Double>
+Database Column: 'TRADE_DISC_PERC',[],16,4
+Documentation: 'disc percent for an item when ordering using trade discount','InventoryQtyList.85'
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: ForceOrigTax
+Data Type: Boolean
+Database Column: 'FORCE_ORIG_TAX',[],1,0
+Documentation: 'Indicate whether tax should be calculated based on original price or discounted price. 0 or null = Calculate taxes based on current line item price, 1=Calculate taxes based on non-discounted price','InventoryQtyList.86'
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: Height
+Data Type: Nullable<double>
+Database Column: 'HEIGHT',[],7,2
+Documentation: 'Height of item','InventoryQtyList.87'
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: Length
+Data Type: Nullable<double>
+Database Column: 'LENGTH',[],7,2
+Documentation: 'Length of item','InventoryQtyList.88'
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: Width
+Data Type: Nullable<double>
+Database Column: 'WIDTH',[],7,2
+Documentation: 'Width of item','InventoryQtyList.89'
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: MeasureUnit
+Data Type: Nullable<integer>
+Database Column: 'MEASURE_UNIT',[],5,0
+Documentation: 'MeasureUnit','InventoryQtyList.91'
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: ShipMeasurement1
+Data Type: Nullable<double>
+Database Column: 'SHIP_MEASUREMENT1',[],10,3
+Documentation: 'ShipMeasurement1','InventoryQtyList.92'
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: ShipMeasurement2
+Data Type: Nullable<double>
+Database Column: 'SHIP_MEASUREMENT2',[],10,3
+Documentation: 'ShipMeasurement2','InventoryQtyList.93'
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: QtySid
+Data Type: Nullable<Int64>
+Database Column: 'QTY_SID',[],19,0
+Documentation: 'QtySid','InventoryQtyList.94'
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: MMSid
+Data Type: Nullable<Int64>
+Database Column: 'MM_SID',[],19,0
+Documentation: 'MMSid','InventoryQtyList.95'
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: MMQSid
+Data Type: Nullable<Int64>
+Database Column: 'MMQ_SID',[],19,0
+Documentation: 'MMQSid','InventoryQtyList.96'
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: QtyRowVersion
+Data Type: Nullable<Integer>
+Database Column: 'QTY_ROW_VERSION',[],1,0
+Documentation: 'QtyRowVersion','InventoryQtyList.97'
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: MMRowVersion
+Data Type: Nullable<Integer>
+Database Column: 'MM_ROW_VERSION',[],1,0
+Documentation: 'MMRowVersion','InventoryQtyList.98'
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: MMQRowVersion
+Data Type: Nullable<Integer>
+Database Column: 'MMQ_ROW_VERSION',[],1,0
+Documentation: 'MMQRowVersion','InventoryQtyList.99'
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: QtySbsSid
+Data Type: Nullable<Int64>
+Database Column: 'QTY_SBS_SID',[],19,0
+Documentation: 'QtySbsSid','InventoryQtyList.100'
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: QtyStoreSid
+Data Type: Nullable<Int64>
+Database Column: 'QTY_STORE_SID',[],19,0
+Documentation: 'QtyStoreSid','InventoryQtyList.101'
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: QtyQty
+Data Type: Nullable<Double>
+Database Column: 'QTY_QTY',[],10,3
+Documentation: 'QtyQty','InventoryQtyList.102'
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: CmpnMinQty
+Data Type: Nullable<Double>
+Database Column: 'CMPN_MIN_QTY',[],10,3
+Documentation: 'CmpnMinQty','InventoryQtyList.103'
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: CmpnMaxQty
+Data Type: Nullable<Double>
+Database Column: 'CMPN_MAX_QTY',[],10,3
+Documentation: 'CmpnMaxQty','InventoryQtyList.104'
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: QtyMinQty
+Data Type: Nullable<Double>
+Database Column: 'QTY_MIN_QTY',[],10,3
+Documentation: 'QtyMinQty','InventoryQtyList.105'
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: QtyMaxQty
+Data Type: Nullable<Double>
+Database Column: 'QTY_MAX_QTY',[],10,3
+Documentation: 'QtyMaxQty','InventoryQtyList.106'
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: QtyNewMinQty
+Data Type: Nullable<Double>
+Database Column: 'QTY_NEW_MIN_QTY',[],10,3
+Documentation: 'QtyNewMinQty','InventoryQtyList.107'
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: QtyNewMaxQty
+Data Type: Nullable<Double>
+Database Column: 'QTY_NEW_MAX_QTY',[],10,3
+Documentation: 'QtyNewMaxQty','InventoryQtyList.108'
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: InvnVendor
+Data Type: IList<TInvnVendorV>
+Database Column: NA
+Documentation: NA
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: DcsCode
+Data Type: Nullable<string>
+Database Column: NA
+Documentation: 'DcsCode','InventoryQtyList.109'
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: SbsNo
+Data Type: Nullable<Int16>
+Database Column: NA
+Documentation: 'uniquely identifying subsidiary number','InventoryQtyList.110'
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: SbsName
+Data Type: Nullable<string>
+Database Column: NA
+Documentation: 'user defined name for the subsidiary','InventoryQtyList.111'
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: ScaleNo
+Data Type: Nullable<integer>
+Database Column: NA
+Documentation: 'ScaleNo','InventoryQtyList.112'
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: ScaleName
+Data Type: Nullable<string>
+Database Column: NA
+Documentation: 'Scale name','InventoryQtyList.113'
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: VendorCode
+Data Type: Nullable<string>
+Database Column: NA
+Documentation: 'VendCode','InventoryQtyList.114'
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: VendorName
+Data Type: Nullable<string>
+Database Column: NA
+Documentation: 'name of the vendor business','InventoryQtyList.115'
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: VendorId
+Data Type: Nullable<integer>
+Database Column: NA
+Documentation: 'legacy information will be stamped with a vendor ID','InventoryQtyList.116'
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: TaxName
+Data Type: Nullable<string>
+Database Column: NA
+Documentation: 'TaxName','InventoryQtyList.117'
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: CurrencyAlphaCode
+Data Type: Nullable<string>
+Database Column: NA
+Documentation: '3 letter alphabetic currency code as defined by ISO 4217','InventoryQtyList.118'
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: CName
+Data Type: Nullable<string>
+Database Column: NA
+Documentation: 'CName','InventoryQtyList.119'
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: DName
+Data Type: Nullable<string>
+Database Column: NA
+Documentation: 'DName','InventoryQtyList.120'
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: SName
+Data Type: Nullable<string>
+Database Column: NA
+Documentation: 'SName','InventoryQtyList.121'
+Legacy Column: NA
+
+------------------------------------------------------
+

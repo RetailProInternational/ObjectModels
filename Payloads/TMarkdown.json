@@ -38,7 +38,8 @@
       "sbsname" : null,
       "seasonname" : null,
       "origintimezone" : "-07:00",
-      "ownername" : null
+      "ownername" : null,
+      "seq" : null
     }
   ]
 }

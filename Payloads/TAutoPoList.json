@@ -1,0 +1,40 @@
+{
+  "data" : [
+    {
+      "sid" : "0",
+      "createdby" : null,
+      "modifiedby" : null,
+      "modifieddatetime" : null,
+      "controllersid" : "0",
+      "originapplication" : null,
+      "rowversion" : 0,
+      "tenantsid" : null,
+      "createddatetime" : null,
+      "postdate" : null,
+      "sbssid" : "0",
+      "invnsbsitemsid" : "0",
+      "storesid" : "0",
+      "qty" : null,
+      "sbsno" : 0,
+      "sbsname" : null,
+      "storeno" : 0,
+      "storecode" : null,
+      "storename" : null,
+      "dcscode" : null,
+      "vendcode" : null,
+      "description1" : null,
+      "description2" : null,
+      "cost" : null,
+      "minqty" : null,
+      "maxqty" : null,
+      "ordqty" : null,
+      "mark" : false,
+      "attribute" : null,
+      "itemsize" : null,
+      "upc" : null,
+      "alu" : null,
+      "useqtydecimals" : 0
+    }
+  ]
+}
+

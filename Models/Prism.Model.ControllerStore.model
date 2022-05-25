@@ -1,11 +1,11 @@
 ##########################################################################################################
-File Name: Prism.Model.PcpRewardItemDiscTier.pas
+File Name: Prism.Model.ControllerStore.pas
 ##########################################################################################################
-Class Name: TPcpRewardItemDiscTier
+Class Name: TControllerStore
 Base Class Name: TModelBase
-Database Table: PCP_REWARD_ITEM_DISC_TIER
+Database Table: CONTROLLER_STORE
 Associate Class: False
-Identified By: 'FPromoSid,FQty'
+Identified By: 'FOwnerControllerSid,FSbsSid,FStoreSid'
 Legacy Identified By: NA
 
 Members
@@ -14,7 +14,7 @@ Members
 Name: Sid
 Data Type: Int64
 Database Column: 'SID',[cpRequired,cpPrimaryKey,cpNotNull],19,0
-Documentation: 'Sid','PcpRewardItemDiscTier.1'
+Documentation: NA
 Legacy Column: NA
 
 ------------------------------------------------------
@@ -22,7 +22,7 @@ Legacy Column: NA
 Name: CreatedBy
 Data Type: string
 Database Column: 'CREATED_BY',[cpRequired,cpNotNull],30
-Documentation: 'CreatedBy','PcpRewardItemDiscTier.2'
+Documentation: NA
 Legacy Column: NA
 
 ------------------------------------------------------
@@ -30,7 +30,7 @@ Legacy Column: NA
 Name: CreatedDatetime
 Data Type: TDateTime
 Database Column: 'CREATED_DATETIME',[cpRequired,cpNotNull
-Documentation: 'CreatedDatetime','PcpRewardItemDiscTier.3'
+Documentation: NA
 Legacy Column: NA
 
 ------------------------------------------------------
@@ -38,7 +38,7 @@ Legacy Column: NA
 Name: ModifiedBy
 Data Type: Nullable<string>
 Database Column: 'MODIFIED_BY',[],30
-Documentation: 'ModifiedBy','PcpRewardItemDiscTier.4'
+Documentation: NA
 Legacy Column: NA
 
 ------------------------------------------------------
@@ -46,7 +46,7 @@ Legacy Column: NA
 Name: ModifiedDatetime
 Data Type: Nullable<TDateTime>
 Database Column: 'MODIFIED_DATETIME',[
-Documentation: 'ModifiedDatetime','PcpRewardItemDiscTier.5'
+Documentation: NA
 Legacy Column: NA
 
 ------------------------------------------------------
@@ -54,7 +54,7 @@ Legacy Column: NA
 Name: ControllerSid
 Data Type: Int64
 Database Column: 'CONTROLLER_SID',[cpRequired,cpNotNull],19,0
-Documentation: 'ControllerSid','PcpRewardItemDiscTier.6'
+Documentation: NA
 Legacy Column: NA
 
 ------------------------------------------------------
@@ -62,7 +62,7 @@ Legacy Column: NA
 Name: OriginApplication
 Data Type: string
 Database Column: 'ORIGIN_APPLICATION',[cpRequired,cpNotNull],20
-Documentation: 'OriginApplication','PcpRewardItemDiscTier.7'
+Documentation: NA
 Legacy Column: NA
 
 ------------------------------------------------------
@@ -70,7 +70,7 @@ Legacy Column: NA
 Name: PostDate
 Data Type: Nullable<TDateTime>
 Database Column: 'POST_DATE',[
-Documentation: 'PostDate','PcpRewardItemDiscTier.8'
+Documentation: NA
 Legacy Column: NA
 
 ------------------------------------------------------
@@ -78,7 +78,7 @@ Legacy Column: NA
 Name: RowVersion
 Data Type: Integer
 Database Column: NA
-Documentation: 'RowVersion','PcpRewardItemDiscTier.9'
+Documentation: NA
 Legacy Column: NA
 
 ------------------------------------------------------
@@ -86,39 +86,79 @@ Legacy Column: NA
 Name: TenantSid
 Data Type: Nullable<Int64>
 Database Column: 'TENANT_SID',[],19,0
-Documentation: 'TenantSid','PcpRewardItemDiscTier.10'
+Documentation: NA
 Legacy Column: NA
 
 ------------------------------------------------------
 
-Name: PromoSid
+Name: Active
+Data Type: boolean
+Database Column: 'ACTIVE',[cpRequired,cpNotNull],1,0
+Documentation: NA
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: OwnerControllerSid
 Data Type: Int64
-Database Column: 'PROMO_SID',[cpRequired,cpNotNull],19,0
-Documentation: 'PromoSid','PcpRewardItemDiscTier.11'
+Database Column: 'OWNER_CONTROLLER_SID',[cpRequired,cpNotNull],19,0
+Documentation: NA
 Legacy Column: NA
 
 ------------------------------------------------------
 
-Name: Qty
-Data Type: Nullable<Double>
-Database Column: 'QTY',[],10,3
-Documentation: 'Qty','PcpRewardItemDiscTier.12'
+Name: SbsSid
+Data Type: Int64
+Database Column: 'SBS_SID',[cpRequired,cpNotNull],19,0
+Documentation: NA
 Legacy Column: NA
 
 ------------------------------------------------------
 
-Name: DiscValue
-Data Type: Nullable<Double>
-Database Column: 'DISC_VALUE',[],16,4
-Documentation: 'DiscValue','PcpRewardItemDiscTier.13'
+Name: StoreSid
+Data Type: Int64
+Database Column: 'STORE_SID',[cpRequired,cpNotNull],19,0
+Documentation: NA
 Legacy Column: NA
 
 ------------------------------------------------------
 
-Name: PLSid
-Data Type: Nullable<Int64>
-Database Column: 'PL_SID',[],19,0
-Documentation: 'PLSid','PcpRewardItemDiscTier.14'
+Name: SbsName
+Data Type: TNullableString
+Database Column: NA
+Documentation: NA
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: SbsNo
+Data Type: Nullable<Int16>
+Database Column: NA
+Documentation: NA
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: StoreCode
+Data Type: TNullableString
+Database Column: NA
+Documentation: NA
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: StoreName
+Data Type: TNullableString
+Database Column: NA
+Documentation: NA
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: StoreNo
+Data Type: Nullable<Int16>
+Database Column: NA
+Documentation: NA
 Legacy Column: NA
 
 ------------------------------------------------------

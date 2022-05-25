@@ -1,0 +1,28 @@
+{
+  "data" : [
+    {
+      "sid" : "0",
+      "createdby" : null,
+      "modifiedby" : null,
+      "modifieddatetime" : null,
+      "controllersid" : "0",
+      "originapplication" : null,
+      "rowversion" : 0,
+      "tenantsid" : null,
+      "createddatetime" : null,
+      "postdate" : null,
+      "invnminmaxsid" : "0",
+      "sbssid" : "0",
+      "storesid" : "0",
+      "minqty" : null,
+      "maxqty" : null,
+      "newminqty" : null,
+      "newmaxqty" : null,
+      "minmaxbegindate" : null,
+      "minmaxenddate" : null,
+      "sbsno" : null,
+      "storeno" : null
+    }
+  ]
+}
+

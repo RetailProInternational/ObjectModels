@@ -14,14 +14,8 @@
       "sbssid" : "0",
       "storesid" : null,
       "qty" : null,
-      "minqty" : null,
-      "maxqty" : null,
-      "newminqty" : null,
-      "newmaxqty" : null,
       "transferinqty" : null,
       "transferoutqty" : null,
-      "minmaxbegindate" : null,
-      "minmaxenddate" : null,
       "soldqty" : null,
       "rcvdqty" : null,
       "onorderedqty" : null,
@@ -36,7 +30,6 @@
       "asnintransitqty" : null,
       "lastonhandqtydate" : null,
       "invnsbsitemsid" : "0",
-      "autoconfigsid" : null,
       "serialinfo" : [
       ],
       "lotinfo" : [

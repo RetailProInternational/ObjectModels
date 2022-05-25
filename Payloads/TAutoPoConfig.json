@@ -1,0 +1,46 @@
+{
+  "data" : [
+    {
+      "sid" : "0",
+      "createdby" : null,
+      "createddatetime" : null,
+      "modifiedby" : null,
+      "modifieddatetime" : null,
+      "controllersid" : "0",
+      "originapplication" : null,
+      "rowversion" : 0,
+      "tenantsid" : null,
+      "postdate" : null,
+      "sbssid" : "0",
+      "configname" : null,
+      "active" : false,
+      "incsalesorder" : false,
+      "inctoin" : false,
+      "inctoout" : false,
+      "incintransit" : false,
+      "excludeordpastcancel" : false,
+      "multistore" : false,
+      "storesid" : null,
+      "fillpercentage" : null,
+      "enforceminordqty" : false,
+      "orditemsabovemin" : false,
+      "potype" : null,
+      "associatesid" : "0",
+      "orderdate" : null,
+      "orderdpo" : null,
+      "shippingdate" : null,
+      "canceldate" : null,
+      "shippingdpo" : null,
+      "canceldpo" : null,
+      "ponote" : null,
+      "itemfilter" : null,
+      "pofilter" : null,
+      "ponoformat" : null,
+      "autopostores" : [
+      ],
+      "autopodates" : [
+      ]
+    }
+  ]
+}
+

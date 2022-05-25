@@ -339,6 +339,14 @@ Legacy Column: NA
 
 ------------------------------------------------------
 
+Name: Finalized
+Data Type: Nullable<Int16>
+Database Column: 'FINALIZED',[],1,0
+Documentation: 'Finalized','ZoutControl.57'
+Legacy Column: NA
+
+------------------------------------------------------
+
 Name: Clerk
 Data Type: Nullable<integer>
 Database Column: NA

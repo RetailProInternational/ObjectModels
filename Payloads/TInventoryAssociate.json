@@ -25,6 +25,7 @@
       "taxcodesid" : null,
       "lastrcvddate" : null,
       "active" : false,
+      "qtypercase" : null,
       "dcscode" : null,
       "vendcode" : null,
       "vendname" : null,

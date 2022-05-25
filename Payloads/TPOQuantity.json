@@ -17,6 +17,7 @@
       "ordqty" : null,
       "rcvdqty" : null,
       "archived" : null,
+      "storeohqty" : 0,
       "storeminqty" : 0,
       "storemaxqty" : 0,
       "dueqty" : 0,

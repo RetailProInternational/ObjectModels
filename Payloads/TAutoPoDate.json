@@ -8,13 +8,15 @@
       "modifieddatetime" : null,
       "controllersid" : "0",
       "originapplication" : null,
-      "postdate" : null,
       "rowversion" : 0,
       "tenantsid" : null,
-      "promosid" : "0",
-      "qty" : null,
-      "discvalue" : null,
-      "plsid" : null
+      "postdate" : null,
+      "autopoconfigsid" : "0",
+      "rangetype" : 0,
+      "date1" : null,
+      "date2" : null,
+      "number1" : null,
+      "number2" : null
     }
   ]
 }

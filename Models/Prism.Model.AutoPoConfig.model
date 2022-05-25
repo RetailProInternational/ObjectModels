@@ -1,0 +1,309 @@
+##########################################################################################################
+File Name: Prism.Model.AutoPoConfig.pas
+##########################################################################################################
+Class Name: TAutoPoConfig
+Base Class Name: TModelBase
+Database Table: AUTO_PO_CONFIG
+Associate Class: False
+Identified By: 'FSid'
+Legacy Identified By: NA
+
+Members
+===========================================================================================
+
+Name: Sid
+Data Type: Int64
+Database Column: 'SID',[cpRequired,cpPrimaryKey,cpNotNull],19,0
+Documentation: NA
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: CreatedBy
+Data Type: string
+Database Column: 'CREATED_BY',[cpRequired,cpNotNull],30
+Documentation: NA
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: CreatedDatetime
+Data Type: TDateTime
+Database Column: 'CREATED_DATETIME',[cpRequired,cpNotNull
+Documentation: NA
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: ModifiedBy
+Data Type: Nullable<string>
+Database Column: 'MODIFIED_BY',[],30
+Documentation: NA
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: ModifiedDatetime
+Data Type: Nullable<TDateTime>
+Database Column: 'MODIFIED_DATETIME',[
+Documentation: NA
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: ControllerSid
+Data Type: Int64
+Database Column: 'CONTROLLER_SID',[cpRequired,cpNotNull],19,0
+Documentation: NA
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: OriginApplication
+Data Type: string
+Database Column: 'ORIGIN_APPLICATION',[cpRequired,cpNotNull],20
+Documentation: NA
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: RowVersion
+Data Type: Int16
+Database Column: NA
+Documentation: NA
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: TenantSid
+Data Type: Nullable<Int64>
+Database Column: 'TENANT_SID',[],19,0
+Documentation: NA
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: PostDate
+Data Type: Nullable<TDateTime>
+Database Column: 'POST_DATE',[
+Documentation: NA
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: SbsSid
+Data Type: Int64
+Database Column: 'SBS_SID',[cpRequired,cpNotNull],19,0
+Documentation: NA
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: ConfigName
+Data Type: string
+Database Column: 'CONFIG_NAME',[cpRequired,cpNotNull],200
+Documentation: NA
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: Active
+Data Type: boolean
+Database Column: 'ACTIVE',[cpRequired,cpNotNull],1,0
+Documentation: NA
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: IncSalesOrder
+Data Type: Nullable<boolean>
+Database Column: 'INC_SALES_ORDER',[],1,0
+Documentation: NA
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: IncToIn
+Data Type: Nullable<boolean>
+Database Column: 'INC_TO_IN',[],1,0
+Documentation: NA
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: IncToOut
+Data Type: Nullable<boolean>
+Database Column: 'INC_TO_OUT',[],1,0
+Documentation: NA
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: IncIntransit
+Data Type: Nullable<boolean>
+Database Column: 'INC_INTRANSIT',[],1,0
+Documentation: NA
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: ExcludeOrdPastCancel
+Data Type: Nullable<boolean>
+Database Column: 'EXCLUDE_ORD_PAST_CANCEL',[],1,0
+Documentation: NA
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: Multistore
+Data Type: Nullable<boolean>
+Database Column: 'MULTI_STORE',[],1,0
+Documentation: NA
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: StoreSid
+Data Type: Nullable<int64>
+Database Column: 'STORE_SID',[],19,0
+Documentation: NA
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: FillPercentage
+Data Type: Nullable<Int16>
+Database Column: 'FILL_PERCENTAGE',[],3,0
+Documentation: NA
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: EnforceMinOrdQty
+Data Type: Nullable<boolean>
+Database Column: 'ENFORCE_MIN_ORD_QTY',[],1,0
+Documentation: NA
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: OrdItemsAboveMin
+Data Type: Nullable<boolean>
+Database Column: 'ORD_ITEMS_ABOVE_MIN',[],1,0
+Documentation: NA
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: PoType
+Data Type: Nullable<TPOType>
+Database Column: 'PO_TYPE',[],5,0
+Documentation: NA
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: AssociateSid
+Data Type: Int64
+Database Column: 'ASSOCIATE_SID',[cpRequired,cpNotNull],19,0
+Documentation: NA
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: OrderDate
+Data Type: Nullable<TDateTime>
+Database Column: 'ORDER_DATE',[
+Documentation: NA
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: OrderDpo
+Data Type: Nullable<Int16>
+Database Column: 'ORDER_DPO',[],5,0
+Documentation: NA
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: ShippingDate
+Data Type: Nullable<TDateTime>
+Database Column: 'SHIPPING_DATE',[
+Documentation: NA
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: CancelDate
+Data Type: Nullable<TDateTime>
+Database Column: 'CANCEL_DATE',[
+Documentation: NA
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: ShippingDpo
+Data Type: Nullable<Int16>
+Database Column: 'SHIPPING_DPO',[],5,0
+Documentation: NA
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: CancelDpo
+Data Type: Nullable<Int16>
+Database Column: 'CANCEL_DPO',[],5,0
+Documentation: NA
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: PoNote
+Data Type: Nullable<string>
+Database Column: 'PO_NOTE',[],255
+Documentation: NA
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: PoNoFormat
+Data Type: Nullable<string>
+Database Column: 'PO_NO_FORMAT',[],10
+Documentation: NA
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: ItemFilter
+Data Type: Nullable<string>
+Database Column: 'ITEM_FILTER',[],2001
+Documentation: NA
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: PoFilter
+Data Type: Nullable<string>
+Database Column: 'PO_FILTER',[],2001
+Documentation: NA
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: AutoPoStores
+Data Type: IList<TAutoPoStore>
+Database Column: NA
+Documentation: 'list of configuration parameters','AutoPoConfig.1'
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: AutoPoDates
+Data Type: IList<TAutoPoDate>
+Database Column: NA
+Documentation: 'list of configuration parameters','AutoPoConfig.2'
+Legacy Column: NA
+
+------------------------------------------------------
+

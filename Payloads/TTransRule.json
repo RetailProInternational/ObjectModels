@@ -2,7 +2,7 @@
   "data" : [
     {
       "sid" : "0",
-      "createdby" : "0",
+      "createdby" : null,
       "createddatetime" : null,
       "modifiedby" : null,
       "modifieddatetime" : null,

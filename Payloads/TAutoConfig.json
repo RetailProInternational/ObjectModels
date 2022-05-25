@@ -16,7 +16,9 @@
       "configname" : null,
       "active" : true,
       "islocked" : false,
-      "autoconfigparam" : [
+      "autoconfigstores" : [
+      ],
+      "autoconfigdates" : [
       ],
       "autommformula" : [
       ]

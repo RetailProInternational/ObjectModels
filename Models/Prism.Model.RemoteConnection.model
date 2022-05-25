@@ -99,6 +99,14 @@ Legacy Column: NA
 
 ------------------------------------------------------
 
+Name: PausedAt
+Data Type: Nullable<TDateTime>
+Database Column: 'PAUSED_AT',[
+Documentation: '1 - Paused, Prism stops sending D2D messages to this connection','RemoteConnection.20'
+Legacy Column: NA
+
+------------------------------------------------------
+
 Name: RemoteControllerSid
 Data Type: Int64
 Database Column: 'REMOTE_CONTROLLER_SID',[cpRequired,cpNotNull],19,0

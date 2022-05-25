@@ -227,6 +227,14 @@ Legacy Column: NA
 
 ------------------------------------------------------
 
+Name: ActivePrice
+Data Type: Nullable<Double>
+Database Column: 'ACTIVE_PRICE',[],16,4
+Documentation: 'ActivePrice','DocItem.252'
+Legacy Column: NA
+
+------------------------------------------------------
+
 Name: TaxPerc
 Data Type: Nullable<Double>
 Database Column: 'TAX_PERC',[],16,4

@@ -25,7 +25,8 @@
       "remoteaddress" : null,
       "remotev9address" : null,
       "localcontrollername" : null,
-      "remotecontrollername" : null
+      "remotecontrollername" : null,
+      "pausedat" : null
     }
   ]
 }

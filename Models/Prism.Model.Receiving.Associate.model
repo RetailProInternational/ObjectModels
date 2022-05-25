@@ -83,3 +83,11 @@ Legacy Column: NA
 
 ------------------------------------------------------
 
+Name: SbsSid
+Data Type: int64
+Database Column: 'SBS_SID',[cpRequired,cpNotNull],19,0
+Documentation: NA
+Legacy Column: NA
+
+------------------------------------------------------
+

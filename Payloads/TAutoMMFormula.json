@@ -14,9 +14,22 @@
       "autoconfigsid" : "0",
       "formulaname" : null,
       "active" : true,
-      "invnfiltername" : null,
-      "autommformuladetail" : [
-      ]
+      "filter" : null,
+      "filterdb" : null,
+      "minformulatype" : 0,
+      "minsoldfrom" : "0",
+      "minsoldto" : "0",
+      "minconditiontype" : 0,
+      "mindos" : null,
+      "mindosqty" : null,
+      "minincludeoos" : false,
+      "maxformulatype" : 0,
+      "maxsoldfrom" : "0",
+      "maxsoldto" : "0",
+      "maxconditiontype" : 0,
+      "maxdos" : null,
+      "maxdosqty" : null,
+      "maxincludeoos" : false
     }
   ]
 }

@@ -12,12 +12,11 @@
       "rowversion" : 0,
       "tenantsid" : null,
       "autoconfigsid" : "0",
-      "areatype" : 0,
-      "paramid" : 0,
-      "paramname" : null,
-      "paramtype" : 0,
-      "paramvaluejson" : null,
-      "paramvalueurl" : null
+      "rangetype" : 0,
+      "date1" : null,
+      "date2" : null,
+      "number1" : null,
+      "number2" : null
     }
   ]
 }

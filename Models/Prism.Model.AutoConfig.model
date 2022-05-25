@@ -131,10 +131,18 @@ Legacy Column: NA
 
 ------------------------------------------------------
 
-Name: AutoConfigParam
-Data Type: IList<TAutoConfigParam>
+Name: AutoConfigStores
+Data Type: IList<TAutoConfigStore>
 Database Column: NA
 Documentation: 'list of configuration parameters','AutoConfig.16'
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: AutoConfigDates
+Data Type: IList<TAutoConfigDate>
+Database Column: NA
+Documentation: 'list of configuration parameters','AutoConfig.17'
 Legacy Column: NA
 
 ------------------------------------------------------
@@ -142,7 +150,7 @@ Legacy Column: NA
 Name: AutoMMFormula
 Data Type: IList<TAutoMMFormula>
 Database Column: NA
-Documentation: 'list of min/max formulas','AutoConfig.17'
+Documentation: 'list of min/max formulas','AutoConfig.18'
 Legacy Column: NA
 
 ------------------------------------------------------

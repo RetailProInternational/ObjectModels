@@ -203,6 +203,14 @@ Legacy Column: NA
 
 ------------------------------------------------------
 
+Name: Seq
+Data Type: Nullable<integer>
+Database Column: 'SEQ',[],5,0
+Documentation: NA
+Legacy Column: NA
+
+------------------------------------------------------
+
 Name: MarkdownAdj
 Data Type: IList<TMarkdownAdj>
 Database Column: NA
