@@ -11,10 +11,13 @@
       "postdate" : null,
       "rowversion" : 0,
       "tenantsid" : null,
-      "data" : null,
-      "pisheetsid" : "0",
-      "chunkno" : 0,
-      "totalchunks" : 0
+      "autoconfigsid" : "0",
+      "areatype" : 0,
+      "paramid" : 0,
+      "paramname" : null,
+      "paramtype" : 0,
+      "paramvaluejson" : null,
+      "paramvalueurl" : null
     }
   ]
 }

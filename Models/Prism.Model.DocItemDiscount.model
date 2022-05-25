@@ -187,6 +187,14 @@ Legacy Column: NA
 
 ------------------------------------------------------
 
+Name: NewDiscAmtDetaxed
+Data Type: Nullable<Double>
+Database Column: 'NEW_DISC_AMT_DETAXED',[],16,4
+Documentation: 'new unit discount with detaxed','DocItemDiscount.222'
+Legacy Column: NA
+
+------------------------------------------------------
+
 Name: NewDiscPerc
 Data Type: Nullable<Double>
 Database Column: 'NEW_DISC_PERC',[],16,4

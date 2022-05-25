@@ -243,10 +243,10 @@ Legacy Column: 'ALT_VEND_CODE'
 
 ------------------------------------------------------
 
-Name: SublocSid
-Data Type: Nullable<Int64>
-Database Column: 'SUBLOC_SID',[],19,0
-Documentation: 'SublocSid','SlipItem.30'
+Name: SublocId
+Data Type: Nullable<Integer>
+Database Column: 'SUBLOC_ID',[],10,0
+Documentation: 'SublocId','SlipItem.30'
 Legacy Column: NA
 
 ------------------------------------------------------
@@ -611,18 +611,10 @@ Legacy Column: NA
 
 ------------------------------------------------------
 
-Name: SublocId
-Data Type: Nullable<Integer>
-Database Column: NA
-Documentation: 'ID','SlipItem.74'
-Legacy Column: 'SUBLOC_ID'
-
-------------------------------------------------------
-
 Name: ALU
 Data Type: Nullable<string>
 Database Column: NA
-Documentation: 'alternate lookup code','SlipItem.75'
+Documentation: 'alternate lookup code','SlipItem.74'
 Legacy Column: NA
 
 ------------------------------------------------------
@@ -630,7 +622,7 @@ Legacy Column: NA
 Name: FCCost
 Data Type: Nullable<Double>
 Database Column: NA
-Documentation: 'cost of last order of item in foreign currency','SlipItem.76'
+Documentation: 'cost of last order of item in foreign currency','SlipItem.75'
 Legacy Column: NA
 
 ------------------------------------------------------
@@ -638,7 +630,15 @@ Legacy Column: NA
 Name: VendName
 Data Type: Nullable<String>
 Database Column: NA
-Documentation: 'VendName','SlipItem.77'
+Documentation: 'VendName','SlipItem.76'
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: OHCheckApproved
+Data Type: boolean
+Database Column: NA
+Documentation: 'Approved skip o/h check','SlipItem.77'
 Legacy Column: NA
 
 ------------------------------------------------------

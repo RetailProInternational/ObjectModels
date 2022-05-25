@@ -117,7 +117,7 @@ Legacy Column: NA
 
 Name: CentralCardNumber
 Data Type: Nullable<string>
-Database Column: 'CENTRAL_CARD_NUMBER',[],30
+Database Column: 'CENTRAL_CARD_NUMBER',[],32
 Documentation: 'The identifying portion of the card for reference','TenderCentralGiftCard.14'
 Legacy Column: NA
 

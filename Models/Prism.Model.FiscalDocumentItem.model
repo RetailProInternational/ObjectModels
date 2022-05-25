@@ -1,0 +1,221 @@
+##########################################################################################################
+File Name: Prism.Model.FiscalDocumentItem.pas
+##########################################################################################################
+Class Name: TFiscalDocumentItem
+Base Class Name: TModelBase
+Database Table: FISCAL_DOCUMENT_ITEM
+Associate Class: False
+Identified By: 'FSid'
+Legacy Identified By: NA
+
+Members
+===========================================================================================
+
+Name: Sid
+Data Type: Int64
+Database Column: 'SID',[cpRequired,cpPrimaryKey,cpNotNull],19,0
+Documentation: 'SID','FiscalDocumentItem.1'
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: PostDate
+Data Type: Nullable<TDateTime>
+Database Column: 'POST_DATE',[
+Documentation: 'Post date','FiscalDocumentItem.25'
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: OriginApplication
+Data Type: string
+Database Column: 'ORIGIN_APPLICATION',[cpRequired,cpNotNull],20
+Documentation: 'Origin application','FiscalDocumentItem.26'
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: FiscalDocumentSid
+Data Type: Int64
+Database Column: 'FISCAL_DOCUMENT_SID',[cpRequired,cpNotNull],19,0
+Documentation: 'FiscalDocument SID','FiscalDocumentItem.2'
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: InvnSbsItemSid
+Data Type: Nullable<Int64>
+Database Column: 'INVN_SBS_ITEM_SID',[],19,0
+Documentation: 'InvnSbsItem SID','FiscalDocumentItem.3'
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: Udf1String
+Data Type: Nullable<string>
+Database Column: 'UDF1_STRING',[],210
+Documentation: 'String 1','FiscalDocumentItem.4'
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: Udf2String
+Data Type: Nullable<string>
+Database Column: 'UDF2_STRING',[],210
+Documentation: 'String 2','FiscalDocumentItem.5'
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: Udf3String
+Data Type: Nullable<string>
+Database Column: 'UDF3_STRING',[],210
+Documentation: 'String 3','FiscalDocumentItem.6'
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: Udf4String
+Data Type: Nullable<string>
+Database Column: 'UDF4_STRING',[],210
+Documentation: 'String 4','FiscalDocumentItem.7'
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: Udf5String
+Data Type: Nullable<string>
+Database Column: 'UDF5_STRING',[],210
+Documentation: 'String 5','FiscalDocumentItem.8'
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: Udf6String
+Data Type: Nullable<string>
+Database Column: 'UDF6_STRING',[],210
+Documentation: 'String 6','FiscalDocumentItem.9'
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: Udf7String
+Data Type: Nullable<string>
+Database Column: 'UDF7_STRING',[],210
+Documentation: 'String 7','FiscalDocumentItem.10'
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: Udf8String
+Data Type: Nullable<string>
+Database Column: 'UDF8_STRING',[],210
+Documentation: 'String 8','FiscalDocumentItem.11'
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: Udf9String
+Data Type: Nullable<string>
+Database Column: 'UDF9_STRING',[],210
+Documentation: 'String 9','FiscalDocumentItem.12'
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: Udf10String
+Data Type: Nullable<string>
+Database Column: 'UDF10_STRING',[],210
+Documentation: 'String 10','FiscalDocumentItem.13'
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: Udf1Date
+Data Type: Nullable<TDateTime>
+Database Column: 'UDF1_DATE',[
+Documentation: 'Date 1','FiscalDocumentItem.14'
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: Udf2Date
+Data Type: Nullable<TDateTime>
+Database Column: 'UDF2_DATE',[
+Documentation: 'Date 2','FiscalDocumentItem.15'
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: Udf3Date
+Data Type: Nullable<TDateTime>
+Database Column: 'UDF3_DATE',[
+Documentation: 'Date 3','FiscalDocumentItem.16'
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: Udf4Date
+Data Type: Nullable<TDateTime>
+Database Column: 'UDF4_DATE',[
+Documentation: 'Date 4','FiscalDocumentItem.17'
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: Udf5Date
+Data Type: Nullable<TDateTime>
+Database Column: 'UDF5_DATE',[
+Documentation: 'Date 5','FiscalDocumentItem.18'
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: Udf1Float
+Data Type: Nullable<Double>
+Database Column: 'UDF1_FLOAT',[],10,4
+Documentation: 'Float 1','FiscalDocumentItem.19'
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: Udf2Float
+Data Type: Nullable<Double>
+Database Column: 'UDF2_FLOAT',[],10,4
+Documentation: 'Float 2','FiscalDocumentItem.20'
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: Udf3Float
+Data Type: Nullable<Double>
+Database Column: 'UDF3_FLOAT',[],10,4
+Documentation: 'Float 3','FiscalDocumentItem.21'
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: Udf4Float
+Data Type: Nullable<Double>
+Database Column: 'UDF4_FLOAT',[],10,4
+Documentation: 'Float 4','FiscalDocumentItem.22'
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: Udf5Float
+Data Type: Nullable<Double>
+Database Column: 'UDF5_FLOAT',[],10,4
+Documentation: 'Float 5','FiscalDocumentItem.23'
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: Udf1Clob
+Data Type: Nullable<string>
+Database Column: 'UDF1_CLOB',[],2001
+Documentation: 'Clob 1','FiscalDocumentItem.24'
+Legacy Column: NA
+
+------------------------------------------------------
+

@@ -1,0 +1,357 @@
+##########################################################################################################
+File Name: Prism.Model.SroConfig.pas
+##########################################################################################################
+Class Name: TSroConfig
+Base Class Name: TModelBase
+Database Table: SRO_CONFIG
+Associate Class: False
+Identified By: NA
+Legacy Identified By: NA
+
+Members
+===========================================================================================
+
+Name: Sid
+Data Type: Int64
+Database Column: 'SID',[cpRequired,cpPrimaryKey,cpNotNull],19,0
+Documentation: 'unique identifying value','SroConfig.1'
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: CreatedBy
+Data Type: string
+Database Column: 'CREATED_BY',[cpRequired,cpNotNull],40
+Documentation: 'employee id of row creator using application ui','SroConfig.2'
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: CreatedDatetime
+Data Type: TDateTime
+Database Column: 'CREATED_DATETIME',[cpRequired,cpNotNull
+Documentation: 'datetime row was created','SroConfig.3'
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: ModifiedBy
+Data Type: Nullable<string>
+Database Column: 'MODIFIED_BY',[],40
+Documentation: 'employee id of last modifier using application ui','SroConfig.4'
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: ModifiedDatetime
+Data Type: Nullable<TDateTime>
+Database Column: 'MODIFIED_DATETIME',[
+Documentation: 'datetime row was last modified','SroConfig.5'
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: ControllerSid
+Data Type: Int64
+Database Column: 'CONTROLLER_SID',[cpRequired,cpNotNull],19,0
+Documentation: 'ControllerSid','SroConfig.6'
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: OriginApplication
+Data Type: string
+Database Column: 'ORIGIN_APPLICATION',[cpRequired,cpNotNull],40
+Documentation: 'indicates application used to create a new row.','SroConfig.7'
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: RowVersion
+Data Type: Integer
+Database Column: NA
+Documentation: 'optimistic locking value','SroConfig.8'
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: PostDate
+Data Type: TDateTime
+Database Column: 'POST_DATE',[cpRequired,cpNotNull
+Documentation: 'date and time row was created/last modified in this system.  may not be the same as created/modified datetime.','SroConfig.9'
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: TenantSid
+Data Type: Nullable<Int64>
+Database Column: 'TENANT_SID',[],19,0
+Documentation: 'Reference to tenant description','SroConfig.10'
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: SroConfigName
+Data Type: Nullable<string>
+Database Column: 'SRO_CONFIG_NAME',[],75
+Documentation: 'Free form descriptive text for the SRO Analysis to be run based on this SRO configuration.','SroConfig.11'
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: CalcSold
+Data Type: Boolean
+Database Column: 'CALC_SOLD',[],1,0
+Documentation: 'Informs the SRO action whether to analyze sold inventory quantities','SroConfig.12'
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: SoldBeginDate
+Data Type: Nullable<TDateTime>
+Database Column: 'SOLD_BEGIN_DATE',[
+Documentation: 'Optional user-entered begin date to analyze sold quantities.','SroConfig.13'
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: SoldEndDate
+Data Type: Nullable<TDateTime>
+Database Column: 'SOLD_END_DATE',[
+Documentation: 'Optional user-entered end date to analyze sold quantities. If end date populated, begin date must be populated.','SroConfig.14'
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: SoldDateRange
+Data Type: TDynamicDateType
+Database Column: 'SOLD_DATE_RANGE',[],2,0
+Documentation: 'Enum for selected date range type: None, FixedDates, XDaysXDaysAgo, XWeeksXWeeksAgo, XMonthsXMonthsAgo, Today, Yesterday, '+
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: SoldFromNbr
+Data Type: Nullable<Int16>
+Database Column: 'SOLD_FROM_NBR',[],3,0
+Documentation: 'Used for some dynamic date ranges as in From the Last n Weeks','SroConfig.16'
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: SoldToNbr
+Data Type: Nullable<Int16>
+Database Column: 'SOLD_TO_NBR',[],3,0
+Documentation: 'Used for some dynamic date ranges as in From the Last n Weeks to the Next <n> Weeks','SroConfig.17'
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: CalcRecvd
+Data Type: Boolean
+Database Column: 'CALC_RECVD',[],1,0
+Documentation: 'Informs the SRO action whether to analyze Received quantities','SroConfig.18'
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: RecvdBeginDate
+Data Type: Nullable<TDateTime>
+Database Column: 'RECVD_BEGIN_DATE',[
+Documentation: 'Optional user-entered begin date to analyze received quantities. ','SroConfig.19'
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: RecvdEndDate
+Data Type: Nullable<TDateTime>
+Database Column: 'RECVD_END_DATE',[
+Documentation: 'Optional user-entered end date to analyze received quantities. If end date populated, begin date must be populated.','SroConfig.20'
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: RecvdDateRange
+Data Type: TDynamicDateType
+Database Column: 'RECVD_DATE_RANGE',[],2,0
+Documentation: 'Enum for selected date range type: None, FixedDates, XDaysXDaysAgo, XWeeksXWeeksAgo, XMonthsXMonthsAgo, Today, Yesterday, '+
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: RecvdFromNbr
+Data Type: Nullable<Int16>
+Database Column: 'RECVD_FROM_NBR',[],3,0
+Documentation: 'Used for some dynamic date ranges as in From the Last n Weeks','SroConfig.22'
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: RecvdToNbr
+Data Type: Nullable<Int16>
+Database Column: 'RECVD_TO_NBR',[],3,0
+Documentation: 'Used for some dynamic date ranges as in From the Last n Weeks to the Next <n> Weeks','SroConfig.23'
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: CalcPending
+Data Type: Boolean
+Database Column: 'CALC_PENDING',[],1,0
+Documentation: 'If true SRO analysis includes pending-received (vouchder) quantities, using same date params used for CalcRecvd','SroConfig.24'
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: CalcOnorder
+Data Type: Boolean
+Database Column: 'CALC_ONORDER',[],1,0
+Documentation: 'If true On-Order (PO) quantities are included in the analysis','SroConfig.30'
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: OnorderBeginDate
+Data Type: Nullable<TDateTime>
+Database Column: 'ONORDER_BEGIN_DATE',[
+Documentation: 'Optional user-entered begin date to analyze on-order quantities. ','SroConfig.31'
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: OnorderEndDate
+Data Type: Nullable<TDateTime>
+Database Column: 'ONORDER_END_DATE',[
+Documentation: 'Optional user-entered end date to analyze on-order quantities. If end date populated, begin date must be populated.','SroConfig.32'
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: OnorderDateRange
+Data Type: TDynamicDateType
+Database Column: 'ONORDER_DATE_RANGE',[],2,0
+Documentation: 'Enum for selected date range type: None, FixedDates, XDaysXDaysAgo, XWeeksXWeeksAgo, XMonthsXMonthsAgo, Today, Yesterday, '+
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: OnOrderUseOrderDate
+Data Type: Boolean
+Database Column: 'ONORDER_USE_ORDERDATE',[],1,0
+Documentation: 'When true, begin and end date refer to PO.created_datetime, otherwise refer to the PO.shipping_date.','SroConfig.34'
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: OnOrderFromNbr
+Data Type: Nullable<Int16>
+Database Column: 'ONORDER_FROM_NBR',[],3,0
+Documentation: 'Used for some dynamic date ranges as in From the Last n Weeks','SroConfig.35'
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: OnOrderToNbr
+Data Type: Nullable<Int16>
+Database Column: 'ONORDER_TO_NBR',[],3,0
+Documentation: 'Used for some dynamic date ranges as in From the Last n Weeks to the Next <n> Weeks','SroConfig.36'
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: CalcAsn
+Data Type: Boolean
+Database Column: 'CALC_ASN',[],1,0
+Documentation: 'Informs the SRO action whether to analyze ASN quantities','SroConfig.37'
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: AsnBeginDate
+Data Type: Nullable<TDateTime>
+Database Column: 'ASN_BEGIN_DATE',[
+Documentation: 'Optional user-entered begin date to analyze on-order quantities.','SroConfig.38'
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: AsnEndDate
+Data Type: Nullable<TDateTime>
+Database Column: 'ASN_END_DATE',[
+Documentation: 'Optional user-entered end date to analyze on-order quantities.','SroConfig.39'
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: AsnDateRange
+Data Type: TDynamicDateType
+Database Column: 'ASN_DATE_RANGE',[],2,0
+Documentation: 'Enum for selected date range type: None, FixedDates, XDaysXDaysAgo, XWeeksXWeeksAgo, XMonthsXMonthsAgo, Today, Yesterday, '+
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: AsnUseCreatedDate
+Data Type: Boolean
+Database Column: 'ASN_USE_CREATEDDATE',[],1,0
+Documentation: 'When true, begin and end dates refer to voucher.created_datetime, otherwise they refer to the voucher arriveddate.','SroConfig.32'
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: AsnFromNbr
+Data Type: Nullable<Int16>
+Database Column: 'ASN_FROM_NBR',[],3,0
+Documentation: 'Used for some dynamic date ranges as in From the Last n Weeks','SroConfig.35'
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: AsnToNbr
+Data Type: Nullable<Int16>
+Database Column: 'ASN_TO_NBR',[],3,0
+Documentation: 'Used for some dynamic date ranges as in From the Last n Weeks to the Next <n> Weeks','SroConfig.36'
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: Status
+Data Type: Nullable<Int16>
+Database Column: 'STATUS',[],1,0
+Documentation: 'Status of the analysis: 0=not run, 1=running, 2=completed, 3=failed','SroConfig.33'
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: LastStartDateTime
+Data Type: Nullable<TDateTime>
+Database Column: 'LAST_START_DATETIME',[
+Documentation: 'Last date-time this analysis was started. Populated by the api or stored procedure.','SroConfig.34'
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: LastCompletedDateTime
+Data Type: Nullable<TDateTime>
+Database Column: 'LAST_COMPLETED_DATETIME',[
+Documentation: 'Last successfully completed date-time. Populated by the api or stored procedure.','SroConfig.35'
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: SroConfigSbs
+Data Type: IList<TSroConfigSbs>
+Database Column: NA
+Documentation: NA
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: SroConfigStore
+Data Type: IList<TSroConfigStore>
+Database Column: NA
+Documentation: NA
+Legacy Column: NA
+
+------------------------------------------------------
+

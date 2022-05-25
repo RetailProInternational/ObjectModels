@@ -1,0 +1,229 @@
+##########################################################################################################
+File Name: Prism.Model.Sublocation.pas
+##########################################################################################################
+Class Name: TSublocation
+Base Class Name: TModelBase
+Database Table: SUBLOCATION
+Associate Class: False
+Identified By: 'FSbsid,FStoreSid,FSublocId'
+Legacy Identified By: NA
+
+Members
+===========================================================================================
+
+Name: Sid
+Data Type: Int64
+Database Column: 'SID',[cpRequired,cpPrimaryKey,cpNotNull],19,0
+Documentation: NA
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: CreatedBy
+Data Type: string
+Database Column: 'CREATED_BY',[cpRequired,cpNotNull],30
+Documentation: NA
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: CreatedDatetime
+Data Type: TDateTime
+Database Column: 'CREATED_DATETIME',[cpRequired,cpNotNull
+Documentation: NA
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: ModifiedDatetime
+Data Type: Nullable<TDateTime>
+Database Column: 'MODIFIED_DATETIME',[
+Documentation: NA
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: ModifiedBy
+Data Type: Nullable<string>
+Database Column: 'MODIFIED_BY',[],30
+Documentation: NA
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: ControllerSid
+Data Type: Int64
+Database Column: 'CONTROLLER_SID',[cpRequired,cpNotNull],19,0
+Documentation: NA
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: OriginApplication
+Data Type: string
+Database Column: 'ORIGIN_APPLICATION',[cpRequired,cpNotNull],20
+Documentation: NA
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: RowVersion
+Data Type: Integer
+Database Column: NA
+Documentation: NA
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: PostDate
+Data Type: Nullable<TDateTime>
+Database Column: 'POST_DATE',[
+Documentation: NA
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: TenantSid
+Data Type: Nullable<Int64>
+Database Column: 'TENANT_SID',[],19,0
+Documentation: NA
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: SbsSid
+Data Type: Int64
+Database Column: 'SBS_SID',[cpRequired,cpNotNull],19,0
+Documentation: NA
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: StoreSid
+Data Type: Int64
+Database Column: 'STORE_SID',[cpRequired,cpNotNull],19,0
+Documentation: NA
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: PriceLvlSid
+Data Type: Nullable<Int64>
+Database Column: 'PRICE_LVL_SID',[],19,0
+Documentation: NA
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: SublocDesc
+Data Type: Nullable<string>
+Database Column: 'SUBLOC_DESC',[],120
+Documentation: NA
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: SublocName
+Data Type: Nullable<string>
+Database Column: 'SUBLOC_NAME',[], 30
+Documentation: NA
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: QtyLimit
+Data Type: Nullable<Double>
+Database Column: 'QTY_LIMIT',[
+Documentation: NA
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: Active
+Data Type: boolean
+Database Column: 'ACTIVE',[],1,0
+Documentation: NA
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: Unsellable
+Data Type: boolean
+Database Column: 'UNSELLABLE',[],1,0
+Documentation: NA
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: Managed
+Data Type: boolean
+Database Column: 'MANAGED',[],1,0
+Documentation: NA
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: Secure
+Data Type: boolean
+Database Column: 'SECURE',[],1,0
+Documentation: NA
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: RestrictNegative
+Data Type: boolean
+Database Column: 'RESTRICT_NEGATIVE',[],1,0
+Documentation: NA
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: SublocCode
+Data Type: Nullable<string>
+Database Column: 'SUBLOC_CODE',[],120
+Documentation: NA
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: SublocId
+Data Type: Integer
+Database Column: 'SUBLOC_ID',[cpRequired,cpNotNull],10,0
+Documentation: NA
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: SublocationSegment
+Data Type: IList<TSublocationSegment>
+Database Column: NA
+Documentation: NA
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: SbsNo
+Data Type: Nullable<Int16>
+Database Column: NA
+Documentation: 'uniquely identifying subsidiary number','Sublocation.1'
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: StoreNo
+Data Type: Nullable<Int16>
+Database Column: NA
+Documentation: 'Store Number','Sublocation.2'
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: PriceLvl
+Data Type: Nullable<Integer>
+Database Column: NA
+Documentation: 'Price Level','Sublocation.3'
+Legacy Column: NA
+
+------------------------------------------------------
+

@@ -48,6 +48,8 @@
       "cmpqty" : null,
       "adjqty" : [
       ],
+      "adjsublocation" : [
+      ],
       "adjserial" : [
       ],
       "adjlotqty" : [
@@ -79,7 +81,10 @@
       "taxname2" : null,
       "serialtype" : null,
       "lottype" : null,
-      "kittype" : null
+      "kittype" : null,
+      "vendsid" : null,
+      "adjsbssid" : "0",
+      "adjstoresid" : null
     }
   ]
 }

@@ -1,0 +1,25 @@
+{
+  "data" : [
+    {
+      "sid" : "0",
+      "createdby" : null,
+      "createddatetime" : null,
+      "modifieddatetime" : null,
+      "modifiedby" : null,
+      "controllersid" : "0",
+      "originapplication" : null,
+      "rowversion" : 0,
+      "postdate" : null,
+      "tenantsid" : null,
+      "sbssid" : "0",
+      "storesid" : "0",
+      "qty" : null,
+      "invnsbsitemsid" : "0",
+      "sbsno" : null,
+      "storeno" : null,
+      "sublocid" : 0,
+      "itemuid" : null
+    }
+  ]
+}
+

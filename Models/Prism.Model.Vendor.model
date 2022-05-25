@@ -267,14 +267,6 @@ Legacy Column: 'UDF2_DATE'
 
 ------------------------------------------------------
 
-Name: Notes
-Data Type: Nullable<string>
-Database Column: 'NOTES',[],2001)] {2001 tells Marshmallow that this is a CLOB}
-Documentation: 'Notes','Vendor.33'
-Legacy Column: 'NOTES'
-
-------------------------------------------------------
-
 Name: Image
 Data Type: Nullable<TMemoryStream>
 Database Column: 'IMAGE',[
@@ -352,6 +344,14 @@ Data Type: IList<TVendorContact>
 Database Column: NA
 Documentation: NA
 Legacy Column: NA
+
+------------------------------------------------------
+
+Name: Notes
+Data Type: Nullable<string>
+Database Column: 'NOTES',[],2001)] {2001 tells Marshmallow that this is a CLOB}
+Documentation: 'Notes','Vendor.33'
+Legacy Column: 'NOTES'
 
 ------------------------------------------------------
 

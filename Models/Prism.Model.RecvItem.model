@@ -459,10 +459,10 @@ Legacy Column: 'FROM_ASN'
 
 ------------------------------------------------------
 
-Name: SublocSid
-Data Type: Nullable<Int64>
-Database Column: 'SUBLOC_SID',[],19,0
-Documentation: 'SublocSid','RecvItem.57'
+Name: SublocId
+Data Type: Nullable<Integer>
+Database Column: 'SUBLOC_ID',[],10,0
+Documentation: 'SublocId','RecvItem.57'
 Legacy Column: NA
 
 ------------------------------------------------------
@@ -823,6 +823,14 @@ Name: LastRcvdDate
 Data Type: Nullable<TDateTime>
 Database Column: NA
 Documentation: NA
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: OHCheckApproved
+Data Type: boolean
+Database Column: NA
+Documentation: 'Approved skip o/h check','RecvItem.90'
 Legacy Column: NA
 
 ------------------------------------------------------

@@ -147,3 +147,11 @@ Legacy Column: NA
 
 ------------------------------------------------------
 
+Name: CentralTxnSid
+Data Type: Nullable<String>
+Database Column: 'CENTRAL_TXN_SID',[],30
+Documentation: 'value of credit created in during this operation','TenderCentralStoreCredit.17'
+Legacy Column: NA
+
+------------------------------------------------------
+

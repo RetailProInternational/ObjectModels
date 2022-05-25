@@ -1,0 +1,21 @@
+{
+  "data" : [
+    {
+      "sid" : "0",
+      "sbsno" : 0,
+      "storeno" : 0,
+      "workstationno" : 0,
+      "doctype" : null,
+      "serie" : null,
+      "serietype" : null,
+      "nextval" : null,
+      "validationcode" : null,
+      "active" : false,
+      "alreadyused" : false,
+      "modifieddate" : null,
+      "postdate" : null,
+      "originapplication" : null
+    }
+  ]
+}
+

@@ -1,0 +1,125 @@
+##########################################################################################################
+File Name: Prism.Model.SroConfigSbs.pas
+##########################################################################################################
+Class Name: TSroConfigSbs
+Base Class Name: TModelBase
+Database Table: SRO_CONFIG_SBS
+Associate Class: False
+Identified By: 'FSroConfigSid,FSeqNo'
+Legacy Identified By: NA
+
+Members
+===========================================================================================
+
+Name: Sid
+Data Type: Int64
+Database Column: 'SID',[cpRequired,cpPrimaryKey,cpNotNull],19,0
+Documentation: 'unique identifying value','SroConfigSbs.1'
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: CreatedBy
+Data Type: string
+Database Column: 'CREATED_BY',[cpRequired,cpNotNull],40
+Documentation: 'employee id of row creator using application ui','SroConfigSbs.2'
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: CreatedDatetime
+Data Type: TDateTime
+Database Column: 'CREATED_DATETIME',[cpRequired,cpNotNull
+Documentation: 'datetime row was created','SroConfigSbs.3'
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: ModifiedBy
+Data Type: Nullable<string>
+Database Column: 'MODIFIED_BY',[],40
+Documentation: 'employee id of last modifier using application ui','SroConfigSbs.4'
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: ModifiedDatetime
+Data Type: Nullable<TDateTime>
+Database Column: 'MODIFIED_DATETIME',[
+Documentation: 'datetime row was last modified','SroConfigSbs.5'
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: ControllerSid
+Data Type: Int64
+Database Column: 'CONTROLLER_SID',[cpRequired,cpNotNull],19,0
+Documentation: 'ControllerSid','SroConfigSbs.6'
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: OriginApplication
+Data Type: string
+Database Column: 'ORIGIN_APPLICATION',[cpRequired,cpNotNull],40
+Documentation: 'indicates application used to create a new row.','SroConfigSbs.7'
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: RowVersion
+Data Type: Integer
+Database Column: NA
+Documentation: 'optimistic locking value','SroConfigSbs.8'
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: PostDate
+Data Type: TDateTime
+Database Column: 'POST_DATE',[cpRequired,cpNotNull
+Documentation: 'date and time row was created/last modified in this system.  may not be the same as created/modified datetime.','SroConfigSbs.9'
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: TenantSid
+Data Type: Nullable<Int64>
+Database Column: 'TENANT_SID',[],19,0
+Documentation: 'Reference to tenant description','SroConfigSbs.10'
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: SroConfigSid
+Data Type: Int64
+Database Column: 'SROCONFIG_SID',[cpRequired,cpNotNull],19,0
+Documentation: 'Foreign key to the SROConfig resource.','SroConfigSbs.11'
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: SbsSid
+Data Type: Nullable<Int64>
+Database Column: 'SBS_SID',[],19,0
+Documentation: 'Sid of a subsidiary to includd in the analysis. If no SroConfigSbs child resource exists for an SroConfig, all subsidiaries and stores are included.','SroConfigSbs.12'
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: SbsNo
+Data Type: Nullable<Int16>
+Database Column: NA
+Documentation: 'SbsNo of the subsidiary to be included in the SRO analysis that is defined in SroConfig.','SroConfigSbs.13'
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: SbsName
+Data Type: Nullable<string>
+Database Column: NA
+Documentation: 'User defined name for the subsidiary','SroConfigSbs.14'
+Legacy Column: NA
+
+------------------------------------------------------
+

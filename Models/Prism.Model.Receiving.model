@@ -835,6 +835,30 @@ Legacy Column: NA
 
 ------------------------------------------------------
 
+Name: PcFlag
+Data Type: Boolean
+Database Column: 'PC_FLAG',[],1,0
+Documentation: 'Sent to PC flag',''
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: ApFlag
+Data Type: Boolean
+Database Column: 'AP_FLAG',[],1,0
+Documentation: 'Sent to AP flag',''
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: GlFlag
+Data Type: Boolean
+Database Column: 'GL_FLAG',[],1,0
+Documentation: 'Sent to GL flag',''
+Legacy Column: NA
+
+------------------------------------------------------
+
 Name: RecvItem
 Data Type: IList<TRecvItem>
 Database Column: NA

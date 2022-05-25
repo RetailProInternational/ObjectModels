@@ -20,6 +20,7 @@
       "storeminqty" : 0,
       "storemaxqty" : 0,
       "dueqty" : 0,
+      "onorderedqty" : 0,
       "sbsno" : null,
       "storeno" : null,
       "storecode" : null,

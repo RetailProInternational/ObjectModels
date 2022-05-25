@@ -1,0 +1,157 @@
+##########################################################################################################
+File Name: Prism.Model.InvnSbsSublocationQty.pas
+##########################################################################################################
+Class Name: TInvnSbsSublocationQty
+Base Class Name: TModelBase
+Database Table: INVN_SBS_SUBLOCATION_QTY
+Associate Class: False
+Identified By: 'FInvnSbsItemSid,FSbsSid,FStoreSid,FSublocId'
+Legacy Identified By: NA
+
+Members
+===========================================================================================
+
+Name: Sid
+Data Type: Int64
+Database Column: 'SID',[cpRequired,cpPrimaryKey,cpNotNull],19,0
+Documentation: NA
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: CreatedBy
+Data Type: string
+Database Column: 'CREATED_BY',[cpRequired,cpNotNull],30
+Documentation: NA
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: CreatedDatetime
+Data Type: TDateTime
+Database Column: 'CREATED_DATETIME',[cpRequired,cpNotNull
+Documentation: NA
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: ModifiedDatetime
+Data Type: Nullable<TDateTime>
+Database Column: 'MODIFIED_DATETIME',[
+Documentation: NA
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: ModifiedBy
+Data Type: Nullable<string>
+Database Column: 'MODIFIED_BY',[],30
+Documentation: NA
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: ControllerSid
+Data Type: Int64
+Database Column: 'CONTROLLER_SID',[cpRequired,cpNotNull],19,0
+Documentation: NA
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: OriginApplication
+Data Type: string
+Database Column: 'ORIGIN_APPLICATION',[cpRequired,cpNotNull],20
+Documentation: NA
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: RowVersion
+Data Type: Integer
+Database Column: NA
+Documentation: NA
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: PostDate
+Data Type: Nullable<TDateTime>
+Database Column: 'POST_DATE',[
+Documentation: NA
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: TenantSid
+Data Type: Nullable<Int64>
+Database Column: 'TENANT_SID',[],19,0
+Documentation: NA
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: SbsSid
+Data Type: Int64
+Database Column: 'SBS_SID',[cpRequired,cpNotNull],19,0
+Documentation: NA
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: StoreSid
+Data Type: Int64
+Database Column: 'STORE_SID',[cpRequired,cpNotNull],19,0
+Documentation: NA
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: SublocId
+Data Type: integer
+Database Column: 'SUBLOC_ID',[cpRequired,cpNotNull],10,0
+Documentation: NA
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: Qty
+Data Type: Nullable<Double>
+Database Column: 'QTY',[],10,3
+Documentation: NA
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: InvnSbsItemSid
+Data Type: Int64
+Database Column: 'INVN_SBS_ITEM_SID',[cpRequired,cpNotNull],19,0
+Documentation: NA
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: ItemUID
+Data Type: Nullable<Int64>
+Database Column: NA
+Documentation: NA
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: SbsNo
+Data Type: Nullable<Int16>
+Database Column: NA
+Documentation: NA
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: StoreNo
+Data Type: Nullable<Int16>
+Database Column: NA
+Documentation: NA
+Legacy Column: NA
+
+------------------------------------------------------
+

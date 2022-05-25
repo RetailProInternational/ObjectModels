@@ -110,6 +110,9 @@
       "actstrpricewt" : 0,
       "actstrohqty" : 0,
       "actstrcaseqty" : 0,
+      "actstrsoldqty" : 0,
+      "actstrrcvdqty" : 0,
+      "actstronorderedqty" : 0,
       "actstravailqty" : 0,
       "actstrextcost" : 0,
       "actstrextprice" : 0,
@@ -129,10 +132,10 @@
       "actstrmarkuppctg" : 0,
       "actstrcoefficient" : 0,
       "actstrminqty" : 0,
+      "actstrmaxqty" : 0,
       "actstrminextcost" : 0,
       "actstrminextprice" : 0,
       "actstrminextpricewt" : 0,
-      "actstrmaxqty" : 0,
       "actstrmaxextcost" : 0,
       "actstrmaxextprice" : 0,
       "actstrmaxextpricewt" : 0,
@@ -174,6 +177,7 @@
       "dname" : null,
       "sname" : null,
       "docitemsid" : "0",
+      "docitemrowversion" : 0,
       "height" : null,
       "length" : null,
       "width" : null,
@@ -182,8 +186,14 @@
       "doccaseqty" : 0,
       "docprice" : 0,
       "doccost" : 0,
-      "defaultprice" : 0,
-      "defaultpricewt" : 0
+      "itemimage" : null,
+      "itemimageindex" : null,
+      "actstrqtysid" : "0",
+      "actstrqtyrowver" : 0,
+      "actstrnewminqty" : 0,
+      "actstrnewmaxqty" : 0,
+      "actstrmmbegindate" : null,
+      "actstrmmenddate" : null
     }
   ]
 }

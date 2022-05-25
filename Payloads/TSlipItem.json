@@ -30,7 +30,7 @@
       "altalu" : null,
       "altcost" : null,
       "altvendcode" : null,
-      "sublocsid" : null,
+      "sublocid" : null,
       "snqty" : null,
       "snactive" : false,
       "snreceived" : false,
@@ -76,10 +76,10 @@
       "serialtype" : null,
       "lottype" : null,
       "kittype" : null,
-      "sublocid" : null,
       "alu" : null,
       "fccost" : null,
-      "vendname" : null
+      "vendname" : null,
+      "ohcheckapproved" : false
     }
   ]
 }

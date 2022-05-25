@@ -91,14 +91,6 @@ Legacy Column: NA
 
 ------------------------------------------------------
 
-Name: Filter
-Data Type: string
-Database Column: 'FILTER',[],2000
-Documentation: 'filter String for Resource','SubResource.11'
-Legacy Column: NA
-
-------------------------------------------------------
-
 Name: ProcessOrder
 Data Type: Integer
 Database Column: 'PROCESS_ORDER',[],10,0
@@ -151,6 +143,14 @@ Name: PrismResourceSid
 Data Type: Int64
 Database Column: 'PRISM_RESOURCE_SID',[cpRequired,cpNotNull],19,0
 Documentation: 'refertnce to prism resource','SubResource.15'
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: Filter
+Data Type: string
+Database Column: 'FILTER',[],2000
+Documentation: 'filter String for Resource','SubResource.11'
 Legacy Column: NA
 
 ------------------------------------------------------

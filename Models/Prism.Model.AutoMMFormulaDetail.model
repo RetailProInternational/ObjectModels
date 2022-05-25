@@ -1,0 +1,213 @@
+##########################################################################################################
+File Name: Prism.Model.AutoMMFormulaDetail.pas
+##########################################################################################################
+Class Name: TAutoMMFormulaDetail
+Base Class Name: TModelBase
+Database Table: AUTO_MM_FORMULA_DETAIL
+Associate Class: False
+Identified By: 'FSid'
+Legacy Identified By: NA
+
+Members
+===========================================================================================
+
+Name: Sid
+Data Type: Int64
+Database Column: 'SID',[cpRequired,cpPrimaryKey,cpNotNull],19,0
+Documentation: 'unique identifying value','AutoMMFormulaDetail.1'
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: CreatedBy
+Data Type: string
+Database Column: 'CREATED_BY',[cpRequired,cpNotNull],30
+Documentation: 'employee id of row creator using application ui','AutoMMFormulaDetail.2'
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: CreatedDatetime
+Data Type: TDateTime
+Database Column: 'CREATED_DATETIME',[cpRequired,cpNotNull
+Documentation: 'datetime row was created','AutoMMFormulaDetail.3'
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: ModifiedBy
+Data Type: Nullable<string>
+Database Column: 'MODIFIED_BY',[],30
+Documentation: 'employee id of last modifier using application ui','AutoMMFormulaDetail.4'
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: ModifiedDatetime
+Data Type: Nullable<TDateTime>
+Database Column: 'MODIFIED_DATETIME',[
+Documentation: 'datetime row was last modified','AutoMMFormulaDetail.5'
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: ControllerSid
+Data Type: Int64
+Database Column: 'CONTROLLER_SID',[cpRequired,cpNotNull],19,0
+Documentation: 'reference to store record for database where that owns row.','AutoMMFormulaDetail.6'
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: OriginApplication
+Data Type: string
+Database Column: 'ORIGIN_APPLICATION',[cpRequired,cpNotNull],20
+Documentation: 'indicates application used to create row.  v9 and v8 are reserved for rpro versions 8 and 9,respectively.  this is the same value that will be used in licensing applications.','AutoMMFormulaDetail.7'
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: PostDate
+Data Type: Nullable<TDateTime>
+Database Column: 'POST_DATE',[
+Documentation: 'date and time row was created/last modified in this system.  may not be the same as created/modified datetime.','AutoMMFormulaDetail.8'
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: RowVersion
+Data Type: Integer
+Database Column: NA
+Documentation: 'optimistic locking value','AutoMMFormulaDetail.9'
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: TenantSid
+Data Type: Nullable<Int64>
+Database Column: 'TENANT_SID',[],19,0
+Documentation: 'reference to tenant description','AutoMMFormulaDetail.10'
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: AmmFormulaSid
+Data Type: Int64
+Database Column: 'AMM_FORMULA_SID',[cpRequired,cpNotNull],19,0
+Documentation: 'reference to auto_mm_formula record','AutoMMFormulaDetail.11'
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: MinFormulatype
+Data Type: Int16
+Database Column: 'MIN_FORMULA_TYPE',[cpRequired,cpNotNull],1,0
+Documentation: 'minimum formula type: 0=DaysOfSupply (default), 1=Annual','AutoMMFormulaDetail.12'
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: MinSoldFrom
+Data Type: Int64
+Database Column: 'MIN_SOLD_FROM',[cpRequired,cpNotNull],10,0
+Documentation: 'minimum sold from quantity - minimum range value i.e. 0 is default','AutoMMFormulaDetail.13'
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: MinSoldTo
+Data Type: Int64
+Database Column: 'MIN_SOLD_TO',[cpRequired,cpNotNull],10,0
+Documentation: 'minimum sold to quantity - maximum range value i.e. 9999999 is default','AutoMMFormulaDetail.14'
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: MinConditionType
+Data Type: Int16
+Database Column: 'MIN_CONDITION_TYPE',[cpRequired,cpNotNull],1,0
+Documentation: 'minimum condition type: 0=GreaterThan (default), 1=LesserThan','AutoMMFormulaDetail.15'
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: MinDos
+Data Type: Nullable<Int16>
+Database Column: 'MIN_DOS',[],5,0
+Documentation: 'minimum days of supply (DOS): 0=default','AutoMMFormulaDetail.16'
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: MinDosQty
+Data Type: Nullable<Double>
+Database Column: 'MIN_DOS_QTY',[],10,3
+Documentation: 'minimum quantity value for DOS: 0=default','AutoMMFormulaDetail.17'
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: MinIncludeOos
+Data Type: Nullable<Int16>
+Database Column: 'MIN_INCLUDE_OOS',[],1,0
+Documentation: 'minimum include out of stock: 0=exclude (default), 1=include','AutoMMFormulaDetail.18'
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: MaxFormulaType
+Data Type: Int16
+Database Column: 'MAX_FORMULA_TYPE',[cpRequired,cpNotNull],1,0
+Documentation: 'maximum formula type: 0=DaysOfSupply (default), 1=Annual','AutoMMFormulaDetail.19'
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: MaxSoldFrom
+Data Type: Int64
+Database Column: 'MAX_SOLD_FROM',[cpRequired,cpNotNull],10,0
+Documentation: 'maximum sold from quantity - maximum range value i.e. 0 is default','AutoMMFormulaDetail.20'
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: MaxSoldTo
+Data Type: Int64
+Database Column: 'MAX_SOLD_TO',[cpRequired,cpNotNull],10,0
+Documentation: 'maximum sold to quantity - maximum range value i.e. 9999999 is default','AutoMMFormulaDetail.21'
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: MaxConditionType
+Data Type: Int16
+Database Column: 'MAX_CONDITION_TYPE',[cpRequired,cpNotNull],1,0
+Documentation: 'maximum condition type: 0=GreaterThan (default), 1=LesserThan','AutoMMFormulaDetail.22'
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: MaxDos
+Data Type: Nullable<Int16>
+Database Column: 'MAX_DOS',[],5,0
+Documentation: 'maximum days of supply (DOS): 0=default','AutoMMFormulaDetail.23'
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: MaxDosQty
+Data Type: Nullable<Double>
+Database Column: 'MAX_DOS_QTY',[],10,3
+Documentation: 'max quantity value for DOS: 0=default','AutoMMFormulaDetail.24'
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: MaxIncludeOos
+Data Type: Nullable<Int16>
+Database Column: 'MAX_INCLUDE_OOS',[],1,0
+Documentation: 'maximum include out of stock: 0=exclude (default), 1=include','AutoMMFormulaDetail.25'
+Legacy Column: NA
+
+------------------------------------------------------
+

@@ -2,7 +2,7 @@
 File Name: Prism.Model.Sublocation.Associate.pas
 ##########################################################################################################
 Class Name: TSublocationAssociate
-Base Class Name: 
+Base Class Name: TAssociateBase
 Database Table: SUBLOCATION
 Associate Class: True
 Identified By: NA
@@ -19,9 +19,89 @@ Legacy Column: NA
 
 ------------------------------------------------------
 
-Name: Id
-Data Type: Nullable<Integer>
-Database Column: 'SUBLOC_ID',[],10,0
+Name: SbsSid
+Data Type: Nullable<Int64>
+Database Column: 'SBS_SID',[cpRequired,cpNotNull],19,0
+Documentation: NA
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: StoreSid
+Data Type: Nullable<Int64>
+Database Column: 'STORE_SID',[cpRequired,cpNotNull],19,0
+Documentation: NA
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: PriceLvlSid
+Data Type: Nullable<Int64>
+Database Column: 'PRICE_LVL_SID',[],19,0
+Documentation: NA
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: SublocDesc
+Data Type: Nullable<string>
+Database Column: 'SUBLOC_DESC',[],120
+Documentation: NA
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: QtyLimit
+Data Type: Nullable<Double>
+Database Column: 'QTY_LIMIT',[
+Documentation: NA
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: Active
+Data Type: boolean
+Database Column: 'ACTIVE',[],1,0
+Documentation: NA
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: Unsellable
+Data Type: boolean
+Database Column: 'UNSELLABLE',[],1,0
+Documentation: NA
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: Managed
+Data Type: boolean
+Database Column: 'MANAGED',[],1,0
+Documentation: NA
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: Secure
+Data Type: boolean
+Database Column: 'SECURE',[],1,0
+Documentation: NA
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: SublocCode
+Data Type: Nullable<string>
+Database Column: 'SUBLOC_CODE',[], 120
+Documentation: NA
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: SublocId
+Data Type: Integer
+Database Column: 'SUBLOC_ID',[cpRequired,cpNotNull],10,0
 Documentation: NA
 Legacy Column: NA
 

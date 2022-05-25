@@ -2,7 +2,17 @@
   "data" : [
     {
       "sid" : "0",
-      "id" : null
+      "sbssid" : null,
+      "storesid" : null,
+      "pricelvlsid" : null,
+      "sublocdesc" : null,
+      "qtylimit" : null,
+      "active" : false,
+      "unsellable" : false,
+      "managed" : false,
+      "secure" : false,
+      "subloccode" : null,
+      "sublocid" : 0
     }
   ]
 }

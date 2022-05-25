@@ -275,6 +275,14 @@ Legacy Column: NA
 
 ------------------------------------------------------
 
+Name: CentralCurrencyCode
+Data Type: Nullable<String>
+Database Column: 'CENTRAL_CURRENCYCODE',[],10
+Documentation: 'offline central credit currency code','Customer.111'
+Legacy Column: NA
+
+------------------------------------------------------
+
 Name: CreditLimit
 Data Type: Nullable<Double>
 Database Column: 'CREDIT_LIMIT',[],16,4
@@ -523,30 +531,6 @@ Legacy Column: NA
 
 ------------------------------------------------------
 
-Name: Udf1Clob
-Data Type: Nullable<string>
-Database Column: 'UDF1_CLOB',[],2001
-Documentation: 'user defined field','Customer.64'
-Legacy Column: NA
-
-------------------------------------------------------
-
-Name: Udf2Clob
-Data Type: Nullable<string>
-Database Column: 'UDF2_CLOB',[],2001
-Documentation: 'user defined field','Customer.65'
-Legacy Column: NA
-
-------------------------------------------------------
-
-Name: Notes
-Data Type: Nullable<string>
-Database Column: 'NOTES',[],2001
-Documentation: 'free text','Customer.66'
-Legacy Column: 'NOTES'
-
-------------------------------------------------------
-
 Name: Image
 Data Type: Nullable<TMemoryStream>
 Database Column: 'IMAGE',[
@@ -656,14 +640,6 @@ Data Type: Nullable<string>
 Database Column: 'STATION',[],1
 Documentation: 'Station code','Customer.80'
 Legacy Column: 'STATION'
-
-------------------------------------------------------
-
-Name: YtdSale
-Data Type: Nullable<Double>
-Database Column: 'YTD_SALE',[],16,4
-Documentation: 'Year to date sale. This total will be calculated at the time the document is committed and stored on the customer record','Customer.81'
-Legacy Column: NA
 
 ------------------------------------------------------
 
@@ -856,6 +832,30 @@ Data Type: Nullable<string>
 Database Column: NA
 Documentation: NA
 Legacy Column: NA
+
+------------------------------------------------------
+
+Name: Udf1Clob
+Data Type: Nullable<string>
+Database Column: 'UDF1_CLOB',[],2001
+Documentation: 'user defined field','Customer.64'
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: Udf2Clob
+Data Type: Nullable<string>
+Database Column: 'UDF2_CLOB',[],2001
+Documentation: 'user defined field','Customer.65'
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: Notes
+Data Type: Nullable<string>
+Database Column: 'NOTES',[],2001
+Documentation: 'free text','Customer.66'
+Legacy Column: 'NOTES'
 
 ------------------------------------------------------
 

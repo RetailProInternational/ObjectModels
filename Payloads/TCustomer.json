@@ -81,7 +81,6 @@
       "lastorderdate" : null,
       "orderitemcount" : null,
       "station" : null,
-      "ytdsale" : null,
       "allowedtenders" : null,
       "countrysid" : null,
       "promocustlistname" : null,
@@ -122,7 +121,8 @@
       "primaryclerkorigsbsno" : null,
       "pricelevelname" : null,
       "origintimezone" : "-07:00",
-      "centralcredit" : null
+      "centralcredit" : null,
+      "centralcurrencycode" : null
     }
   ]
 }

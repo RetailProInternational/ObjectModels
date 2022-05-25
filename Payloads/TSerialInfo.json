@@ -6,7 +6,8 @@
       "serialnote" : null,
       "snqtysid" : null,
       "snqty" : null,
-      "snactive" : null
+      "snactive" : null,
+      "sublocid" : -1
     }
   ]
 }

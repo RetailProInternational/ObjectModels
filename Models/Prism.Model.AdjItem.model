@@ -379,6 +379,14 @@ Legacy Column: NA
 
 ------------------------------------------------------
 
+Name: AdjSublocation
+Data Type: IList<TAdjSublocation>
+Database Column: NA
+Documentation: NA
+Legacy Column: NA
+
+------------------------------------------------------
+
 Name: AdjSerial
 Data Type: IList<TAdjSerial>
 Database Column: NA
@@ -469,6 +477,22 @@ Legacy Column: NA
 
 Name: AdjPriceWOTax
 Data Type: double
+Database Column: NA
+Documentation: NA
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: AdjSbsSid
+Data Type: int64
+Database Column: NA
+Documentation: NA
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: AdjStoreSid
+Data Type: Nullable<int64>
 Database Column: NA
 Documentation: NA
 Legacy Column: NA
@@ -607,6 +631,14 @@ Name: KitType
 Data Type: Nullable<TItemKitType>
 Database Column: NA
 Documentation: '0-NoEntry,1-Kit,2-Package,3-GiftCardStoredValue,4-GiftCardPrePaid,5-GiftCertificate,6-Fee,7-GiftCardCentral','AdjItem.66'
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: VendSid
+Data Type: Nullable<Int64>
+Database Column: NA
+Documentation: 'VendSid','AdjItem.67'
 Legacy Column: NA
 
 ------------------------------------------------------

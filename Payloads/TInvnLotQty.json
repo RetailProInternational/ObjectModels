@@ -16,7 +16,8 @@
       "storesid" : "0",
       "qty" : null,
       "sbsno" : null,
-      "storeno" : null
+      "storeno" : null,
+      "sublocid" : 0
     }
   ]
 }

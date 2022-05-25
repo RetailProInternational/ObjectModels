@@ -15,7 +15,7 @@
       "lotnumber" : null,
       "origqty" : null,
       "adjqty" : null,
-      "sublocsid" : "0"
+      "sublocid" : 0
     }
   ]
 }

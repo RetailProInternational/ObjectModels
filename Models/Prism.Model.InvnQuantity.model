@@ -107,6 +107,30 @@ Legacy Column: NA
 
 ------------------------------------------------------
 
+Name: DefaultSubloc1Id
+Data Type: Nullable<integer>
+Database Column: 'DEFAULT_SUBLOC1_ID',[],10,0
+Documentation: 'reference to sublocation.SublocId','InvnQuantity.41'
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: DefaultSubloc2Id
+Data Type: Nullable<integer>
+Database Column: 'DEFAULT_SUBLOC2_ID',[],10,0
+Documentation: 'reference to sublocation.SublocId','InvnQuantity.42'
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: DefaultSubloc3Id
+Data Type: Nullable<integer>
+Database Column: 'DEFAULT_SUBLOC3_ID',[],10,0
+Documentation: 'reference to sublocation.SublocId','InvnQuantity.43'
+Legacy Column: NA
+
+------------------------------------------------------
+
 Name: Qty
 Data Type: Nullable<Double>
 Database Column: 'QTY',[],10,3
@@ -164,7 +188,7 @@ Legacy Column: 'TRANSFER_OUT_QTY'
 ------------------------------------------------------
 
 Name: MinmaxBeginDate
-Data Type: Nullable<TDateTime>
+Data Type: Nullable<TDate>
 Database Column: 'MINMAX_BEGIN_DATE',[
 Documentation: 'MinmaxBeginDate','InvnQuantity.20'
 Legacy Column: 'MINMAX_BEGIN_DATE'
@@ -172,7 +196,7 @@ Legacy Column: 'MINMAX_BEGIN_DATE'
 ------------------------------------------------------
 
 Name: MinmaxEndDate
-Data Type: Nullable<TDateTime>
+Data Type: Nullable<TDate>
 Database Column: 'MINMAX_END_DATE',[
 Documentation: 'MinmaxEndDate','InvnQuantity.21'
 Legacy Column: 'MINMAX_END_DATE'
@@ -276,7 +300,7 @@ Legacy Column: 'ASN_IN_TRANSIT_QTY'
 ------------------------------------------------------
 
 Name: LastOnHandQtyDate
-Data Type: Nullable<TDateTime>
+Data Type: Nullable<TDate>
 Database Column: 'LAST_ON_HAND_QTY_DATE',[
 Documentation: 'used to record the date when the quantity changed to zero last time.','InvnQuantity.34'
 Legacy Column: 'LST_OH_QTY_DATE'
@@ -287,6 +311,14 @@ Name: InvnSbsItemSid
 Data Type: Int64
 Database Column: 'INVN_SBS_ITEM_SID',[cpRequired,cpNotNull],19,0
 Documentation: 'used by api to navigate to invn_sbs_item resource','InvnQuantity.35'
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: AutoConfigSid
+Data Type: Nullable<Int64>
+Database Column: 'AUTO_CONFIG_SID',[],19,0
+Documentation: 'used by api to navigate to auto utility config','InvnQuantity.44'
 Legacy Column: NA
 
 ------------------------------------------------------
@@ -311,6 +343,14 @@ Name: AvailableQty
 Data Type: Nullable<Double>
 Database Column: NA
 Documentation: 'Non-persisted field for store committed quantity', ''
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: SublocQtyInfo
+Data Type: IList<TSublocQtyInfo>
+Database Column: NA
+Documentation: 'non-persisted list for supplying sublocations while working with InventorySaveItems action', ''
 Legacy Column: NA
 
 ------------------------------------------------------

@@ -1,0 +1,149 @@
+##########################################################################################################
+File Name: Prism.Model.AutoConfigParam.pas
+##########################################################################################################
+Class Name: TAutoConfigParam
+Base Class Name: TModelBase
+Database Table: AUTO_CONFIG_PARAM
+Associate Class: False
+Identified By: 'FSid'
+Legacy Identified By: NA
+
+Members
+===========================================================================================
+
+Name: Sid
+Data Type: Int64
+Database Column: 'SID',[cpRequired,cpPrimaryKey,cpNotNull],19,0
+Documentation: 'unique identifying value','AutoConfigParam.1'
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: CreatedBy
+Data Type: string
+Database Column: 'CREATED_BY',[cpRequired,cpNotNull],30
+Documentation: 'employee id of row creator using application ui','AutoConfigParam.2'
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: CreatedDatetime
+Data Type: TDateTime
+Database Column: 'CREATED_DATETIME',[cpRequired,cpNotNull
+Documentation: 'datetime row was created','AutoConfigParam.3'
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: ModifiedBy
+Data Type: Nullable<string>
+Database Column: 'MODIFIED_BY',[],30
+Documentation: 'employee id of last modifier using application ui','AutoConfigParam.4'
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: ModifiedDatetime
+Data Type: Nullable<TDateTime>
+Database Column: 'MODIFIED_DATETIME',[
+Documentation: 'datetime row was last modified','AutoConfigParam.5'
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: ControllerSid
+Data Type: Int64
+Database Column: 'CONTROLLER_SID',[cpRequired,cpNotNull],19,0
+Documentation: 'reference to store record for database where that owns row.','AutoConfigParam.6'
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: OriginApplication
+Data Type: string
+Database Column: 'ORIGIN_APPLICATION',[cpRequired,cpNotNull],20
+Documentation: 'indicates application used to create row.  v9 and v8 are reserved for rpro versions 8 and 9,respectively.  this is the same value that will be used in licensing applications.','AutoConfigParam.7'
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: PostDate
+Data Type: Nullable<TDateTime>
+Database Column: 'POST_DATE',[
+Documentation: 'date and time row was created/last modified in this system.  may not be the same as created/modified datetime.','AutoConfigParam.8'
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: RowVersion
+Data Type: Integer
+Database Column: NA
+Documentation: 'optimistic locking value','AutoConfigParam.9'
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: TenantSid
+Data Type: Nullable<Int64>
+Database Column: 'TENANT_SID',[],19,0
+Documentation: 'reference to tenant description','AutoConfigParam.10'
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: AutoConfigSid
+Data Type: Int64
+Database Column: 'AUTO_CONFIG_SID',[cpRequired,cpNotNull],19,0
+Documentation: 'reference to auto_config record','AutoConfigParam.11'
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: AreaType
+Data Type: Int16
+Database Column: 'AREA_TYPE',[cpRequired,cpNotNull],1,0
+Documentation: 'area type: 0=AMM_None, 1=AMM_Calculate, 2=AMM_Update, 3=AMM_Clear, 4=AMM_Review, etc','AutoConfigParam.12'
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: ParamId
+Data Type: Int16
+Database Column: 'PARAM_ID',[cpRequired,cpNotNull],5,0
+Documentation: 'unique id of this parameter within the config','AutoConfigParam.13'
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: ParamName
+Data Type: string
+Database Column: 'PARAM_NAME',[cpRequired,cpNotNull],200
+Documentation: 'name of parameter','AutoConfigParam.14'
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: ParamType
+Data Type: Int16
+Database Column: 'PARAM_TYPE',[cpRequired,cpNotNull],1,0
+Documentation: 'parameter type: 0=Primitive, 1=Object, 2=Array','AutoConfigParam.15'
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: ParamValueJson
+Data Type: Nullable<string>
+Database Column: 'PARAM_VALUE_JSON',[],2001
+Documentation: 'parameter value in JSON format; for client use only','AutoConfigParam.16'
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: ParamValueUrl
+Data Type: Nullable<string>
+Database Column: 'PARAM_VALUE_URL',[],2001
+Documentation: 'parameter value in URL format; for client and server use','AutoConfigParam.17'
+Legacy Column: NA
+
+------------------------------------------------------
+

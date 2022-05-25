@@ -5,7 +5,7 @@ Class Name: TAdjLotQty
 Base Class Name: TModelBase
 Database Table: ADJ_LOT_QTY
 Associate Class: False
-Identified By: 'FAdjItemSid, FLotNumber, FSublocSid'
+Identified By: 'FAdjItemSid, FLotNumber, FSublocId'
 Legacy Identified By: NA
 
 Members
@@ -123,9 +123,9 @@ Legacy Column: 'ADJ_QTY'
 
 ------------------------------------------------------
 
-Name: SublocSid
-Data Type: Int64
-Database Column: 'SUBLOC_SID',[cpRequired,cpNotNull],19,0
+Name: SublocId
+Data Type: integer
+Database Column: 'SUBLOC_ID',[cpRequired,cpNotNull],10,0
 Documentation: 'ID of a sublocation.','AdjLotQty.15'
 Legacy Column: NA
 

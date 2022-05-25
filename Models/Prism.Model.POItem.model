@@ -539,6 +539,14 @@ Legacy Column: NA
 
 ------------------------------------------------------
 
+Name: QtyPerCase
+Data Type: Nullable<Double>
+Database Column: NA
+Documentation: 'Quantity per case','POItem.79'
+Legacy Column: NA
+
+------------------------------------------------------
+
 Name: Attribute
 Data Type: Nullable<string>
 Database Column: NA

@@ -211,14 +211,6 @@ Legacy Column: NA
 
 ------------------------------------------------------
 
-Name: Preferences
-Data Type: Nullable<string>
-Database Column: 'PREFERENCES',[],2001
-Documentation: 'Default Preferences at subsidiary level','Subsidiary.26'
-Legacy Column: NA
-
-------------------------------------------------------
-
 Name: Active
 Data Type: Boolean
 Database Column: 'ACTIVE',[],1,0
@@ -247,6 +239,14 @@ Name: PriceLevel
 Data Type: Nullable<integer>
 Database Column: NA
 Documentation: 'price level','Subsidiary.30'
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: Preferences
+Data Type: Nullable<string>
+Database Column: 'PREFERENCES',[],2001
+Documentation: 'Default Preferences at subsidiary level','Subsidiary.26'
 Legacy Column: NA
 
 ------------------------------------------------------

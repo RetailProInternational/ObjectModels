@@ -14,7 +14,9 @@
       "stylecode" : null,
       "inprogress" : false,
       "archive" : 0,
-      "imagepath" : "invn_style\\0000\\0000\\0000\\0000\\"
+      "imagepath" : "invn_style\\0000\\0000\\0000\\0000\\",
+      "styleimage" : null,
+      "styleimageindex" : null
     }
   ]
 }

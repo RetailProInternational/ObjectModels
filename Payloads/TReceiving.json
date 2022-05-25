@@ -202,7 +202,10 @@
       "slipstorephone1" : null,
       "storephone2" : null,
       "origstorephone2" : null,
-      "slipstorephone2" : null
+      "slipstorephone2" : null,
+      "pcflag" : false,
+      "apflag" : false,
+      "glflag" : false
     }
   ]
 }

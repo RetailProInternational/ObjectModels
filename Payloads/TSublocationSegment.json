@@ -1,0 +1,22 @@
+{
+  "data" : [
+    {
+      "sid" : "0",
+      "createdby" : null,
+      "createddatetime" : null,
+      "modifieddatetime" : null,
+      "modifiedby" : null,
+      "controllersid" : "0",
+      "originapplication" : null,
+      "rowversion" : 0,
+      "postdate" : null,
+      "tenantsid" : null,
+      "sublocsid" : "0",
+      "segmentvalue" : null,
+      "segmentname" : null,
+      "segmentprefsid" : "0",
+      "segmentid" : null
+    }
+  ]
+}
+

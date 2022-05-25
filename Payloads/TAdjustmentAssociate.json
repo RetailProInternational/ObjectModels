@@ -2,7 +2,9 @@
   "data" : [
     {
       "sid" : "0",
-      "adjtype" : null
+      "adjtype" : null,
+      "sbssid" : "0",
+      "storesid" : null
     }
   ]
 }

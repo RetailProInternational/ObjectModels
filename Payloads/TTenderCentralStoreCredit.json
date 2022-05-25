@@ -17,7 +17,8 @@
       "centralcommitstate" : null,
       "redeemcreditid" : null,
       "newcreditid" : null,
-      "newcreditvalue" : null
+      "newcreditvalue" : null,
+      "centraltxnsid" : null
     }
   ]
 }

@@ -263,7 +263,9 @@
       "employee5name" : null,
       "employee5origsbsno" : null,
       "internalitempos" : null,
-      "returnediteminvoiceinternalitempos" : null
+      "returnediteminvoiceinternalitempos" : null,
+      "sublocid" : null,
+      "overridecheckqty" : null
     }
   ]
 }

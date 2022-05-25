@@ -21,7 +21,6 @@
       "origstoresid" : null,
       "origstation" : null,
       "clerksid" : null,
-      "sublocsid" : null,
       "pricelvlsid" : null,
       "workstationsid" : null,
       "status" : null,
@@ -82,7 +81,8 @@
       "clerkorigsbsno" : null,
       "createdbyorigsbsno" : null,
       "modifiedbyorigsbsno" : null,
-      "sublocationid" : null
+      "alextractdate" : null,
+      "alpostdate" : null
     }
   ]
 }

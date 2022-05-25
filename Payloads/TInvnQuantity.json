@@ -36,6 +36,7 @@
       "asnintransitqty" : null,
       "lastonhandqtydate" : null,
       "invnsbsitemsid" : "0",
+      "autoconfigsid" : null,
       "serialinfo" : [
       ],
       "lotinfo" : [
@@ -45,7 +46,12 @@
       "sbsname" : null,
       "storename" : null,
       "storeno" : null,
-      "storecode" : null
+      "storecode" : null,
+      "defaultsubloc1id" : null,
+      "defaultsubloc2id" : null,
+      "defaultsubloc3id" : null,
+      "sublocqtyinfo" : [
+      ]
     }
   ]
 }

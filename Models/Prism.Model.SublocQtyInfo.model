@@ -1,0 +1,37 @@
+##########################################################################################################
+File Name: Prism.Model.SublocQtyInfo.pas
+##########################################################################################################
+Class Name: TSublocQtyInfo
+Base Class Name: TModelBase
+Database Table: 
+Associate Class: False
+Identified By: NA
+Legacy Identified By: NA
+
+Members
+===========================================================================================
+
+Name: Sid
+Data Type: Int64
+Database Column: 'SID',[cpPrimaryKey],19,0
+Documentation: 'Sid','SublocQtyInfo.1'
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: Qty
+Data Type: Nullable<double>
+Database Column: NA
+Documentation: NA
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: SublocId
+Data Type: integer
+Database Column: NA
+Documentation: NA
+Legacy Column: NA
+
+------------------------------------------------------
+

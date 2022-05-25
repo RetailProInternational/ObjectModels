@@ -25,7 +25,8 @@
       "adjusted" : false,
       "externalstatus" : 0,
       "sbsno" : null,
-      "storeno" : null
+      "storeno" : null,
+      "sublocid" : 0
     }
   ]
 }

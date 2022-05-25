@@ -34,10 +34,12 @@
       "sbsno" : null,
       "serveraddress" : null,
       "serverport" : null,
+      "serverusername" : null,
+      "serverpassword" : null,
       "timeout" : null,
       "resiliencyinterval" : null,
-      "storeassignments" : null,
-      "domainname" : null
+      "domainname" : null,
+      "storeassignments" : null
     }
   ]
 }

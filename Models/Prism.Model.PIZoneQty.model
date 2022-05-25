@@ -1,0 +1,229 @@
+##########################################################################################################
+File Name: Prism.Model.PIZoneQty.pas
+##########################################################################################################
+Class Name: TPIZoneQty
+Base Class Name: TModelBase
+Database Table: PI_ZONE_QTY
+Associate Class: False
+Identified By: NA
+Legacy Identified By: NA
+
+Members
+===========================================================================================
+
+Name: PiZoneSid
+Data Type: Int64
+Database Column: 'PI_ZONE_SID',[cpRequired,cpNotNull],19,0
+Documentation: NA
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: PiStartSid
+Data Type: Int64
+Database Column: 'PI_START_SID',[cpRequired,cpNotNull],19,0
+Documentation: NA
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: Price
+Data Type: Nullable<Double>
+Database Column: 'PRICE',[],16,4
+Documentation: NA
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: Cost
+Data Type: Nullable<Double>
+Database Column: 'COST',[],16,4
+Documentation: NA
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: ScanQty
+Data Type: Nullable<Double>
+Database Column: 'SCAN_QTY',[],10,3
+Documentation: NA
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: ManualQty
+Data Type: Nullable<Double>
+Database Column: 'MANUAL_QTY',[],10,3
+Documentation: NA
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: ManualActive
+Data Type: Int16
+Database Column: 'MANUAL_ACTIVE',[cpRequired,cpNotNull],1,0
+Documentation: NA
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: ImportedQty
+Data Type: Nullable<Double>
+Database Column: 'IMPORTED_QTY',[],10,3
+Documentation: NA
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: ImportedActive
+Data Type: Int16
+Database Column: 'IMPORTED_ACTIVE',[cpRequired,cpNotNull],1,0
+Documentation: NA
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: Sku
+Data Type: Nullable<string>
+Database Column: 'SKU',[],20
+Documentation: NA
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: SerialErrFlag
+Data Type: Nullable<Int16>
+Database Column: 'SERIAL_ERR_FLAG',[],1,0
+Documentation: NA
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: LotErrFlag
+Data Type: Nullable<Int16>
+Database Column: 'LOT_ERR_FLAG',[],1,0
+Documentation: NA
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: Imported
+Data Type: Int16
+Database Column: 'IMPORTED',[cpRequired,cpNotNull],1,0
+Documentation: NA
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: Sid
+Data Type: Int64
+Database Column: 'SID',[cpRequired,cpPrimaryKey,cpNotNull],19,0
+Documentation: NA
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: CreatedBy
+Data Type: string
+Database Column: 'CREATED_BY',[cpRequired,cpNotNull],30
+Documentation: NA
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: CreatedDatetime
+Data Type: TDateTime
+Database Column: 'CREATED_DATETIME',[cpRequired,cpNotNull
+Documentation: NA
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: ModifiedBy
+Data Type: Nullable<string>
+Database Column: 'MODIFIED_BY',[],30
+Documentation: NA
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: ModifiedDatetime
+Data Type: Nullable<TDateTime>
+Database Column: 'MODIFIED_DATETIME',[
+Documentation: NA
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: ControllerSid
+Data Type: Int64
+Database Column: 'CONTROLLER_SID',[cpRequired,cpNotNull],19,0
+Documentation: NA
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: OriginApplication
+Data Type: string
+Database Column: 'ORIGIN_APPLICATION',[cpRequired,cpNotNull],20
+Documentation: NA
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: PostDate
+Data Type: Nullable<TDateTime>
+Database Column: 'POST_DATE',[
+Documentation: NA
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: RowVersion
+Data Type: Integer
+Database Column: NA
+Documentation: NA
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: TenantSid
+Data Type: Nullable<Int64>
+Database Column: 'TENANT_SID',[],19,0
+Documentation: NA
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: TotSNQty
+Data Type: Integer
+Database Column: 'TOT_SN_QTY',[],7,0
+Documentation: NA
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: TotLotQty
+Data Type: Double
+Database Column: 'TOT_LOT_QTY',[],10,3
+Documentation: NA
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: PIZoneQtySerial
+Data Type: IList<TPIZoneQtySerial>
+Database Column: NA
+Documentation: NA
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: PIZoneQtyLot
+Data Type: IList<TPIZoneQtyLot>
+Database Column: NA
+Documentation: NA
+Legacy Column: NA
+
+------------------------------------------------------
+

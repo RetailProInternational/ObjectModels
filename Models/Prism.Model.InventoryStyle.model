@@ -115,6 +115,22 @@ Legacy Column: 'ARCHIVED'
 
 ------------------------------------------------------
 
+Name: StyleImage
+Data Type: Nullable<string>
+Database Column: NA
+Documentation: NA
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: StyleImageIndex
+Data Type: Nullable<integer>
+Database Column: NA
+Documentation: NA
+Legacy Column: NA
+
+------------------------------------------------------
+
 Name: ImagePath
 Data Type: TNullableString
 Database Column: NA

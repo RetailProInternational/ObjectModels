@@ -1,0 +1,52 @@
+{
+  "data" : [
+    {
+      "sid" : "0",
+      "createdby" : null,
+      "createddatetime" : null,
+      "modifiedby" : null,
+      "modifieddatetime" : null,
+      "controllersid" : "0",
+      "originapplication" : null,
+      "rowversion" : 0,
+      "postdate" : null,
+      "tenantsid" : null,
+      "sroconfigname" : null,
+      "calcsold" : false,
+      "soldbegindate" : null,
+      "soldenddate" : null,
+      "solddaterange" : 0,
+      "soldfromnbr" : null,
+      "soldtonbr" : null,
+      "calcrecvd" : false,
+      "recvdbegindate" : null,
+      "recvdenddate" : null,
+      "recvddaterange" : 0,
+      "recvdfromnbr" : null,
+      "recvdtonbr" : null,
+      "calcpending" : false,
+      "calconorder" : false,
+      "onorderbegindate" : null,
+      "onorderenddate" : null,
+      "onorderdaterange" : 0,
+      "onorderuseorderdate" : false,
+      "onorderfromnbr" : null,
+      "onordertonbr" : null,
+      "calcasn" : false,
+      "asnbegindate" : null,
+      "asnenddate" : null,
+      "asndaterange" : 0,
+      "asnusecreateddate" : false,
+      "asnfromnbr" : null,
+      "asntonbr" : null,
+      "status" : null,
+      "laststartdatetime" : null,
+      "lastcompleteddatetime" : null,
+      "sroconfigsbs" : [
+      ],
+      "sroconfigstore" : [
+      ]
+    }
+  ]
+}
+

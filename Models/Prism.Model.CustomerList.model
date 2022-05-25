@@ -483,6 +483,14 @@ Legacy Column: NA
 
 ------------------------------------------------------
 
+Name: LtyLvlName
+Data Type: Nullable<string>
+Database Column: 'LTY_LVL_NAME',[],50
+Documentation: 'LtyLvlName','CustomerList.123', '', true
+Legacy Column: NA
+
+------------------------------------------------------
+
 Name: Mark1
 Data Type: Nullable<string>
 Database Column: 'MARK1',[],4
@@ -687,14 +695,6 @@ Name: TotalTransactions
 Data Type: Nullable<Integer>
 Database Column: 'TOTAL_TRANSACTIONS',[],10,0
 Documentation: 'TotalTransactions','CustomerList.86'
-Legacy Column: NA
-
-------------------------------------------------------
-
-Name: YtdSale
-Data Type: Nullable<Double>
-Database Column: 'YTD_SALE',[],16,4
-Documentation: 'YtdSale','CustomerList.87'
 Legacy Column: NA
 
 ------------------------------------------------------

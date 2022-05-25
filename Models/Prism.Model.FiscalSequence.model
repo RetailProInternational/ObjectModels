@@ -1,0 +1,125 @@
+##########################################################################################################
+File Name: Prism.Model.FiscalSequence.pas
+##########################################################################################################
+Class Name: TFiscalSequence
+Base Class Name: TModelBase
+Database Table: FISCAL_SEQUENCE
+Associate Class: False
+Identified By: 'FSid'
+Legacy Identified By: NA
+
+Members
+===========================================================================================
+
+Name: Sid
+Data Type: Int64
+Database Column: 'SID',[cpRequired,cpPrimaryKey,cpNotNull],19,0
+Documentation: 'SID','FiscalSequence.1'
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: PostDate
+Data Type: Nullable<TDateTime>
+Database Column: 'POST_DATE',[
+Documentation: 'Post date','FiscalSequence.13'
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: OriginApplication
+Data Type: string
+Database Column: 'ORIGIN_APPLICATION',[cpRequired,cpNotNull],20
+Documentation: 'Origin application','FiscalSequence.14'
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: SbsNo
+Data Type: Integer
+Database Column: 'SBS_NO',[cpRequired,cpNotNull],10,0
+Documentation: 'Subsidiary number','FiscalSequence.2'
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: StoreNo
+Data Type: Integer
+Database Column: 'STORE_NO',[cpRequired,cpNotNull],10,0
+Documentation: 'Store number','FiscalSequence.3'
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: WorkstationNo
+Data Type: Integer
+Database Column: 'WORKSTATION_NO',[cpRequired,cpNotNull],10,0
+Documentation: 'Workstation number','FiscalSequence.4'
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: DocType
+Data Type: string
+Database Column: 'DOC_TYPE',[cpRequired,cpNotNull],10
+Documentation: 'Document type','FiscalSequence.5'
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: Serie
+Data Type: Nullable<string>
+Database Column: 'SERIE',[],10
+Documentation: 'Serie','FiscalSequence.6'
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: SerieType
+Data Type: Nullable<string>
+Database Column: 'SERIE_TYPE',[],10
+Documentation: 'Serie type','FiscalSequence.7'
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: NextVal
+Data Type: Nullable<Integer>
+Database Column: 'NEXT_VAL',[],10,0
+Documentation: 'Next value','FiscalSequence.8'
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: ValidationCode
+Data Type: Nullable<string>
+Database Column: 'VALIDATION_CODE',[],100
+Documentation: 'Validation code','FiscalSequence.9'
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: Active
+Data Type: Boolean
+Database Column: 'ACTIVE',[],1,0
+Documentation: 'Active','FiscalSequence.10'
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: AlreadyUsed
+Data Type: Boolean
+Database Column: 'ALREADY_USED',[],1,0
+Documentation: 'Already used','FiscalSequence.11'
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: ModifiedDate
+Data Type: Nullable<TDateTime>
+Database Column: 'MODIFIED_DATE',[
+Documentation: 'Modified date','FiscalSequence.12'
+Legacy Column: NA
+
+------------------------------------------------------
+

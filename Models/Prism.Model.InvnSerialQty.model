@@ -5,7 +5,7 @@ Class Name: TInvnSerialQty
 Base Class Name: TModelBase
 Database Table: INVN_SBS_ITEM_SN_QTY
 Associate Class: False
-Identified By: 'FSerialNo,FInvnSbsItemSNSid,FSbsSid,FStoreSid'
+Identified By: 'FSerialNo,FInvnSbsItemSNSid,FSbsSid,FStoreSid,FSublocId'
 Legacy Identified By: NA
 
 Members
@@ -184,6 +184,14 @@ Data Type: Boolean
 Database Column: 'ADJUSTED',[],1,0
 Documentation: 'Adjusted','InvnSerialQty.22'
 Legacy Column: 'ADJUSTED'
+
+------------------------------------------------------
+
+Name: SublocId
+Data Type: integer
+Database Column: 'SUBLOC_ID',[cpRequired,cpNotNull],10,0
+Documentation: NA
+Legacy Column: NA
 
 ------------------------------------------------------
 

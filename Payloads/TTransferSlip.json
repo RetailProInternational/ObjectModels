@@ -30,7 +30,6 @@
       "docpricetotal" : null,
       "doccosttotal" : null,
       "doccostsubtotal" : null,
-      "sublocsid" : null,
       "origstoresid" : null,
       "origstation" : null,
       "trackingno" : null,
@@ -119,7 +118,6 @@
       "modifiedbyorigsbsno" : null,
       "resolvedbyemplname" : null,
       "resolvedbyorigsbsno" : null,
-      "sublocationid" : null,
       "origintimezone" : "-07:00",
       "outstorecode" : null,
       "outstoreaddress6" : null,
@@ -143,7 +141,11 @@
       "origstorephone1" : null,
       "origstorephone2" : null,
       "outstorephone1" : null,
-      "outstorephone2" : null
+      "outstorephone2" : null,
+      "instorezip" : null,
+      "glflag" : false,
+      "alextractdate" : null,
+      "alpostdate" : null
     }
   ]
 }

@@ -131,14 +131,6 @@ Legacy Column: NA
 
 ------------------------------------------------------
 
-Name: RunResponsePayload
-Data Type: Nullable<string>
-Database Column: 'RUN_RESPONSE_PAYLOAD',[],2001
-Documentation: 'response payload','ScheduledTaskRun.16'
-Legacy Column: NA
-
-------------------------------------------------------
-
 Name: RunUrl
 Data Type: string
 Database Column: 'RUN_URL',[cpRequired,cpNotNull],1000
@@ -147,18 +139,26 @@ Legacy Column: NA
 
 ------------------------------------------------------
 
-Name: RunRequestPayload
-Data Type: Nullable<string>
-Database Column: 'RUN_REQUEST_PAYLOAD',[],2001
-Documentation: 'RequestPayload actually run with including any replaceable params','ScheduledTaskRun.18'
-Legacy Column: NA
-
-------------------------------------------------------
-
 Name: Workstation
 Data Type: Nullable<string>
 Database Column: 'WORKSTATION',[],64
 Documentation: 'Unique WS name in this format: Scheduler_sbs<n> for subsid task will run for','ScheduledTaskRun.19'
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: RunResponsePayload
+Data Type: Nullable<string>
+Database Column: 'RUN_RESPONSE_PAYLOAD',[],2001
+Documentation: 'response payload','ScheduledTaskRun.16'
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: RunRequestPayload
+Data Type: Nullable<string>
+Database Column: 'RUN_REQUEST_PAYLOAD',[],2001
+Documentation: 'RequestPayload actually run with including any replaceable params','ScheduledTaskRun.18'
 Legacy Column: NA
 
 ------------------------------------------------------

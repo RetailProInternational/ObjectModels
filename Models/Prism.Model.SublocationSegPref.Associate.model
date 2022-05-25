@@ -1,0 +1,53 @@
+##########################################################################################################
+File Name: Prism.Model.SublocationSegPref.Associate.pas
+##########################################################################################################
+Class Name: TSublocationSegPrefAssociate
+Base Class Name: TAssociateBase
+Database Table: SUBLOCATION_SEG_PREF
+Associate Class: True
+Identified By: NA
+Legacy Identified By: NA
+
+Members
+===========================================================================================
+
+Name: Sid
+Data Type: Int64
+Database Column: 'SID',[cpRequired,cpPrimaryKey,cpNotNull],19,0
+Documentation: NA
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: SegmentLength
+Data Type: Nullable<Int16>
+Database Column: 'SEGMENT_LENGTH',[],5,0
+Documentation: NA
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: Required
+Data Type: boolean
+Database Column: 'REQUIRED',[],1,0
+Documentation: NA
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: SbsSid
+Data Type: Nullable<Int64>
+Database Column: 'SBS_SID',[cpRequired,cpNotNull],19,0
+Documentation: NA
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: SegmentId
+Data Type: Nullable<Int16>
+Database Column: 'SEGMENT_ID',[cpRequired,cpNotNull],5,0
+Documentation: NA
+Legacy Column: NA
+
+------------------------------------------------------
+

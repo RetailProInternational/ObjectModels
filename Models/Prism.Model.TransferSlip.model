@@ -243,14 +243,6 @@ Legacy Column: NA
 
 ------------------------------------------------------
 
-Name: SublocSid
-Data Type: Nullable<Integer>
-Database Column: 'SUBLOC_SID',[],10,0
-Documentation: 'sid of a sublocation.','TransferSlip.30'
-Legacy Column: NA
-
-------------------------------------------------------
-
 Name: OrigStoreSid
 Data Type: Nullable<Int64>
 Database Column: 'ORIG_STORE_SID',[],19,0
@@ -587,6 +579,30 @@ Legacy Column: NA
 
 ------------------------------------------------------
 
+Name: GlFlag
+Data Type: Boolean
+Database Column: 'GL_FLAG',[],1,0
+Documentation: 'Sent to GL flag','TransferSlip.127'
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: AlExtractDate
+Data Type: Nullable<TDateTime>
+Database Column: 'AL_EXTRACT_DATE',[
+Documentation: 'Accounting Link extract date','TransferSlip.128'
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: AlPostDate
+Data Type: Nullable<TDateTime>
+Database Column: 'AL_POST_DATE',[
+Documentation: 'Accounting Link post date','TransferSlip.129'
+Legacy Column: NA
+
+------------------------------------------------------
+
 Name: SlipItem
 Data Type: IList<TSlipItem>
 Database Column: NA
@@ -891,6 +907,14 @@ Legacy Column: NA
 
 ------------------------------------------------------
 
+Name: InStoreZip
+Data Type: Nullable<string>
+Database Column: NA
+Documentation: 'Zip','TransferSlip.126'
+Legacy Column: NA
+
+------------------------------------------------------
+
 Name: OrigStoreAddress1
 Data Type: Nullable<string>
 Database Column: NA
@@ -1111,14 +1135,6 @@ Name: OutStorePhone2
 Data Type: Nullable<string>
 Database Column: NA
 Documentation: 'OutStore Phone2','TransferSlip.125'
-Legacy Column: NA
-
-------------------------------------------------------
-
-Name: SublocationId
-Data Type: Nullable<Integer>
-Database Column: NA
-Documentation: 'Id','TransferSlip.105'
 Legacy Column: NA
 
 ------------------------------------------------------

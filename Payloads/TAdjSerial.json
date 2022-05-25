@@ -16,7 +16,8 @@
       "origqty" : null,
       "adjqty" : null,
       "notes" : null,
-      "actiontype" : 0
+      "actiontype" : 0,
+      "sublocid" : 0
     }
   ]
 }

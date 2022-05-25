@@ -100,8 +100,8 @@ Legacy Column: NA
 ------------------------------------------------------
 
 Name: Active
-Data Type: Boolean
-Database Column: 'ACTIVE',[cpRequired,cpNotNull],1,0
+Data Type: Nullable<Boolean>
+Database Column: 'ACTIVE',[],1,0
 Documentation: 'toggles active','GridData.12'
 Legacy Column: NA
 

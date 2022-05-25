@@ -101,7 +101,7 @@ Legacy Column: NA
 
 Name: CardNo
 Data Type: Nullable<string>
-Database Column: 'CARD_NO',[],30
+Database Column: 'CARD_NO',[],32
 Documentation: 'gift card number','TenderGiftCard.12'
 Legacy Column: NA
 
@@ -267,14 +267,6 @@ Legacy Column: NA
 
 ------------------------------------------------------
 
-Name: Eftdata0
-Data Type: Nullable<string>
-Database Column: 'EFTDATA0',[],2001
-Documentation: 'additional data that is needed for printing on the invoice','TenderGiftCard.33'
-Legacy Column: NA
-
-------------------------------------------------------
-
 Name: EntryMethod
 Data Type: Nullable<TEntryMethod>
 Database Column: 'ENTRY_METHOD',[],1,0
@@ -399,6 +391,14 @@ Name: Eftdata19
 Data Type: Nullable<string>
 Database Column: 'EFTDATA19',[],32
 Documentation: 'additional data that is needed for printing on the invoice','TenderGiftCard.49'
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: Eftdata0
+Data Type: Nullable<string>
+Database Column: 'EFTDATA0',[],2001
+Documentation: 'additional data that is needed for printing on the invoice','TenderGiftCard.33'
 Legacy Column: NA
 
 ------------------------------------------------------

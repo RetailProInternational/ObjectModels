@@ -117,7 +117,7 @@ Legacy Column: NA
 
 Name: VendInvcNo
 Data Type: string
-Database Column: 'VEND_INVC_NO',[cpRequired,cpNotNull],15
+Database Column: 'VEND_INVC_NO',[cpRequired,cpNotNull],25
 Documentation: 'VendInvcNo','VendorInvoice.14'
 Legacy Column: 'VEND_INVC_NO'
 

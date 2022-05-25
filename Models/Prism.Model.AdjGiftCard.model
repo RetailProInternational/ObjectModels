@@ -101,7 +101,7 @@ Legacy Column: NA
 
 Name: GiftCardNo
 Data Type: string
-Database Column: 'GIFT_CARD_NO',[cpRequired,cpNotNull],25
+Database Column: 'GIFT_CARD_NO',[cpRequired,cpNotNull],32
 Documentation: 'this is the older non-central gift card numbers.','AdjGiftCard.12'
 Legacy Column: 'GIFT_CARD_NO'
 

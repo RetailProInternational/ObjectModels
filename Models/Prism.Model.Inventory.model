@@ -292,7 +292,7 @@ Legacy Column: NA
 ------------------------------------------------------
 
 Name: LastSoldDate
-Data Type: Nullable<TDateTime>
+Data Type: Nullable<TDate>
 Database Column: 'LAST_SOLD_DATE',[
 Documentation: 'LastSoldDate','Inventory.36'
 Legacy Column: 'LST_SOLD_DATE'
@@ -308,7 +308,7 @@ Legacy Column: NA
 ------------------------------------------------------
 
 Name: DiscontinuedDate
-Data Type: Nullable<TDateTime>
+Data Type: Nullable<TDate>
 Database Column: 'DISCONTINUED_DATE',[
 Documentation: 'date sales of item were discontinued','Inventory.38'
 Legacy Column: 'DISCONT_DATE'
@@ -396,7 +396,7 @@ Legacy Column: 'FST_PRICE'
 ------------------------------------------------------
 
 Name: FirstRcvdDate
-Data Type: Nullable<TDateTime>
+Data Type: Nullable<TDate>
 Database Column: 'FIRST_RCVD_DATE',[
 Documentation: 'FirstRcvdDate','Inventory.49'
 Legacy Column: 'FST_RCVD_DATE'
@@ -404,7 +404,7 @@ Legacy Column: 'FST_RCVD_DATE'
 ------------------------------------------------------
 
 Name: LastRcvdDate
-Data Type: Nullable<TDateTime>
+Data Type: Nullable<TDate>
 Database Column: 'LAST_RCVD_DATE',[
 Documentation: 'LastRcvdDate','Inventory.50'
 Legacy Column: 'LST_RCVD_DATE'
@@ -476,7 +476,7 @@ Legacy Column: 'UDF05_STRING'
 ------------------------------------------------------
 
 Name: SellableDate
-Data Type: Nullable<TDateTime>
+Data Type: Nullable<TDate>
 Database Column: 'SELLABLE_DATE',[
 Documentation: 'Item cannot be sold until this date','Inventory.59'
 Legacy Column: 'SELLABLE_DATE'
@@ -484,7 +484,7 @@ Legacy Column: 'SELLABLE_DATE'
 ------------------------------------------------------
 
 Name: OrderableDate
-Data Type: Nullable<TDateTime>
+Data Type: Nullable<TDate>
 Database Column: 'ORDERABLE_DATE',[
 Documentation: 'Item cannot be ordered until this date','Inventory.60'
 Legacy Column: 'ORDERABLE_DATE'
@@ -1267,6 +1267,14 @@ Legacy Column: NA
 
 ------------------------------------------------------
 
+Name: DocItemRowVersion
+Data Type: Integer
+Database Column: NA
+Documentation: NA
+Legacy Column: NA
+
+------------------------------------------------------
+
 Name: DocQty
 Data Type: double
 Database Column: NA
@@ -1291,16 +1299,88 @@ Legacy Column: NA
 
 ------------------------------------------------------
 
-Name: DefaultPriceWT
-Data Type: double
+Name: ItemImage
+Data Type: Nullable<string>
 Database Column: NA
 Documentation: NA
 Legacy Column: NA
 
 ------------------------------------------------------
 
-Name: DefaultPrice
-Data Type: double
+Name: ItemImageIndex
+Data Type: Nullable<integer>
+Database Column: NA
+Documentation: NA
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: ActStrQtySid
+Data Type: Int64
+Database Column: NA
+Documentation: NA
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: ActStrQtyRowVer
+Data Type: Integer
+Database Column: NA
+Documentation: NA
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: ActStrNewMinQty
+Data Type: Double
+Database Column: NA
+Documentation: NA
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: ActStrNewMaxQty
+Data Type: Double
+Database Column: NA
+Documentation: NA
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: ActStrMMBeginDate
+Data Type: TDateTime
+Database Column: NA
+Documentation: NA
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: ActStrMMEndDate
+Data Type: TDateTime
+Database Column: NA
+Documentation: NA
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: ActStrRcvdQty
+Data Type: Double
+Database Column: NA
+Documentation: NA
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: ActStrSoldQty
+Data Type: Double
+Database Column: NA
+Documentation: NA
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: ActStrOnOrderedQty
+Data Type: Double
 Database Column: NA
 Documentation: NA
 Legacy Column: NA

@@ -355,14 +355,6 @@ Legacy Column: 'WEB_STORE'
 
 ------------------------------------------------------
 
-Name: Preferences
-Data Type: Nullable<string>
-Database Column: 'PREFERENCES',[],2001
-Documentation: 'Default Preferences at store level','Store.44'
-Legacy Column: NA
-
-------------------------------------------------------
-
 Name: TaxAreaSid
 Data Type: Nullable<Int64>
 Database Column: 'TAX_AREA_SID',[],19,0
@@ -423,6 +415,14 @@ Name: TaxArea2
 Data Type: Nullable<string>
 Database Column: NA
 Documentation: 'Name','Store.52'
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: Preferences
+Data Type: Nullable<string>
+Database Column: 'PREFERENCES',[],2001
+Documentation: 'Default Preferences at store level','Store.44'
 Legacy Column: NA
 
 ------------------------------------------------------

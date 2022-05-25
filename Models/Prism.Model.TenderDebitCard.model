@@ -227,14 +227,6 @@ Legacy Column: NA
 
 ------------------------------------------------------
 
-Name: Eftdata0
-Data Type: Nullable<string>
-Database Column: 'EFTDATA0',[],2001
-Documentation: 'additional data that is needed for printing on the invoice','TenderDebitCard.28'
-Legacy Column: NA
-
-------------------------------------------------------
-
 Name: EntryMethod
 Data Type: Nullable<TEntryMethod>
 Database Column: 'ENTRY_METHOD',[],1,0
@@ -383,6 +375,14 @@ Name: EftdataBSCust
 Data Type: Nullable<string>
 Database Column: 'EFTDATABSCUST',[],2001
 Documentation: 'Customer Receipt text','TenderDebitCard.47'
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: Eftdata0
+Data Type: Nullable<string>
+Database Column: 'EFTDATA0',[],2001
+Documentation: 'additional data that is needed for printing on the invoice','TenderDebitCard.28'
 Legacy Column: NA
 
 ------------------------------------------------------

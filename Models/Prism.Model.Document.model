@@ -451,14 +451,6 @@ Legacy Column: NA
 
 ------------------------------------------------------
 
-Name: UdfClob
-Data Type: Nullable<string>
-Database Column: 'UDF_CLOB',[
-Documentation: 'user defined clob field','Document.55'
-Legacy Column: NA
-
-------------------------------------------------------
-
 Name: TotalFeeAmt
 Data Type: Nullable<Double>
 Database Column: 'TOTAL_FEE_AMT',[],16,4
@@ -1956,7 +1948,7 @@ Legacy Column: NA
 ------------------------------------------------------
 
 Name: OrderedDate
-Data Type: Nullable<TDateTime>
+Data Type: Nullable<TDate>
 Database Column: 'ORDERED_DATE',[
 Documentation: 'The date that is reported as the ordered date for order items','Document.243'
 Legacy Column: NA
@@ -1964,7 +1956,7 @@ Legacy Column: NA
 ------------------------------------------------------
 
 Name: ShipDate
-Data Type: Nullable<TDateTime>
+Data Type: Nullable<TDate>
 Database Column: 'SHIP_DATE',[
 Documentation: 'The date after which order items can no longer be fulfilled','Document.244'
 Legacy Column: NA
@@ -1972,7 +1964,7 @@ Legacy Column: NA
 ------------------------------------------------------
 
 Name: CancelDate
-Data Type: Nullable<TDateTime>
+Data Type: Nullable<TDate>
 Database Column: 'CANCEL_DATE',[
 Documentation: 'CancelDate','Document.245'
 Legacy Column: NA
@@ -2931,6 +2923,38 @@ Legacy Column: NA
 
 ------------------------------------------------------
 
+Name: ArFlag
+Data Type: Boolean
+Database Column: 'AR_FLAG',[],1,0
+Documentation: 'Sent to AR flag','Document.384'
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: GlFlag
+Data Type: Boolean
+Database Column: 'GL_FLAG',[],1,0
+Documentation: 'Sent to GL flag','Document.385'
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: AlExtractDate
+Data Type: Nullable<TDateTime>
+Database Column: 'AL_EXTRACT_DATE',[
+Documentation: 'Accounting Link extract date','Document.386'
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: AlPostDate
+Data Type: Nullable<TDateTime>
+Database Column: 'AL_POST_DATE',[
+Documentation: 'Accounting Link post date','Document.387'
+Legacy Column: NA
+
+------------------------------------------------------
+
 Name: DocItem
 Data Type: IList<TDocItem>
 Database Column: NA
@@ -2983,6 +3007,14 @@ Name: DocCoupon
 Data Type: IList<TDocCoupon>
 Database Column: NA
 Documentation: NA
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: UdfClob
+Data Type: Nullable<string>
+Database Column: 'UDF_CLOB',[
+Documentation: 'user defined clob field','Document.55'
 Legacy Column: NA
 
 ------------------------------------------------------

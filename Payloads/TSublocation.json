@@ -1,0 +1,35 @@
+{
+  "data" : [
+    {
+      "sid" : "0",
+      "createdby" : null,
+      "createddatetime" : null,
+      "modifieddatetime" : null,
+      "modifiedby" : null,
+      "controllersid" : "0",
+      "originapplication" : null,
+      "rowversion" : 0,
+      "postdate" : null,
+      "tenantsid" : null,
+      "sbssid" : "0",
+      "storesid" : "0",
+      "pricelvlsid" : null,
+      "sublocdesc" : null,
+      "sublocname" : null,
+      "qtylimit" : null,
+      "active" : false,
+      "unsellable" : false,
+      "managed" : false,
+      "secure" : false,
+      "restrictnegative" : false,
+      "subloccode" : null,
+      "sublocid" : 0,
+      "sbsno" : null,
+      "storeno" : null,
+      "pricelvl" : null,
+      "sublocationsegment" : [
+      ]
+    }
+  ]
+}
+

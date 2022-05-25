@@ -1771,14 +1771,6 @@ Legacy Column: NA
 
 ------------------------------------------------------
 
-Name: Eftdata0
-Data Type: Nullable<string>
-Database Column: 'EFTDATA0',[],2001
-Documentation: 'additional data that is needed for printing on the invoice','DocItem.219'
-Legacy Column: NA
-
-------------------------------------------------------
-
 Name: Eftdata11
 Data Type: Nullable<string>
 Database Column: 'EFTDATA11',[],32
@@ -1851,30 +1843,6 @@ Legacy Column: NA
 
 ------------------------------------------------------
 
-Name: Eftdata10
-Data Type: Nullable<string>
-Database Column: 'EFTDATA10',[],2001
-Documentation: 'additional data that is needed for printing on the invoice','DocItem.229'
-Legacy Column: NA
-
-------------------------------------------------------
-
-Name: EftdataBSMer
-Data Type: Nullable<string>
-Database Column: 'EFTDATABSMER',[],2001
-Documentation: 'Merchant Receipt text','DocItem.230'
-Legacy Column: NA
-
-------------------------------------------------------
-
-Name: EftdataBSCust
-Data Type: Nullable<string>
-Database Column: 'EFTDATABSCUST',[],2001
-Documentation: 'Customer Receipt text','DocItem.231'
-Legacy Column: NA
-
-------------------------------------------------------
-
 Name: ActivationSid
 Data Type: Nullable<Int64>
 Database Column: 'ACTIVATION_SID',[],19,0
@@ -1907,10 +1875,58 @@ Legacy Column: NA
 
 ------------------------------------------------------
 
+Name: SublocId
+Data Type: Nullable<Integer>
+Database Column: 'SUBLOC_ID',[],10,0
+Documentation: 'Sublocation ID','DocItem.260'
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: OverrideCheckQty
+Data Type: Nullable<Integer>
+Database Column: 'OVERRIDE_CHECK_QTY',[],1,0
+Documentation: 'Override Check Qty','DocItem.261'
+Legacy Column: NA
+
+------------------------------------------------------
+
 Name: DocItemDiscount
 Data Type: IList<TDocItemDiscount>
 Database Column: NA
 Documentation: NA
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: Eftdata10
+Data Type: Nullable<string>
+Database Column: 'EFTDATA10',[],2001
+Documentation: 'additional data that is needed for printing on the invoice','DocItem.229'
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: Eftdata0
+Data Type: Nullable<string>
+Database Column: 'EFTDATA0',[],2001
+Documentation: 'additional data that is needed for printing on the invoice','DocItem.219'
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: EftdataBSMer
+Data Type: Nullable<string>
+Database Column: 'EFTDATABSMER',[],2001
+Documentation: 'Merchant Receipt text','DocItem.230'
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: EftdataBSCust
+Data Type: Nullable<string>
+Database Column: 'EFTDATABSCUST',[],2001
+Documentation: 'Customer Receipt text','DocItem.231'
 Legacy Column: NA
 
 ------------------------------------------------------

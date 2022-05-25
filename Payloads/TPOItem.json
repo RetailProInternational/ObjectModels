@@ -89,7 +89,8 @@
       "dname" : null,
       "cname" : null,
       "sname" : null,
-      "vendorname" : null
+      "vendorname" : null,
+      "qtypercase" : null
     }
   ]
 }

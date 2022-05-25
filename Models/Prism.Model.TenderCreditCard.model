@@ -267,14 +267,6 @@ Legacy Column: NA
 
 ------------------------------------------------------
 
-Name: Eftdata0
-Data Type: Nullable<string>
-Database Column: 'EFTDATA0',[],2001
-Documentation: 'additional data that is needed for printing on the invoice','TenderCreditCard.33'
-Legacy Column: NA
-
-------------------------------------------------------
-
 Name: CardProcessingFee
 Data Type: Nullable<Double>
 Database Column: 'CARD_PROCESSING_FEE',[],16,4
@@ -431,6 +423,14 @@ Name: Eftdata19
 Data Type: Nullable<string>
 Database Column: 'EFTDATA19',[],32
 Documentation: 'additional data that is needed for printing on the invoice','TenderCreditCard.53'
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: Eftdata0
+Data Type: Nullable<string>
+Database Column: 'EFTDATA0',[],2001
+Documentation: 'additional data that is needed for printing on the invoice','TenderCreditCard.33'
 Legacy Column: NA
 
 ------------------------------------------------------

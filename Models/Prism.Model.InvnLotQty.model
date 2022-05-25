@@ -5,7 +5,7 @@ Class Name: TInvnLotQty
 Base Class Name: TModelBase
 Database Table: INVN_SBS_ITEM_LOT_QTY
 Associate Class: False
-Identified By: 'FLotNumber,FInvnSbsItemLotSid,FSbsSid,FStoreSid'
+Identified By: 'FLotNumber,FInvnSbsItemLotSid,FSbsSid,FStoreSid,FSublocId'
 Legacy Identified By: NA
 
 Members
@@ -120,6 +120,14 @@ Data Type: Nullable<Double>
 Database Column: 'QTY',[],10,3
 Documentation: 'Qty','InvnLotQty.14'
 Legacy Column: 'QTY'
+
+------------------------------------------------------
+
+Name: SublocId
+Data Type: integer
+Database Column: 'SUBLOC_ID',[cpRequired,cpNotNull],10,0
+Documentation: 'SSublocId','InvnLotQty.17'
+Legacy Column: NA
 
 ------------------------------------------------------
 

@@ -99,18 +99,18 @@ Legacy Column: NA
 
 ------------------------------------------------------
 
-Name: SchemaFields
-Data Type: Nullable<string>
-Database Column: 'SCHEMA_FIELDS',[],2001
-Documentation: 'The field definitions for custom schema','CustomSchema.12'
-Legacy Column: NA
-
-------------------------------------------------------
-
 Name: UserdefinedFlag
 Data Type: Int16
 Database Column: 'USERDEFINED_FLAG',[cpRequired,cpNotNull],1,0
 Documentation: '1 indicates is defined by enduser','CustomSchema.13'
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: SchemaFields
+Data Type: Nullable<string>
+Database Column: 'SCHEMA_FIELDS',[],2001
+Documentation: 'The field definitions for custom schema','CustomSchema.12'
 Legacy Column: NA
 
 ------------------------------------------------------

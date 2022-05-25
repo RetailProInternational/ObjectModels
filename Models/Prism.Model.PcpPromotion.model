@@ -107,17 +107,9 @@ Legacy Column: NA
 
 ------------------------------------------------------
 
-Name: GeneralDescription
-Data Type: Nullable<string>
-Database Column: 'GENERAL_DESCRIPTION',[
-Documentation: 'GeneralDescription','PcpPromotion.13'
-Legacy Column: NA
-
-------------------------------------------------------
-
 Name: GeneralDiscReason
 Data Type: Nullable<string>
-Database Column: 'GENERAL_DISC_REASON',[],6
+Database Column: 'GENERAL_DISC_REASON',[],30
 Documentation: 'GeneralDiscReason','PcpPromotion.14'
 Legacy Column: NA
 
@@ -179,94 +171,6 @@ Legacy Column: NA
 
 ------------------------------------------------------
 
-Name: ActivationWeekDays
-Data Type: Nullable<Int16>
-Database Column: 'ACTIVATION_WEEKDAYS',[],1,0
-Documentation: 'ActivationWeekDays','PcpPromotion.210'
-Legacy Column: NA
-
-------------------------------------------------------
-
-Name: ActivationWeekDay1
-Data Type: Nullable<Int16>
-Database Column: 'ACTIVATION_WEEKDAY1',[],1,0
-Documentation: 'ActivationWeekDay1','PcpPromotion.211'
-Legacy Column: NA
-
-------------------------------------------------------
-
-Name: ActivationWeekDay2
-Data Type: Nullable<Int16>
-Database Column: 'ACTIVATION_WEEKDAY2',[],1,0
-Documentation: 'ActivationWeekDay2','PcpPromotion.212'
-Legacy Column: NA
-
-------------------------------------------------------
-
-Name: ActivationWeekDay3
-Data Type: Nullable<Int16>
-Database Column: 'ACTIVATION_WEEKDAY3',[],1,0
-Documentation: 'ActivationWeekDay3','PcpPromotion.213'
-Legacy Column: NA
-
-------------------------------------------------------
-
-Name: ActivationWeekDay4
-Data Type: Nullable<Int16>
-Database Column: 'ACTIVATION_WEEKDAY4',[],1,0
-Documentation: 'ActivationWeekDay4','PcpPromotion.214'
-Legacy Column: NA
-
-------------------------------------------------------
-
-Name: ActivationWeekDay5
-Data Type: Nullable<Int16>
-Database Column: 'ACTIVATION_WEEKDAY5',[],1,0
-Documentation: 'ActivationWeekDay5','PcpPromotion.215'
-Legacy Column: NA
-
-------------------------------------------------------
-
-Name: ActivationWeekDay6
-Data Type: Nullable<Int16>
-Database Column: 'ACTIVATION_WEEKDAY6',[],1,0
-Documentation: 'ActivationWeekDay6','PcpPromotion.216'
-Legacy Column: NA
-
-------------------------------------------------------
-
-Name: ActivationWeekDay7
-Data Type: Nullable<Int16>
-Database Column: 'ACTIVATION_WEEKDAY7',[],1,0
-Documentation: 'ActivationWeekDay7','PcpPromotion.217'
-Legacy Column: NA
-
-------------------------------------------------------
-
-Name: ActivationDayTime
-Data Type: Nullable<Int16>
-Database Column: 'ACTIVATION_DAYTIME',[],1,0
-Documentation: 'ActivationDayTime','PcpPromotion.218'
-Legacy Column: NA
-
-------------------------------------------------------
-
-Name: ActivationDayTimeStart
-Data Type: Nullable<Double>
-Database Column: 'ACTIVATION_DAYTIME_START',[],10,9
-Documentation: 'ActivationDayTimeStart','PcpPromotion.219'
-Legacy Column: NA
-
-------------------------------------------------------
-
-Name: ActivationDayTimeEnd
-Data Type: Nullable<Double>
-Database Column: 'ACTIVATION_DAYTIME_END',[],10,9
-Documentation: 'ActivationDayTimeEnd','PcpPromotion.220'
-Legacy Column: NA
-
-------------------------------------------------------
-
 Name: ActivationSbsSid
 Data Type: Int64
 Database Column: 'ACTIVATION_SBS_SID',[cpRequired,cpNotNull],19,0
@@ -295,14 +199,6 @@ Name: ActivationUseDistricts
 Data Type: Nullable<Int16>
 Database Column: 'ACTIVATION_USE_DISTRICTS',[],1,0
 Documentation: 'ActivationUseDistricts','PcpPromotion.25'
-Legacy Column: NA
-
-------------------------------------------------------
-
-Name: ActivationStoreFilter
-Data Type: Nullable<string>
-Database Column: 'ACTIVATION_STORE_FILTER',[
-Documentation: 'ActivationStoreFilter','PcpPromotion.26'
 Legacy Column: NA
 
 ------------------------------------------------------
@@ -391,14 +287,6 @@ Name: ValidationUseCustomers
 Data Type: Nullable<Int16>
 Database Column: 'VALIDATION_USE_CUSTOMERS',[],1,0
 Documentation: 'ValidationUseCustomers','PcpPromotion.37'
-Legacy Column: NA
-
-------------------------------------------------------
-
-Name: ValidationCustomerFilter
-Data Type: Nullable<string>
-Database Column: 'VALIDATION_CUSTOMER_FILTER',[
-Documentation: 'ValidationCustomerFilter','PcpPromotion.38'
 Legacy Column: NA
 
 ------------------------------------------------------
@@ -563,22 +451,6 @@ Legacy Column: NA
 
 ------------------------------------------------------
 
-Name: CustomerFilterUi
-Data Type: Nullable<string>
-Database Column: 'CUSTOMER_FILTER_UI',[
-Documentation: 'CustomerFilterUi','PcpPromotion.56'
-Legacy Column: NA
-
-------------------------------------------------------
-
-Name: StoreFilterUi
-Data Type: Nullable<string>
-Database Column: 'STORE_FILTER_UI',[
-Documentation: 'StoreFilterUi','PcpPromotion.57'
-Legacy Column: NA
-
-------------------------------------------------------
-
 Name: ApplyManualDiscountedItems
 Data Type: Boolean
 Database Column: 'APPLY_MANUAL_DISCOUNTED_ITEMS',[
@@ -711,6 +583,46 @@ Name: PcpPromotionGroups
 Data Type: IList<TPcpPromotionGroups>
 Database Column: NA
 Documentation: NA
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: GeneralDescription
+Data Type: Nullable<string>
+Database Column: 'GENERAL_DESCRIPTION',[
+Documentation: 'GeneralDescription','PcpPromotion.13'
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: ActivationStoreFilter
+Data Type: Nullable<string>
+Database Column: 'ACTIVATION_STORE_FILTER',[
+Documentation: 'ActivationStoreFilter','PcpPromotion.26'
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: ValidationCustomerFilter
+Data Type: Nullable<string>
+Database Column: 'VALIDATION_CUSTOMER_FILTER',[
+Documentation: 'ValidationCustomerFilter','PcpPromotion.38'
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: CustomerFilterUi
+Data Type: Nullable<string>
+Database Column: 'CUSTOMER_FILTER_UI',[
+Documentation: 'CustomerFilterUi','PcpPromotion.56'
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: StoreFilterUi
+Data Type: Nullable<string>
+Database Column: 'STORE_FILTER_UI',[
+Documentation: 'StoreFilterUi','PcpPromotion.57'
 Legacy Column: NA
 
 ------------------------------------------------------

@@ -400,7 +400,11 @@
       "employee4origsbsno" : null,
       "employee5name" : null,
       "employee5origsbsno" : null,
-      "origintimezone" : "-07:00"
+      "origintimezone" : "-07:00",
+      "arflag" : false,
+      "glflag" : false,
+      "alextractdate" : null,
+      "alpostdate" : null
     }
   ]
 }

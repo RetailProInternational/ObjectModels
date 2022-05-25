@@ -1,0 +1,33 @@
+{
+  "data" : [
+    {
+      "sid" : "0",
+      "fiscaldocumentsid" : "0",
+      "invnsbsitemsid" : null,
+      "udf1string" : null,
+      "udf2string" : null,
+      "udf3string" : null,
+      "udf4string" : null,
+      "udf5string" : null,
+      "udf6string" : null,
+      "udf7string" : null,
+      "udf8string" : null,
+      "udf9string" : null,
+      "udf10string" : null,
+      "udf1date" : null,
+      "udf2date" : null,
+      "udf3date" : null,
+      "udf4date" : null,
+      "udf5date" : null,
+      "udf1float" : null,
+      "udf2float" : null,
+      "udf3float" : null,
+      "udf4float" : null,
+      "udf5float" : null,
+      "udf1clob" : null,
+      "postdate" : null,
+      "originapplication" : null
+    }
+  ]
+}
+

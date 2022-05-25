@@ -29,7 +29,7 @@ Legacy Column: NA
 
 Name: VendInvcNo
 Data Type: Nullable<string>
-Database Column: 'VEND_INVC_NO',[],15
+Database Column: 'VEND_INVC_NO',[],25
 Documentation: NA
 Legacy Column: NA
 

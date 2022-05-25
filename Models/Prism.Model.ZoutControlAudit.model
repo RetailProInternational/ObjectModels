@@ -139,14 +139,6 @@ Legacy Column: NA
 
 ------------------------------------------------------
 
-Name: ReportXml
-Data Type: Nullable<string>
-Database Column: 'REPORT_XML',[],2001
-Documentation: NA
-Legacy Column: NA
-
-------------------------------------------------------
-
 Name: CurrencyEventSid
 Data Type: Nullable<Int64>
 Database Column: 'CURRENCY_EVENT_SID',[],19,0
@@ -166,6 +158,14 @@ Legacy Column: NA
 Name: AuditNo
 Data Type: Int16
 Database Column: 'AUDIT_NO',[cpRequired,cpNotNull],5,0
+Documentation: NA
+Legacy Column: NA
+
+------------------------------------------------------
+
+Name: ReportXml
+Data Type: Nullable<string>
+Database Column: 'REPORT_XML',[],2001
 Documentation: NA
 Legacy Column: NA
 

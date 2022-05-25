@@ -163,6 +163,14 @@ Legacy Column: NA
 
 ------------------------------------------------------
 
+Name: OnOrderedQty
+Data Type: Double
+Database Column: NA
+Documentation: NA
+Legacy Column: NA
+
+------------------------------------------------------
+
 Name: SbsNo
 Data Type: Nullable<Int16>
 Database Column: NA
